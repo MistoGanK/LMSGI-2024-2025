@@ -1,0 +1,124 @@
+*{
+    color: rgba(0, 0, 0, 0.819);
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    list-style:none;
+    text-decoration: none;
+    background-color: whitesmoke;
+    outline: none;
+    overflow: hidden;
+    box-sizing:border-box
+}
+header{
+    width: 100%;
+}
+nav{
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+ul{
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+}
+li{
+    display: inline-block;
+    margin-right: 50px;
+}
+li img{
+    width: 45px;
+}
+header li:nth-child(n +3){
+    border-right: 2px solid black;
+    padding-right: 10px;
+}
+li:nth-child(7){
+    border: none;
+}
+li:hover a{
+    color: rgb(203, 157, 73);
+    opacity: 90%;
+}
+
+form{
+    display: inline-block;
+}
+input[type="search"]{
+    padding:5px;
+}
+nav + div {
+    height: 100px;
+    background-color: darkgrey;
+    text-align: center;
+}
+nav + div p{
+    display: inline-block;
+    background-color: darkgrey;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+    width: 30%;
+    text-align: center;
+    margin:0;
+    vertical-align:middle;
+}
+main{
+    width: 100%;
+}
+.client_shopping {
+    display: inline-block;
+    width: 50%; 
+    float: left;
+    padding: 0;
+    margin: 0 auto; /* Center the inline-block element */
+    text-align: center;
+    margin-top:30px;
+    margin-bottom:15px;
+}
+.produc_section{   
+    width:33%;
+    display: inline-block;
+    float: left;
+}
+.client_shopping:nth-child(3){
+    border-bottom: solid black 1px;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+.produc_section li{
+    margin-bottom: 10px;
+    text-align:start;
+    width: 100%;
+    margin: 0;
+}
+.produc_p1{
+    font-size:22px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.produc_p2{
+    font-size:15px;
+}
+.product_p3{
+    font-size:17px;
+    font-weight: bold;
+}
+.shopping_resume ul li{
+    display: inline;
+    font-size:20px;
+    font-weight: 400;
+    border-bottom: 2px solid black;
+}
+.shopping_resume ul li:last-child p{
+    font-weight: bolder;
+    font-size:25px;
+}
+.shopping_resume ul li:first-child p{
+    outline: solid black 1px;
+}
+.shopping_resume ul li:first-child p:hover{
+    color: chocolate;
+}
