@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Author" content="NPS,I">
+        <meta name="Description" content="LMSGI UD1 EX6">
+        <title>LMSGI UD1 EX6</title>
+        <style>
+            /* Apply styling to the first column */
+            .segunda_tabla col:first-child {
+                background-color: #fff07c;
+                font-weight: bold;
+                width: 120px;
+            }
+            /* Apply styling to the second column */
+            .segunda_tabla col:nth-child(2) {
+                background-color: #b0d0d3;
+                width:160px;
+            }
+            /* Apply styling to the third column */
+            .segunda_tabla col:nth-child(3) {
+                background-color: #c08497;
+                width:300px;
+            }
+            .primera_tabl,table, th, td{
+                border: solid black 1px;
+            }
+            table{
+                margin-bottom: 20px;
+            }
+            td,th{
+                padding: 5px;
+            }
+            .segunda_tabla th{
+                font-weight: bolder;
+            }
+            .segunda_tabla td{
+                font-weight: 500;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <table class="primera_tabla">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th colspan="2">Address</th>
+                    <th>Image</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">John</td>
+                    <td>25</td>
+                    <td rowspan="2">123 Main St</td>
+                    <td rowspan="2">City, Country</td>
+                    <td rowspan="2"><img src="https://via.placeholder.com/120" title="imagen" alt="imagen_link"></td>
+                </tr>
+                <tr>
+                    <td>male</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Mary</td>
+                    <td>30</td>
+                    <td>456 Elm St</td>
+                    <td>Another City, Country</td>
+                    <td rowspan="3"><img src="https://via.placeholder.com/120" title="imagen" alt="imagen_link"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Female</td>
+                    <td>789 Oak St</td>
+                    <td>Yet another City, Country</td>
+                </tr>
+                <tr>
+                    <td>101 Pine St</td>
+                    <td>One More City, Country</td>
+                </tr>
+            </table>
+            <table class="segunda_tabla">
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <tr>
+                    <th>Name</th>
+                    <th>Occupation</th>
+                    <th>Location</th>
+                </tr>
+                <tr>
+                    <td>Alice</td>
+                    <td>Software Engineer</td>
+                    <td>New York</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>Graphic Designer</td>
+                    <td>Los Angeles</td>
+                </tr>
+                <tr>
+                    <td>Charlie</td>
+                    <td>Marketing Manager</td>
+                    <td>Chicago</td>
+                </tr>
+                <tr>
+                    <td>Dave</td>
+                    <td>Accountant</td>
+                    <td>Houston</td>
+                </tr>
+            </table>
+        </main>
+    </body>
+</html>
