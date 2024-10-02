@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="ahuthor" content="NPS">
+        <meta name="descripció" content="LMSGI UD1 EX9">
+        <link rel="stylesheet" href="index.css">
+        <title>LMSGI UD1 EX9 NIKOLAY</title>
+    </head>
+    <body>
+        <article class="formulario">
+            <h1>Formulari</h1>
+            <h2>DADES DE LA PERSONA PARTICIPANT</h2>
+            <form action="" method="get">
+                <section class="dades_personals">
+                    <div class="data_section">
+                        <label for="nom">Nom:<span class="aste">*</span></label>
+                        <input type="text" id="nom" name="usuari_nom" title="Introdueixi el seu nom" minlength="2" maxlength="30" required>
+                    </div>
+                    <div class="data_section">
+                        <label>
+                            Cognom<span class="aste">*</span>
+                            <input type="text" name="usuari_cognom" title="Introdueixi el seu cognom" minlength="2" maxlength="30" required>
+                        </label>
+                    </div>
+                    <div class="data_section">
+                        <label for="dni">DNI/NIF<span class="aste">*</span></label>
+                        <input type="text" id="dni" name="dni_usuari" title="Introdueixi el seu DNI, minim sis caràcters maxim divuit" minlength="6" maxlength="18" requirded>
+                    </div>
+                    <div class="data_section">
+                        <label for="telefon">Telèfon<span class="aste">*</span></label>
+                        <input type="number" id="telefon" name="usuario_telefon" title="Introdueixi el seu telèfon, maxim 100 caracters y Espanyol" required>
+                    </div>
+                    <div class="data_section">
+                        <label>
+                            Data de Naixament<span class="aste">*</span>
+                            <input type="date" name="data_naixament_usuari" title="Introdueixi la seva data de naixement" required>
+                        </label>
+                    </div>
+                    <div class="data_section">
+                        <label>Gènere<span class="aste">*</span></label>
+                        <label>
+                            Dona
+                            <input type="radio" name="rbutton">
+                        </label>
+                        <label>
+                            Home
+                            <input type="radio" name="rbutton">
+                        </label>
+                        <label>
+                            No Binari
+                            <input type="radio" name="rbutton">
+                        </label>
+                    </div>
+                    <div class="data_section">
+                        <label>Adreça <span class="aste">*</span></label>
+                        <label for="via">Via</label>
+                        <select name="via_usuari" id="via" title="Introdueixi la seva via">
+                            <option>carrer</option>
+                            <option>avinguda</option>
+                            <option>carretera</option>
+                            <option>ronda</option>
+                            <option>autopista</option>
+                            <option>rambla</option>
+                            <option>camí</option>
+                            <option>Altre<input type="text" name="altre_via_usuari"></option>
+                        </select>
+                    </div>
+                </section>
+            </form>
+        </article>
+    </body>
+</html>

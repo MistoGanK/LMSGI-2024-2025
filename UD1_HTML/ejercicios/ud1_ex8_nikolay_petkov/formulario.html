@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="author" content="NPS">
+        <meta name="descripción" content="LMSGI UD1 EX8">
+        <title>Formulari de registre - La meva web</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+            }
+           .aste{
+            color: red;
+
+           }
+           label:last-child{
+           }
+           body{    
+            background-color: #1f1f1f;
+           }
+           main{
+            width: 100%;
+            max-width: 800px;
+            min-width:300px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           }
+           h1{
+            margin-bottom:15px;
+            text-align: center;
+            font-weight: bolder;
+           }
+           label{
+            margin-bottom:5px;
+            font-weight: 500;
+           }
+           input[type="text"],
+           input[type="email"],
+           textarea{
+            width:100%;
+            padding:10px;
+            margin-bottom: 15px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            font-size:17px;
+           }
+           input[type="text"]:focus{
+            outline: 1px solid greenyellow;
+           }
+           textarea:focus{
+            outline: 1px solid greenyellow;
+           }
+           input[type="radio"]{
+            margin-bottom:25px;
+            margin-left:5px;
+           }
+           input[type="radio"]:focus{
+            outline: 1px solid greenyellow;
+           }
+           input[type="checkbox"]:focus{
+            outline: solid 1px greenyellow;
+           }
+           input[type="submit"]{
+            margin-top:10px;
+            width: 70px;
+            padding: 5px;
+            border-radius: 10px;    
+           }
+           textarea{
+            resize:none;
+           }
+           a{
+            color:#1f1f1f
+           }
+           a:hover{
+            color: green;
+           }
+           .condicions_generals{
+            margin-top:1000px
+           }
+           .condicions_generals p, h2{
+            margin-bottom:10px;
+           }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Formulari de Registre</h1>
+            <form method="get" action="">
+                <p>
+                    <label for="nom">Nom:<span class="aste">*</span></label>
+                    <input type="text" id="nom" name="nom" required minlength="2" maxlength="30" autofocus>
+                </p>
+                <p>
+                    <label for="pcognom">Primer Cognom:<span class="aste">*</label>
+                    <input type="text" id="pcognom" name="primer_cognom" maxlength="50">
+                </p>
+                <p>
+                    <label for="scognom">Segon Cognom:</label>
+                    <input type="text" id="scognom" name="segon_cognom" maxlegnth="50">
+                </p>
+                <p>
+                    <label>Gènere:<span class="aste">*</span></label>
+                    <input type="radio" id="done" name="bradio" required>
+                    <label for="done">Done</label>
+                    <input type="radio" id="home" name="bradio">
+                    <label for="home">Home</label>
+                    <input type="radio" id="nobi" name="bradio">
+                    <label for="nobi">No binari</label>
+                </p>
+                <p>
+                    <label for="email">Email:<span class="aste">*</span></label>
+                    <input type="text" id="email" name="email" required maxlength="100">
+                </p>
+                <label>
+                    Descripció:
+                    <p></p>
+                    <textarea name="desc" maxlength="300" cols="40" rows="10"  placeholder="Entra una descripció amb un màxim de 300 caràcters..."></textarea>
+                </label>
+                <p></p>
+                <hr>
+                <h2>Consentiment</h2>
+                <p>
+                    <input type="checkbox" id="chboxnews" name="chnewsletter" checked>
+                    <label for="chboxnews" title="Subscriu-te al newsletter">Vull rebre informació amb les darreres novetas i oferte personalitzades.</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="chboxcond" name="chboxconditions" required>
+                    <label for="chboxcond" title="condicions generals">Declar haber llegit i acceptar les <a href="#condi" title="link a condicions generals">condicions generals</a> de l'aplicació i la normativa sobre protecció de dates personals.</label>
+                </p>
+                <p>
+                    <input type="submit" value="envia" name="envia" title="enviar dates">
+                </p>
+                <div class="condicions_generals" id="condi">
+                    <h2>Condicions generals</h2>
+                    <p><strong>Identificació del tractament:</strong> Nom i Llinatges</p>
+                    <p><strong>Responsable del tractament:</strong> Empresa S.L.</p>
+                    <p><strong>Finalitat del tractament:</strong> gestionar els diferents enviaments d'informació derivats del registre de l'usuari.</p>
+                    <p><strong>Legitimació:</strong> consentiment de la persona interessada.</p>
+                    <p><strong>Persones destinatàries:</strong> Les encarregades del tractament que proveeixen, per compte de l'empresa. Les dades no es comunicaran a altres categories de destinataris, excepte en els casos previstos per la llei.</p>
+                    <p><strong>Drets de les persones interessades:</strong> sol·licitar l'accés, rectificació o supressió de les dades, i la limitació o oposició al tractament. Cal utilitzar els formularis i el procediment disponibles.</p>
+                </div>
+            </form>
+        </main>
+    </body>
+</htlm>

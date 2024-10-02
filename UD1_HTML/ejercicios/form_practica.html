@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+        <meta name="Author" contetnt="NPS">
+        <title>Practica FORM</title>
+    </head>
+    <body>
+        <main>
+            <h1>Registración</h1>
+            <form action="#" method="get">
+                <p>
+                    <label for="nom">Nom:</label>
+                    <input id="nom" type="text" name="nom" min="3" max="100" required autofocus>
+                </p>
+                <p>
+                    <label for="llinatge">Llinatge:</label>
+                    <input id="llinatge" type="text" name="llinatge" min="3" max="100" required>
+                </p>
+                <p>
+                    <label for="edat">Edat:</label>
+                    <input id="edat" type="number" name="edat" min="18" max="130" required> 
+                </p>
+                <p>
+                    <lable for="desc">Descripció</lable>
+                    <textarea name="desc" id="desc" placeholder="Escribe algo wey" cols="30" rows="10"></textarea>
+                </p>
+                <p>Cual es tu sexo bro/a?</p>
+                    <input type="radio" name="rbuton" id="hombre" value="hombre">
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" name="rbuton" id="mujer" value="mujer">
+                    <label for="mujer">Mujer</label>
+                    <input type="radio" name="rbuton" id="nobi" value="nobi">
+                    <label for="nobi">No binario</label>
+                    <input type="radio" name="rbuton" id="goku" value="goku">
+                    <label for="goku">Goku</label>
+                <p>
+                    <button>Cancela</button>
+                    <input type="submit" name="enviar" title="enviar" value="enviar">
+                </p>
+                 <p>
+                    <label for="pais">Escriba su pais:</label>
+                    <input list="paises" name="pais" id="pais">
+                    <datalist id="paises">
+                        <option value="España"></option>
+                        <option value="Portugal"></option>
+                        <option value="United Kigdom"></option>
+                        <option value="Brazuil"></option>
+                    </datalist>
+                </p>
+                <p>
+                    <input type="checkbox" name="cond" id="conds" checked>
+                    <label for="conds">Acepto las condiciones</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="news" id="news">
+                    <label for="news">Acepto recibir Newsletters</label>  
+                </p>
+            </form>
+        </main>
+    </body>
+</html>
