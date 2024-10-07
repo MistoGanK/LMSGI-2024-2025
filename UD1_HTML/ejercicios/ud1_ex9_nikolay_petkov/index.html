@@ -6,7 +6,7 @@
         <meta name="ahuthor" content="NPS">
         <meta name="descripció" content="LMSGI UD1 EX9">
         <link rel="stylesheet" href="index.css">
-        <title>LMSGI UD1 EX9 NIKOLAY</title>
+        <title>Formulari d'inscripció a la cursa XYZ</title>
     </head>
     <body>
         <article class="formulario">
@@ -16,33 +16,33 @@
                 <section class="dades_personals">
                     <div class="data_section">
                         <label for="nom">Nom:<span class="aste">*</span></label>
-                        <input type="text" id="nom" name="usuari_nom" title="Introdueixi el seu nom" minlength="2" maxlength="30" required>
+                        <input type="text" id="nom" name="usuari_nom" title="Introdueixi el seu nom" minlength="2" maxlength="30" required autofocus>
                     </div>
                     <div class="data_section">
                         <label>
-                            Cognom<span class="aste">*</span>
-                            <input type="text" name="usuari_cognom" title="Introdueixi el seu cognom" minlength="2" maxlength="30" required>
+                            Cognom:<span class="aste">*</span>
+                            <input type="text" name="usuari_cognom" title="Introdueixi el seu cognom" minlength="2" maxlength="50" required>
                         </label>
                     </div>
                     <div class="data_section">
-                        <label for="dni">DNI/NIF<span class="aste">*</span></label>
+                        <label for="dni">DNI/NIF:<span class="aste">*</span></label>
                         <input type="text" id="dni" name="dni_usuari" title="Introdueixi el seu DNI, minim sis caràcters maxim divuit" minlength="6" maxlength="18" requirded>
                     </div>
                     <div class="data_section">
-                        <label for="telefon">Telèfon<span class="aste">*</span></label>
-                        <input type="number" id="telefon" name="usuario_telefon" title="Introdueixi el seu telèfon, maxim 100 caracters y Espanyol" required>
+                        <label for="telefon">Telèfon:<span class="aste">*</span></label>
+                        <input type="number" id="telefon" name="usuario_telefon" title="Introdueixi el seu telèfon, maxim 100 caracters y Espanyol" maxlength="100" required>
                     </div>
                     <div class="data_section">
                         <label>
-                            Data de Naixament<span class="aste">*</span>
-                            <input type="date" name="data_naixament_usuari" title="Introdueixi la seva data de naixement" required>
+                            Data de Naixament:<span class="aste">*</span>
+                            <input type="date" name="data_nanovetatsixament_usuari" title="Introdueixi la seva data de naixement" required>
                         </label>
                     </div>
                     <div class="data_section">
-                        <label>Gènere<span class="aste">*</span></label>
+                        <label>Gènere:<span class="aste">*</span></label>
                         <label>
                             Dona
-                            <input type="radio" name="rbutton">
+                            <input type="radio" name="rbutton" required>
                         </label>
                         <label>
                             Home
@@ -54,21 +54,100 @@
                         </label>
                     </div>
                     <div class="data_section">
-                        <label>Adreça <span class="aste">*</span></label>
-                        <label for="via">Via</label>
-                        <select name="via_usuari" id="via" title="Introdueixi la seva via">
-                            <option>carrer</option>
-                            <option>avinguda</option>
-                            <option>carretera</option>
-                            <option>ronda</option>
-                            <option>autopista</option>
-                            <option>rambla</option>
-                            <option>camí</option>
-                        </select>
-                        <label for="altre_via">Altre:</label>
-                        <input type="text" id="altre_via" title="insereix altra via">
+                        <div class="data_section">
+                            <label>Adreça: <span class="aste">*</span></label>
+                            <div class="data_section"></div>
+                            <div class="data_section">
+                            <label for="via">Via:</label>
+                            <p></p>
+                            <input list="vias" id="via" name="vias" required>
+                            <datalist name="vias" id="vias" title="Introdueixi la seva via">
+                                <option value="carrer">carrer</option>
+                                <option value="avinguda">avinguda</option>
+                                <option value="carretera">carretera</option>
+                                <option value="ronda">ronda</option>
+                                <option value="autopista">autopista</option>
+                                <option value="rambla">rambla</option>
+                                <option value="cami">camí</option>
+                                <option value="altre">altre</option>
+                            </datalist>
+                        </div>
+                        <div class="data_section">
+                            <label for="nom_via">nom via:<span class="aste">*</span></label>
+                            <input id="nom_via" type="text" name="nom_via" title="Introdueixi el nom de la via" required>
+                            <label for="nombre">nombre:<span class="aste">*</span></label>
+                            <input id="nombre" type="text" title="Introdueixi el nombre de la via" required>
+                        </div>
                     </div>
                     <div class="data_section">
+                    </div>
+                    <div class="data_section">
+                        <label for="poblacio_usuari">Població:<span class="aste">*</span></label>
+                        <select name="poblacio_usuari" id="poblacio_usuari" title="Introdueixi la seva població" required>
+                            <option value="mao">Maó</option>
+                            <option value="ciutadella">Ciutadella</option>
+                            <option value="alaior">Alaior</option>
+                            <option value="ferreries">Ferreries</option>
+                            <option value="es_mercadal">Es Mercadal</option>
+                            <option value="es_mitjorn_gran">Es Mitgjorn Gran</option>
+                            <option value="es_castell">Es Castell</option>
+                            <option value="sant_luis">Sant Luis</option>
+                            <option value="altre">Altre</option>
+                        </select>  
+                    </div>
+                    <div class="data_section">
+                        <label for="cp_usuari">Codi postal:<span class="aste">*</span></label>
+                        <input type="text" minlength="5" maxlenght="7" id="cp_usuari" name="codi_postal" title="Introdueixi el codi postal, minim 5 y maxim 7 nombres" required>
+                    </div>
+                    <div class="data_section">
+                        <label for="text_lliure">Club:</label>
+                        <p></p>
+                        <textarea id="text_lliure" rows="10" cols="100%" placeholder="Text lliure del club de maxim 600 caracters..." maxlength="600"></textarea>
+                    </div>
+                    <div class="data_section">
+                        <label for="talla_samarreta">Talla de samarreta</label>
+                        <select id="talla_samarreta"  name="talla_samarretas" title="Introdueixi la seva talla de samarreta">
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                    </div>
+                </section>
+                <section class="dades_personals">
+                    <h2>DADES DE LA CURSA</h2>
+                    <div class="data_section">
+                        <label for="cursa">Circuit:<span class="aste">*</span></label>
+                        <select id="cursa" name="cursas" title="tria el circuit" required>
+                            <optgroup label="Verd">
+                                <option value="cursa_mini">Cursa mini  &#40; verd 1.700m arpox&#41;</option>
+                            </optgroup>
+                            <optgroup label="Blau">
+                                <option value="cursa_mitjana">Cursa mitjana &#40; blau 4.995m aprox&#41;</option>
+                            </optgroup>
+                            <optgroup label="Vermell">
+                                <option value="cursa_gran">Cursa gran &#40; vermell 10.000m aprox&#41;</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="data_section">
+                        <label for="comentari_lliure">Comentari lliure:</label>
+                        <textarea id="comentari_lliure" placeholder="Camp de comentari lliure de maxim 200 caracters..." maxlength="200" rows="10" cols="100%"></textarea>
+                    </div>
+                </section>
+                <section class="dades_personals">
+                    <div class="data_section">
+                        <div class="data_section">
+                            <input id="condicions" type="checkbox" checked required>
+                            <label for="condicions"><span class="aste">*</span> Accepto i assumeixo les normes de participació que regulen la Cursa Popular Ciutat de XYZ.</label>
+                        </div>
+                        <div class="data_section">
+                            <input id="novetats" type="checkbox" checked>
+                            <label for="novetats">Que estic interessat/da en rebre informació sobre les activitats esportives organitzades per l’Ajuntament i dono el meu consentiment per a la tramesa d’informació al respecte.</label>
+                        </div>
+                        <input type="submit" title="envia" name="envia" value="envia">
                     </div>
                 </section>
             </form>

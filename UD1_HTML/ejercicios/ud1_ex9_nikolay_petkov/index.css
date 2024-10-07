@@ -16,7 +16,7 @@ body{
 .formulario{
     width: 100%;
     background-color: #1f1f1f;
-    height: 500px;
+    height: auto;
     padding: 20px;
     border-radius: 30px;
 }
@@ -26,13 +26,15 @@ h1{
     letter-spacing:1px;
     font-weight: bolder;
     font-size:30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;    
+    border-bottom: 5px solid whitesmoke;
+    border-radius:20px;
 }
 h2{
     font-family:sans-serif;
     letter-spacing:1px;
     font-weight: bolder;
-    font-size:17px;
+    font-size:20px;
     margin-bottom: 10px;
 }
 .aste{
@@ -41,4 +43,96 @@ h2{
 
 .data_section{
     margin-bottom:15px;
+    width: 100%;
+    height: auto;
 }
+.data_section label{
+    font-weight: bold;
+}
+.data_section input[type="radio"]{
+    margin-right:10px;
+}
+.data_section input[type="date"]{
+    padding: 7px;
+    width: 200px;
+    font-size: 15px;
+}
+.data_section input[type="number"]{
+    padding: 5px;
+    width: 200px;
+    font-size: 15px;
+}
+input[name="vias"] {
+    padding:10px;
+    height: 50px;
+    width: 100%;
+    font-size:17px;
+}
+
+.data_section input{
+    padding: 3px;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.data_section input[type="text"]{
+    width: 100%;
+    padding:10px;
+    font-size:17px;
+}
+textarea{
+    resize:none;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+select{
+    padding: 5px;
+    font-size: 14px;
+
+}
+.dades_personals{
+    width: 100%;
+    height: auto;
+    font-size:17px;
+    border-bottom: solid 3px whitesmoke;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.data_section input[type="submit"]{
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight:bold;
+
+}
+input[type="text"]:focus{
+    outline: 1px solid greenyellow;
+   }
+   textarea:focus{
+    outline: 1px solid greenyellow;
+   }
+   input[type="radio"]{
+    margin-bottom:25px;
+    margin-left:5px;
+   }
+   input[name="vias"]:focus{
+    outline: 1px solid greenyellow;
+   }
+   input[type="checkbox"]:focus{
+    outline: solid 1px greenyellow;
+   }
+   input[type="data"]:focus{
+    outline: solid 1px greenyellow;
+   }
+   input[type="checkbox"]:focus{
+    outline: solid 1px greenyellow;
+   }
+   input[type="number"]:focus{
+    outline: solid 1px greenyellow;
+   }
