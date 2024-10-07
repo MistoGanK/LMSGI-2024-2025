@@ -26,31 +26,31 @@
                     </div>
                     <div class="data_section">
                         <label for="dni">DNI/NIF:<span class="aste">*</span></label>
-                        <input type="text" id="dni" name="dni_usuari" title="Introdueixi el seu DNI, minim sis caràcters maxim divuit" minlength="6" maxlength="18" requirded>
+                        <input type="text" id="dni" name="dni_usuari" title="Introdueixi el seu DNI, minim sis caràcters maxim divuit" placeholder="minim 9 caracters maxim 9 caracters" minlength="9" maxlength="9" requirded>
                     </div>
                     <div class="data_section">
                         <label for="telefon">Telèfon:<span class="aste">*</span></label>
-                        <input type="number" id="telefon" name="usuario_telefon" title="Introdueixi el seu telèfon, maxim 100 caracters y Espanyol" maxlength="100" required>
+                        <input type="number" id="telefon" name="usuario_telefon" title="Introdueixi el seu telèfon, maxim 100 caracters y Espanyol" placeholder="maxim 100 caracters" maxlength="100" required>
                     </div>
                     <div class="data_section">
                         <label>
                             Data de Naixament:<span class="aste">*</span>
-                            <input type="date" name="data_nanovetatsixament_usuari" title="Introdueixi la seva data de naixement" required>
+                            <input type="date" name="data_nanovetatsixament_usuari" title="Introdueixi la seva data de naixement" required min="1979-12-31" max="2014-12-31">
                         </label>
                     </div>
                     <div class="data_section">
                         <label>Gènere:<span class="aste">*</span></label>
                         <label>
                             Dona
-                            <input type="radio" name="rbutton" required>
+                            <input type="radio" name="rbutton" required value="dona">
                         </label>
                         <label>
                             Home
-                            <input type="radio" name="rbutton">
+                            <input type="radio" name="rbutton" value="home">
                         </label>
                         <label>
                             No Binari
-                            <input type="radio" name="rbutton">
+                            <input type="radio" name="rbutton" value="no_binari">
                         </label>
                     </div>
                     <div class="data_section">
@@ -73,9 +73,9 @@
                             </datalist>
                         </div>
                         <div class="data_section">
-                            <label for="nom_via">nom via:<span class="aste">*</span></label>
+                            <label for="nom_via">Nom via:<span class="aste">*</span></label>
                             <input id="nom_via" type="text" name="nom_via" title="Introdueixi el nom de la via" required>
-                            <label for="nombre">nombre:<span class="aste">*</span></label>
+                            <label for="nombre">Nombre:<span class="aste">*</span></label>
                             <input id="nombre" type="text" title="Introdueixi el nombre de la via" required>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                     </div>
                     <div class="data_section">
                         <label for="cp_usuari">Codi postal:<span class="aste">*</span></label>
-                        <input type="text" minlength="5" maxlenght="7" id="cp_usuari" name="codi_postal" title="Introdueixi el codi postal, minim 5 y maxim 7 nombres" required>
+                        <input type="text" minlength="5" maxlenght="7" id="cp_usuari" name="codi_postal" placeholder="Introdueixi el codi postal, minim 5 y maxim 7 nombres" title="Introdueixi el codi postal, minim 5 y maxim 7 nombres" required>
                     </div>
                     <div class="data_section">
                         <label for="text_lliure">Club:</label>
@@ -105,8 +105,8 @@
                         <textarea id="text_lliure" rows="10" cols="100%" placeholder="Text lliure del club de maxim 600 caracters..." maxlength="600"></textarea>
                     </div>
                     <div class="data_section">
-                        <label for="talla_samarreta">Talla de samarreta</label>
-                        <select id="talla_samarreta"  name="talla_samarretas" title="Introdueixi la seva talla de samarreta">
+                        <label for="talla_samarreta">Talla de samarreta<span class="aste">*</span></label>
+                        <select id="talla_samarreta"  name="talla_samarretas" title="Introdueixi la seva talla de samarreta" required>
                             <option value="XS">XS</option>
                             <option value="S">S</option>
                             <option value="M">M</option>
