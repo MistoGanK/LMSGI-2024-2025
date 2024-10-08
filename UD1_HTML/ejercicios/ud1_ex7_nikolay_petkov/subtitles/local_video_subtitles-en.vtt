@@ -1,7 +1,37 @@
 WEBVTT
 
-00:00:00.0000 --> 00:00:01.0000
-Hola!
+0
+00:00:00.000--> 00:00:01.500
+Hello!
 
-00:00:01.0000 --> 00:00:02.0000
-Que tal 
+1
+00:00:01.500 --> 00:00:02.500
+How are you doing? 
+
+2
+00:00:03.500 --> 00:00:05.000 
+Testing if the subtitles work for me
+
+3
+00:00:05.500 --> 00:00:07.500 
+The key is the format
+
+4
+00:00:07.500 --> 00:00:09.500 
+It must follow the following format:
+
+5
+00:00:09.500 --> 00:00:11.500
+00:00:00.000 &#45;&#45;&#62; 00:00:00.000
+
+6
+00:00:11.500 --> 00:00:13.500
+As you can see, it is essential that the format is accurate.
+
+7
+00:00:13.500 --> 00:00:15.500
+Otherwise you will not get anything u_u
+
+8
+00:00:15.500 --> 00:00:17.500
+Thanks for everything!

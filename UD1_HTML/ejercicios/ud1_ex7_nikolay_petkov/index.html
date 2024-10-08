@@ -13,17 +13,17 @@
             <nav>
                 <ul>
                     <li><a href="index.html" title="Home page" alt="link_home"><h1>Menu</h1></a></li>
-                    <li><a href="" title="Local Video" alt="link_local_video"><p>Local Video</p></a></li>
-                    <li><a href="" title="External Video" alt="link_external_video"><p>External Video</p></a></li>
-                    <li><a href="" title="Local Audio" alt="link_local_audio"><p>Local Audio</p></a></li>
-                    <li><a href="" title="External Audio" alt="link_external_audio"><p>External Audio</p></a></li>
+                    <li><a href="#local_video" title="Local Video" alt="link_local_video"><p>Local Video</p></a></li>
+                    <li><a href="#external_video" title="External Video" alt="link_external_video"><p>External Video</p></a></li>
+                    <li><a href="#local_audio" title="Local Audio" alt="link_local_audio"><p>Local Audio</p></a></li>
+                    <li><a href="#external_audio" title="External Audio" alt="link_external_audio"><p>External Audio</p></a></li>
                 </ul>
             </nav>
         </header>
         <section class="media">
             <h1>Local Video</h1>
             <article>
-                <video width="100%" height="100%" controls>
+                <video width="100%" height="100%" controls id="local_video">
                     <source src="video/partido_tenis.mp4" type="video/mp4">
                     <source src="video/partido_tenis.ogg"type="video/ogg">
                     <p>Tu navegador web no soporta este formato de video</p>
@@ -44,7 +44,7 @@
         <section class="media">
             <h1>External video</h1>
             <article> 
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zB62zhzGV1A?autoplay=1&mute=1"
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zB62zhzGV1A?autoplay=1&mute=1" id="external_video"
             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
             </iframe>    
             </article>
@@ -52,7 +52,7 @@
         <section class="media">
             <h1>Local Audio</h1>
             <article>
-                <audio controls>
+                <audio controls id="local_audio">
                     <source src="audio/creative-technology-showreel-241274.mp3" type="audio/mp3">
                     <source src="audio/creative-technology-showreel-241274.mp3" type="audio/ogg">
                     <source src="audio/creative-technology-showreel-241274.mp3" type="audio/mpeg">
@@ -63,7 +63,7 @@
         <section class="media">
             <h1>External Audio</h1>
             <article>
-                <audio controls autoplay muted>
+                <audio controls autoplay muted id="external_audio">
                     <source src="https://www.computerhope.com/jargon/m/example.mp3" type="audio/mp3">
                     <p>Tu navegador no soporta este formato de audio </p>
                 </audio>
