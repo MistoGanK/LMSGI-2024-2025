@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+        <title>La meva web</title>
+        <style>
+            .aste{
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Formulari Registre</h1>
+            <form action="#" method="get">
+                <label for="nom">Nom:<span class="aste">*</span></label>
+                <input type="text" id="nom" name="name_usuari" minlength="2" maxlength="30" autofocus required>
+                <p></p>
+
+                <label for="primer_cognom">Primer cognom:<span class="aste">*</span></label>
+                <input type="text" id="primer_cognom" name="primer_cognom_usuari" maxlength="50" required>
+                <p></p>
+
+                <label for="segon_cognom">Segon cognom:<span class="aste">*</span></label>
+                <input type="text" id="segon_cognom" name="segon_cognom_usuari" maxlength="50" required>
+                <p></p>
+
+                <label>Genere:<span class="aste">*</span></label>
+                <input type="radio" name="bradio" id="dona" required>
+                <label for="dona">Dona</label>
+                <input type="radio" name="bradio" id="home">
+                <label for="home">home</label>
+                <input type="radio" id="nobi" name="bradio" value="no binari">
+                <label for="nobi">No binari</label>
+                <p></p>
+
+                <label for="email">Email:<span class="aste">*</span></label>
+                <input type="email" id="email" name="email_usuari" maxlength="100" placeholder="example@mail.com" required>
+                <p></p>
+
+                <label for="descripcio">Descripció</label>
+                <br>
+                <textarea id="descripcio" maxlength="300" placeholder="Entra una descripció amb un màxim de 300 caràcters..." cols="50" rows="10"></textarea>
+                <br>
+                <hr>
+                <h2>Consentiment</h2>
+                <input type="checkbox" id="cbnovetats" checked>
+                <label for="cbnovetats">Vull rebre informació amd les darreres novetats i ofertes personalizades.</label>
+                <p></p>
+
+                <input type="checkbox" id="condi" required>
+                <label for="condi">Declar haver llegit i acceptar les <a href="#condigene" title="condicións generals">condicions generals</a>de l'aplicació i la normativa sobre protecció de dades personals.</label>
+
+                <p></p>
+                <input type="submit" name="envia" value="envia">
+
+                <br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br>
+
+
+                <h2 id="condigene">Condicions generals</h2>
+                <p><strong>Identificació del tractament:</strong> Nom i Llinatges</p>
+                <p><strong>Responsable del tractament:</strong> Empresa S.L.</p>
+                <p><strong>Finalitat del tractament:</strong> gestionar els diferents enviaments d'informació derivats del registre de l'usuari.</p>
+                <p><strong>Legitimació:</strong> consentiment de la persona interessada.</p>
+                <p><strong>Persones destinatàries:</strong> Les encarregades del tractament que proveeixen, per compte de l'empresa. Les dades no es comunicaran a altres categories de destinataris, excepte en els casos previstos per la llei.</p>
+                <p><strong>Drets de les persones interessades:</strong> sol·licitar l'accés, rectificació o supressió de les dades, i la limitació o oposició al tractament. Cal utilitzar els formularis i el procediment disponibles.</p>
+            </form>
+        </main>
+    </body>
+</html>

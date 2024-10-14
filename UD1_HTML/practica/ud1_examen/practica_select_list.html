@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica</title>
+  </head>
+  <body>
+    <main>
+      <label for="list">list/datalist</label>
+      <input list="lista" id="list" name="list" required>
+      <datalist id="lista">
+        <option value="Calle">
+        <option value="Carretera">
+        <option value="Via">
+        <option value="Autopista">
+      </datalist>
+      <br>
+
+      <label for="select_solo">Camiseta</label>
+      <select required id="select_solo" name="select_solo">
+        <option value="" disabled selected>Eliga una opción</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+      </select>
+
+      <label for="carrera">Carrera</label>
+      <select id="carrera" required>
+        <option value="" disabled selected>Eliga una carrera</option>
+      <optgroup label="Facil">
+        <option value="facil_10km">10KM</option>
+        <option value="facil_20km">20KM</option>
+      </optgroup>
+      <optgroup label="Medio">
+        <option value="medio_30km">30KM</option>
+        <option value="medio_40km">40KM</option>
+      </optgroup>
+      <optgroup label="dificil">
+        <option value="dificil_50km">50KM</option>
+        <option value="dificil_60km">60KM</option>
+      </optgroup>
+      </select>
+
+      <video controls autoplay muted width="500">
+        <source src="partido_tenis.mp4" type="video/mp4">
+        <source src="partido_tenis.ogg" type="video/ogg">
+          El navegador no soporta el formato de video
+      </video>
+
+      <audio controls autoplay muted>
+        <source src="creative-technology-showreel-241274.mp3" type="audio/mpeg">
+        <source src="creative-technology-showreel-241274.mp3.ogg" type="audio/mpeg">
+          El navegador no soporta el formato de video
+      </audio>
+
+    </main>
+  </body>
+</html>

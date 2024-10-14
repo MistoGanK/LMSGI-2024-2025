@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang"en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="niki">
@@ -9,17 +9,20 @@
             col:first-child {
             background-color: #fff07c;
             font-weight: bold;
+            width:150px;
             }
             /* Apply styling to the second column */
             col:nth-child(2) {
             background-color: #b0d0d3;
+            width:120px;
             }
             /* Apply styling to the third column */
             col:nth-child(3) {
             background-color: #c08497;
+            width:200px;
             }
         </style>
-    </heead>
+    </head>
     <body>
         <main>
             <table border="1">
@@ -44,7 +47,7 @@
                     <td>30</td>
                     <td>456 Elm St</td>
                     <td>Another CIty, Country</td>
-                    <td rowspan="3"><img src="120.png"></td>
+                    <td rowspan="3"><img src="120.png" alt="img_placeholder" title="img_placeholder"></td>
                 </tr>
                 <tr>
                     <td rowspan="2">Female</td>
@@ -54,8 +57,40 @@
                 <tr>
                     <td>101 Pine St</td>
                     <td>One More City, Country</td>
-
-                </td>
+                </tr>
+            </table>
+            <br>
+            <table border="1">
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <tr>
+                    <th>Name</th>
+                    <th>Occupation</th>
+                    <th>Location</th>
+                </tr>
+                <tr>
+                    <td>Alice</td>
+                    <td>Softwaare Engineer</td>
+                    <td>New York</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>Graphic Designer</td>
+                    <td>Los Angeles</td>
+                </tr>
+                <tr>
+                    <td>Charlie</td>
+                    <td>Markegint Manager</td>
+                    <td>Chicago</td>
+                </tr>
+                <tr>
+                    <td>Dave</td>
+                    <td>Accuntant</td>
+                    <td>Houston</td>
+                </tr>
             </table>
         </main>
     </body>

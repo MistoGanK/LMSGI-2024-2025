@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex9</title>
+    <style>
+      .aste{
+        color:red;
+      }
+      textarea{
+        resize:none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <form action="#" method="get">
+          <fieldset>
+            <legend><b>Dades de la Persona participant</b></legend>
+            <br>
+            <label for="nom">Nom:<span class="aste">*</span></label>
+            <input type="text" id="nom" name="nom_usuari" minlength="2" maxlength="30" required>
+            <br>
+
+            <label for="cognom">Cognom:<span class="aste">*</span></label>
+            <input type="text" id="cognom" name="cognom_usuari" minlength="2" maxlength="50" required>
+            <br>
+
+            <label for="dni">DNI:<span class="aste">*</span></label>
+            <input type="text" id="dni" minlength="12" maxlength="12" name="dni_usuari" placeholder="12 caracters..." required>
+            <br>
+
+            <label for="telefon">Telefón:<span class="aste">*</span></label>
+            <input type="tel" id="telefon" required>
+            <br>
+
+            <label>Genere:<span class="aste">*</span></label>
+            <input type="radio" id="dona" name="btradio" required>
+            <label for="dona">Dona</label>
+            <input type="radio" id="home" name="btradio">
+            <label for="home">Home</label>
+            <input type="radio" id="nobi" name="btradio">
+            <label for="nobi">No binari</label>
+            <br>
+
+            <label>Adreça:<span class="aste">*</span></label>
+            <label for="vias">Via:</label>
+            <input list="via" name="vias" id="vias" required>
+            <datalist id="via">
+              <option value="carrer">
+              <option value="avinguda">
+              <option value="carretera">
+              <option value="ronda">
+              <option value="autopista">
+              <option value="rambla">
+              <option value="camí">
+              <option value="altre">
+            </datalist>
+
+            <label for="poblacio">Poblacio</label>
+            <select id="poblacio" required>
+              <option value="" disabled selected>Selecione una opción</option>
+              <option value="Maho">Mahó</option>
+              <option value="Es_castell">És castell</option>
+              <option value="Alaior">Alaior</option>
+              <option value="Ferreries">Ferreries</option>
+              <option value="calan_porter">Calan Porter</option>
+              <option value="Ciudadella">Ciudadella</option>
+              <option value="altre">Altre</option>
+            </select>
+
+            <label for="codi_postal">Codi postal:<span class="aste"></span></label>
+            <input type="number" id="codi_postal" name="codi_postal" min="9" max="9" placeholder="9 caracters" required>
+            <br>
+
+            <textarea cols="80" rows="10" maxlength="300" placeholder="Text lliure..."></textarea>
+            <br>
+
+            <label for="samarreta">Samarreta:<span class="aste">*</span></label>
+            <select id="samarreta" required>
+              <option value="" disabled selected>Selecione una talla</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XLL">XLL</option>
+            </select>
+
+          </fieldset>
+
+          <fieldset>
+            <legend><b>Dades de la Cursa</b></legend>
+            <br>
+
+            <label for="cursa">Cursa:<span class="aste">*</span></label>
+            <select id="cursa" required>
+              <option value="" disabled>Selecione una carrera</option>
+              <optgroup label="verd">
+                <option value="verd">Cursa mini verd 1.700 m aprox.</option>
+              </optgroup>
+              <optgroup label="blau">
+                <option value="blau"> Cursa mitjana blau 4.995 m aprox.</option>
+              </optgroup>
+              <optgroup label="vermell">
+                <option value="vermell">Cursa gran vermell 10.000 m aprox.</option>
+              </optgroup>
+            </select>
+            <br>
+
+            <input type="checkbox" id="normes" checked required>
+            <label for="normes">Accepto i assumeixo les normes de participació que regulen la Cursa Popular Ciutat de XYZ.</label>
+            <br>
+
+            <input type="checkbox" id="newletter" checked>
+            <label for="newletter">Que estic interessat/da en rebre informació sobre les activitats esportives organitzades per l’Ajuntament i dono el meu consentiment per a la tramesa d’informació al respecte.</label>
+
+            <br>
+            <input type="submit" value="envia">
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
