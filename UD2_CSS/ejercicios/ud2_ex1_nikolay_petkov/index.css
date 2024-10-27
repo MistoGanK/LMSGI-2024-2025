@@ -1,0 +1,45 @@
+body{
+  background-color:#D2E4C4;
+  color:#004466;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size:16px;
+}
+h1{
+  color:#3c3c3c;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:32px;
+}
+h2{
+  color:#9A275A;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:24px;
+}
+h3{
+  color:#9A275A;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+ul li{
+  color:#D24B88;
+}
+.important{
+  color: white;
+  background-color:black;
+}
+.no_html{
+  color:black;
+  font-weight: bold;
+}
+.no_html:nth-child(2){
+  font-style:italic;
+}
+a{
+  color:#3c3c3c;
+}
+a:hover{
+  font-weight: bold;
+}
+footer{
+  color:#3c3c3c;
+  font-weight: bold;
+}
