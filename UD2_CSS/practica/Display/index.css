@@ -1,0 +1,27 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  font-size: 20px;
+}
+
+
+header,footer{
+  background-color:red;
+  height: 25%
+}
+
+main{
+  background-color:antiquewhite;
+  height: 70%;
+  font-size: 2em
+}
+section{
+  display: inline;
+  border: 1px solid black;
+  width: 50px;
+}
