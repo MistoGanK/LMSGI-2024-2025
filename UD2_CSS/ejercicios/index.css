@@ -67,21 +67,18 @@ footer{
 }
 footer ul{
   height: 100%;
-  line-height: 60px;
   background-color:#31363b;
   opacity: 70%;
   text-align: center;
 }
 footer ul li{
   display: inline-block;
-  height: 60px;
   font-size: 11px;
   color: #cccccc;
-  line-height: 60px; 
 }
 
 footer img{
-  height: 60px;
+  height: 100%;
   padding:15px;
   vertical-align: middle;
 }
