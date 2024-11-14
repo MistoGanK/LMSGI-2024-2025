@@ -16,21 +16,21 @@
   }
   body{
     height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
   }
   header{
-    background-color:#6d597a;
+    background-color: #6d597a;
     color: #fff;
-    width: 100%;
     text-align: center;
-    line-height: 9vh;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 9vh;
+    height: 70px;
+    line-height: 70px;
   }
   main{
     background-color: #fff;
     width: 100%;
-    height: 85vh;
-    }
+    height: calc(100vh - 110px); 
+  }
   main aside,section{
     display: inline-block;
     vertical-align:middle;
@@ -39,41 +39,44 @@
     width: 20%;
     height: 100%;
     background-color:#b56576;
+    padding: 10px;
   }
   aside nav{  
     height: 100%;
   }
   aside nav ul li{
-    padding:5px;
+    padding: 10px;
   }
   aside nav ul li a{
     color:#000;
-    font-family:Arial, Helvetica, sans-serif;
   }
   section {
     height: 100%;
-    width: 80%;
-    padding: 300px 20px;
-    text-align: center; /* Centers inline-block elements */
+    width: 80%; 
+    text-align: center;
+    padding: 10px 20px;
+    line-height: 50%;
   }
   
   .card {
     display: inline-block;
     height: 70px;
-    width: 49%; /* Adjust width to ensure proper spacing */
+    width: 50%;
     background-color: #eaac8b;
-    margin: 5px auto; /* Center horizontally with margin: 0 auto */
     line-height: 70px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center; /* Center-align text within each card */
+    text-align: center;
+    outline: solid 3px white;
   }
+  .card:nth-child(1),
+  .card:nth-child(2){
+    margin: calc(50vh - 145px) 0 13px 0;
+
+    }
   
   footer{
     background-color: #6d597a;
-    width: 100%;
     color: #fff;
-    font-family:sans-serif;
-    text-align:center;
-    line-height: 6vh;
-    height: 6vh;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
   }
