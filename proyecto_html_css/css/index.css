@@ -1,3 +1,51 @@
+:root{
+    --nvo:#12130F;
+    --vs:#5B9279;
+    --vm:#8FCB9B;
+    --ba:#F7F3F3;
+}
+/* --> Fonts*/
+@font-face{
+    font-family:"brand";
+    src:url(../fonts/brand/milk_and_honey/Milk\ And\ Honey.ttf);
+}
+@font-face{
+    font-family:"header";
+    src:url(../fonts/header/CQ_MONO/CQ\ Mono.otf);
+}
+@font-face{
+    font-family: "body_black";
+    src: url(../fonts/body/MADECarvingSoftPERSONALUSE-Black.otf);
+}
+@font-face{
+    font-family: "body_bold";
+    src:url(../fonts/body/MADECarvingSoftPERSONALUSE-Bold.otf);
+}
+@font-face{
+    font-family: "body_extra_light";
+    src: url(../fonts/body/MADECarvingSoftPERSONALUSE-ExtraLight.otf);
+}
+@font-face{
+    font-family: "body_light";
+    src: url(../fonts/body/MADECarvingSoftPERSONALUSE-Light.otf);
+}
+@font-face{
+    font-family: "body_medium";
+    src: url(../fonts/body/MADECarvingSoftPERSONALUSE-Medium.otf)
+}
+@font-face{
+    font-family: "body_regular";
+    src: url(../fonts/body/MADECarvingSoftPERSONALUSE-Regular.otf);
+}
+@font-face{
+    font-family: "body_semi_bold";
+    src: url(../fonts/body/MADECarvingSoftPERSONALUSE-SemiBold.otf);
+}
+@font-face{
+    font-family:"body_thin";
+    src: url(../fonts/body/MADECarvingSoftPERSONALUSE-Thin.otf);
+}
+
 *{
     margin: 0;
     padding:0;
@@ -6,14 +54,68 @@
     list-style:none;
     box-sizing:border-box;
 }
+/* --> Body*/
 body{
     background-color: #F7F3F3;
     padding:15px;
+    width: 100%;
+    position: relative;
 }
+/* --> Header*/
+header{
+    height:120px;
+}
+nav{
+    height:100%;
+}
+nav ul{
+    height: 50%;
+}   
 nav ul li{
     display: inline-block;
+    height: 100%;
+}
+nav>ul li{
+    vertical-align: middle;
 }
 nav  img{
     width: 50px;
     padding:10px;
-} 
+}
+/* --> Search*/
+.search{
+    height: 50%;
+}
+input#user_search{
+    width: 100%;
+}
+form ul,form ul li{
+    height: 100%;
+    vertical-align: middle;
+}
+header form ul li:nth-child(1){
+    width: 80%;
+}
+header form ul li:nth-child(2){
+    width: 20%;
+}
+/* --> Burger_menu*/
+.burger_menu{
+    position:relative;
+    right: -30px;
+}
+
+
+
+
+/* --> Media Querys*/
+
+/* --> Tablet*/
+@media(width>480px){
+  
+}
+
+/* --> Desktop*/
+@media(width>1024px){
+   
+}
