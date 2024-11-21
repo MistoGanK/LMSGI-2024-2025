@@ -1,0 +1,49 @@
+:root{
+  --c1:#d3d0cb;
+  --c2:#1e2019;
+  --c3:#E2C044;
+  --c4:#587b7f;
+}
+*{
+  margin:0;
+  font-family:verdana;
+}
+header, footer{
+  background-color:var(c1);
+  text-align:center;
+}
+header img{
+  height:10em;
+  margin-top:0.2em;
+  margin-bottom:0.2em;
+}
+footer{
+  min-height:5em;
+}
+a{
+  color:var(c2);
+}
+nav :not(.selected-link){
+  text-decoration:none;
+}
+header img+nav>a:last-child{
+  border-style:dotted 0.15em var(c2);
+}
+footer nav.social-media{
+  padding: 2em 0;
+}
+h1+form,main h1{
+  text-align:center;
+}
+a#condiciones-generales{
+  color:var(c1);
+}
+form>p{
+  padding:0.4em;
+}
+form input[type="submit"]{
+  background-color:var(c3);
+}
+input.accent[type="checkbox"]:checked{
+  accent-color:var(c4);
+}
