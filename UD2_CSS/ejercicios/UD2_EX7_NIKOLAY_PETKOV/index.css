@@ -108,9 +108,6 @@ section article{
 section article div.image-container img{
   width:100%;
 }
-section article div.image-container img:hover{
-  opacity: 90%;
-}
 section article div.item-details{
   width: 100%;
   padding: 3px;
@@ -129,9 +126,6 @@ section article div.item-details span{
   background-color: #ff8800;
   border-radius:10px;
   z-index: 2;
-}
-#back-to-top:hover{
-  opacity: 90%;
 }
 #products-filter a{
   color:black;
@@ -156,7 +150,8 @@ div #load-more-products button {
   background-color: #ff8800;
   border-radius: 6px;
 }
-div #load-more-prodtucs button:hover{
+/* --> general opactity of 90%*/
+button:hover{
   opacity: 90%;
 }
 /*---> footer*/
