@@ -1,9 +1,15 @@
 :root{
     --nvo:#12130F;
     --vs:#5B9279;
-    --vm:#8FCB9B;
+    --vm:#8fcb9b;
     --ba:#F7F3F3;
-}
+    /*--> Estilizado de tarjetas blanco*/
+    --car-white-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --card-white-background:rgba(247, 243, 243, 0.9); 
+    --card-white-border-bottom:1px solid rgba(91, 146, 121, 0.4);
+    /* --> Estilizado de tarjetas negro*/
+
+    }
 /* --> Fonts*/
 @font-face{
     font-family:"brand";
@@ -45,67 +51,93 @@
     font-family:"body_thin";
     src: url(../fonts/body/MADECarvingSoftPERSONALUSE-Thin.otf);
 }
-
+@font-face {
+    font-family: "epa";
+    src: url();
+}
 *{
     margin: 0;
     padding:0;
     text-decoration: none;
-    color:#12130F;
+    color:var(--nvo);
     list-style:none;
     box-sizing:border-box;
+    font-family:"body_regular";
 }
 /* --> Body*/
 body{
-    background-color: #F7F3F3;
+    background-color: var(--ba);
     padding:15px;
     width: 100%;
     position: relative;
 }
 /* --> Header*/
 header{
-    height:120px;
-}
-nav{
-    height:100%;
-}
-nav ul{
-    height: 50%;
-}   
-nav ul li{
+    
+}      
+/* --> Nav*/
+nav ul,
+nav ul li,
+nav ul li a,
+nav ul li a label,
+nav ul li a div{
     display: inline-block;
-    height: 100%;
+    white-space: nowrap;
 }
-nav>ul li{
+nav a,
+nav div, nav label{
+    width: 100%;    
+}
+nav img{
+    width: 40px;
     vertical-align: middle;
 }
-nav  img{
-    width: 50px;
-    padding:10px;
+nav ul.search button{
+    background-color:rgba(247, 243, 243, 0.9);
+    outline:none;
+    border: 0.7px solid var(--vs);
+    border-radius: 60%;
+    background-color: #2929290a;
+    cursor:pointer;
 }
-/* --> Search*/
 .search{
-    height: 50%;
+    position:fixed;
+    right: 20px;
 }
-input#user_search{
+.search_box{
+    display: none;
+    width: 100%;    
+}
+.search_box_visible {
+    display:block;
+}
+.search_box input{
     width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius:3px;
 }
-form ul,form ul li{
-    height: 100%;
-    vertical-align: middle;
+.search_box input:focus{
+    accent-color:#5b9279;
 }
-header form ul li:nth-child(1){
-    width: 80%;
+.filter{
+    margin-top: 15px;
 }
-header form ul li:nth-child(2){
-    width: 20%;
+.filter select,.filter button{
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: solid 1px var(--nvo);
 }
-/* --> Burger_menu*/
-.burger_menu{
-    position:relative;
-    right: -30px;
+.filter button {
+    background-color: var(--vm);
+    font-family: "body_semi_bold";
 }
-
-
+.filter button:hover,.filter button:focus,.filter button:active{
+    color:var(--ba);
+    cursor: pointer;
+}
 
 
 /* --> Media Querys*/

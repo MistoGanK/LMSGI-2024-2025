@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +8,60 @@
         <link rel="stylesheet" href="css/index.css">
     </head> 
     <body>
-        <header>
+       <header>
             <nav>
-                <ul>
-                    <li><a href="#"><img src="assets/icons/login_100dp_5B9279_FILL0_wght400_GRAD200_opsz48.png" alt="icon_login_png" title="Log In"></a></img></li>
-                    <li><a href="#" title="Sing In">Sign in</a></li>
-                    <li><a href="#"><img src="logo/pepos_pocket_title_icon.png" alt="pepo_icon_png" title="Back to Home"></a></li>
-                    <li class="burger_menu"><a href="#"><img src="assets/icons/menu_100dp_5B9279_FILL0_wght500_GRAD200_opsz48.png" alt="menu_icon_green" title="Expand"></a></li>
+                <ul class="menu">
+                    <li>
+                        <a href="#"><div><img src="assets/icons/menu_100dp_5B9279_FILL0_wght500_GRAD200_opsz48.png" title="Menu" alt="menu_png"></div></a>
+                    </li>
+                    <li>
+                        <a href="#"><div><img src="logo/pepe_frog-removebg-preview.png" title="Home" alt="home_png"></div></a>
+                    </li>
                 </ul>
-                <div class="search">
-                    <form method="get" action="#">
-                        <ul>
-                            <li><input type="search" id="user_search"></li><li><label for="user_search"><img src="assets/icons/search_100dp_5B9279_FILL0_wght400_GRAD200_opsz48.png" alt="search_icon_black" title="Search Here"></label></li>
-                        </ul>
+                <ul class="search">
+                    <li>
+                        <button><img src="assets/icons/contrast_100dp_5B9279_FILL0_wght400_GRAD0_opsz48.png"></button>
+                    </li>
+                    <li>
+                      <label for="go_search"><button id="search_btn"><img src="assets/icons/search_100dp_5B9279_FILL0_wght400_GRAD200_opsz48.png"></button></label>
+                    </li>
+                </ul>
+                <div class="search_box">
+                    <form method="post" action="">
+                        <input type="search" id="go_search" name="search_tab" placeholder="Search your meme here...">
                     </form>
                 </div>
+                <div class="filter">
+                    <select name="cronologico">
+                        <option value="ultimos">Ultimós</option>
+                        <option value="antiguos">Antiguos</option>
+                    </select>
+                    <select name="popularidad">
+                        <option value="tendencia">Trending</option>
+                        <option value="mas_vistos">Mas vistos</option>
+                        <option value="mas_votados">Mas votados</option>
+                        <option value="historicos">Historicos</option>
+                        <option value="aleatorios">Aleatorios</option>
+                    </select>
+                    <button>Buscar</button>
+                </div>
             </nav>
-        </header>
-        <main>
-        </main>
-        <footer>
+       </header>
+       <main>
+        <section class="contenido">
+            <article class="post">
+                <header>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </header>
+            </article>
+        </section>
+       </main>
+       <footer>
 
-        </footer>
+       </footer>
+       <script src="javascript/index.js"></script>
     </body>
 </html>

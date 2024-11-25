@@ -35,6 +35,7 @@ header img{
 div.menu ul{
   display: inline-block;
 }
+
 div.menu div{
   position: absolute;
   top:95px;

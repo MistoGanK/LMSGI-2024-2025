@@ -23,9 +23,9 @@ footer{
 a{
   color:var(c2);
 }
-nav :not(.selected-link){
+nav:not(.selected-link){
   text-decoration:none;
-}
+} 
 header img+nav>a:last-child{
   border-style:dotted 0.15em var(c2);
 }
