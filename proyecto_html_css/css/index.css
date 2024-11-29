@@ -252,7 +252,7 @@ main{
 }
 /* ---> Post Header*/
 .post_header a{
-    font-size: 13px;
+    font-size: 15px;
 }
 .post_header h1{
     font-size: 22px;
@@ -269,6 +269,17 @@ main{
     border: solid 0.5px var(--nvo);
     margin-right: 7px;
 }
+.usuario_icono{
+    border:none;
+}
+.delete_icon{
+    position: absolute;
+    right: 15px;
+}
+.contenedor_usuario{
+    position: relative;
+}
+.usuario_icono{}
 /* --> Post Footer*/
 .post_footer{
     text-align: center;
