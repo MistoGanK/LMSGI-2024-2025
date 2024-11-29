@@ -7,25 +7,37 @@
         <title>LMSGI PROYECTO</title>
         <link rel="stylesheet" href="css/index.css">
     </head> 
-    <body>
+    <body id="top">
        <header>
             <nav>
-                <ul class="menu">
-                    <li>
-                        <a href="#"><div><img src="assets/icons/menu_100dp_5B9279_FILL0_wght500_GRAD200_opsz48.png" title="Menu" alt="menu_png"></div></a>
-                    </li>
-                    <li>
-                        <a href="#"><div><img src="logo/pepe_frog-removebg-preview.png" title="Home" alt="home_png"></div></a>
-                    </li>
-                </ul>
-                <ul class="search">
-                    <li>
-                        <button><img src="assets/icons/contrast_100dp_5B9279_FILL0_wght400_GRAD0_opsz48.png"></button>
-                    </li>
-                    <li>
-                      <label for="go_search"><button id="search_btn"><img src="assets/icons/search_100dp_5B9279_FILL0_wght400_GRAD200_opsz48.png"></button></label>
-                    </li>
-                </ul>
+                <div class="menu_div">
+                    <ul class="menu">
+                        <li id="drop_down_icon">
+                            <a href="#"><div><img src="assets/icons/menu_100dp_5B9279_FILL0_wght500_GRAD200_opsz48.png" title="Menu" alt="menu_png"></div></a>
+                        </li>
+                        <li>
+                            <a href="#"><div><img src="logo/pepe_frog-removebg-preview.png" title="Home" alt="home_png"></div></a>
+                        </li>
+                    </ul>
+                    <ul class="drop_down_menu">
+                        <li><a href="views/subir_meme.html"><img src="assets/icons/publish_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png">Subir Meme</a></li>
+                        <li><a href="views/inicio.html"><img src="assets/icons/login_100dp_5B9279_FILL0_wght400_GRAD200_opsz48.png" title="Inició">Inició</a></li>
+                        <li><a href="#"><img src="assets/icons/schedule_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" title="Ultimos">Últimos</a></li>
+                        <li><a href="#"><img src="assets/icons/mode_heat_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" title="Trending">Trending</a></li>
+                        <li><a href="#"><img src="assets/icons/shuffle_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" title="Aleatorio">Aleatorio</a></li>
+                        <li><a href="views/favoritos.html"><img src="assets/icons/bookmark_heart_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" title="Favoritos">Favoritos</a></li>
+                        <li><a href="views/mis_subidas.html"><img src="assets/icons/archive_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" title="Mis subidas">Mis subidas</a></li>
+                        <li><a href="views/ranking.html"><img src="assets/icons/military_tech_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" title="Ranking">Ranking</a></li>
+                    </ul>
+                    <ul class="search">
+                        <li>
+                            <button><img src="assets/icons/contrast_100dp_5B9279_FILL0_wght400_GRAD0_opsz48.png"></button>
+                        </li>
+                        <li>
+                        <label for="go_search"><button id="search_btn"><img src="assets/icons/search_100dp_5B9279_FILL0_wght400_GRAD200_opsz48.png"></button></label>
+                        </li>
+                    </ul>
+                </div>
                 <div class="search_box">
                     <form method="post" action="">
                         <input type="search" id="go_search" name="search_tab" placeholder="Busca tus memes aqui...  ">
@@ -53,10 +65,10 @@
             <article class="post_body">
                 <header class="post_header">
                     <div><button><img src="assets/icons/user_icon_black_100.png" title="usuario"></button><a href="#">ManolodelBombo</a></div>
-                    <div><h1>Mi colega el Youtuber</h1></div>
+                    <div><a href="views/post.html"><h1>Mi colega el Youtuber</h1></a></div>
                 </header>
                 <div class="post">
-                    <a href="#"><img src="assets/memes/amigo_youtuber.webp" title="post"></a>
+                    <a href="views/post.html"><img src="assets/memes/amigo_youtuber.webp" title="post"></a>
                 </div>
                 <div class="post_info">
                     <a href="#">#Yotube</a>
@@ -83,10 +95,10 @@
             <article class="post_body">
                 <header class="post_header">
                     <div><button><img src="assets/icons/user_icon_black_100.png" title="usuario"></button><a href="#">ManolodelBombo</a></div>
-                    <div><h1>Low-cost Yagami</h1></div>
+                    <div><a href="views/post.html"><h1>Low-cost Yagami</h1></a></div>
                 </header>
                 <div class="post">
-                    <a href="#"><img src="assets/memes/big_yagami.webp" title="post"></a>
+                    <a href="views/post.html"><img src="assets/memes/big_yagami.webp" title="post"></a>
                 </div>
                 <div class="post_info">
                     <a href="#">#Death Note</a>
@@ -113,10 +125,10 @@
             <article class="post_body">
                 <header class="post_header">
                     <div><button><img src="assets/icons/user_icon_black_100.png" title="usuario"></button><a href="#">ManolodelBombo</a></div>
-                    <div><h1>Weeb Light Year</h1></div>
+                    <div><a href="views/post.html"><h1>Weeb Light Year</h1></a></div>
                 </header>
                 <div class="post">
-                    <a href="#"><img src="assets/memes/buss_wed.webp" title="post"></a>
+                    <a href="views/post.html"><img src="assets/memes/buss_wed.webp" title="post"></a>
                 </div>
                 <div class="post_info">
                     <a href="#">#Snoopdog</a>
@@ -147,10 +159,10 @@
             <article class="post_body">
                 <header class="post_header">
                     <div><button><img src="assets/icons/user_icon_black_100.png" title="usuario"></button><a href="#">ManolodelBombo</a></div>
-                    <div><h1>Duolingo Discord Mod</h1></div>
+                    <div><a href="views/post.html">h1>Duolingo Discord Mod</h1></a></div>
                 </header>
                 <div class="post">
-                    <a href="#"><img src="assets/memes/Doulingo_mod.webp" title="post"></a>
+                    <a href="views/post.html"><img src="assets/memes/Doulingo_mod.webp" title="post"></a>
                 </div>
                 <div class="post_info">
                     <a href="#">#Discord</a>
@@ -178,10 +190,10 @@
             <article class="post_body">
                 <header class="post_header  ">
                     <div><button><img src="assets/icons/user_icon_black_100.png" title="usuario"></button><a href="#">ManolodelBombo</a></div>
-                    <div><h1>Yo y mi durum 3:AM</h1></div>
+                    <div><a href="views/post.html"><h1>Yo y mi durum 3:AM</h1></a></div>
                 </header>
                 <div class="post">
-                    <a href="#"><img src="assets/memes/durum_mañanero.webp" title="post"></a>
+                    <a href="views/post.html"><img src="assets/memes/durum_mañanero.webp" title="post"></a>
                 </div>
                 <div class="post_info">
                     <a href="#">#Durum</a>
@@ -207,12 +219,12 @@
                 </div>
             </article>
             <article class="post_body">
-                <header class="post_header  ">
+                <header class="post_header">
                     <div><button><img src="assets/icons/user_icon_black_100.png" title="usuario"></button><a href="#">ManolodelBombo</a></div>
-                    <div><h1>Como me ve el gato al descubrir que se ha vuelto a atascar en el vater por octava vez esta semana</h1></div>
+                    <div><a href="views/post.html"><h1>Como me ve el gato al descubrir que se ha vuelto a atascar en el vater por octava vez esta semana</h1></a></div>
                 </header>
                 <div class="post">
-                    <a href="#"><img src="assets/memes/gato_vater.webp" title="post"></a>
+                    <a href="views/post.html"><img src="assets/memes/gato_vater.webp" title="post"></a>
                 </div>
                 <div class="post_info">
                     <a href="#">#Gato</a>
@@ -239,12 +251,12 @@
                 </div>
             </article>
             <article class="post_body">
-                <header class="post_header  ">
+                <header class="post_header">
                     <div><button><img src="assets/icons/user_icon_black_100.png" title="usuario"></button><a href="#">ManolodelBombo</a></div>
-                    <div><h1>Securiti</h1></div>
+                    <div><a href="views/post.html"><h1>Securiti</h1></a></div>
                 </header>
                 <div class="post">
-                    <a href="#"><img src="assets/memes/sekuriti.webp" title="post"></a>
+                    <a href="views/post.html"><img src="assets/memes/sekuriti.webp" title="post"></a>
                 </div>
                 <div class="post_info">
                     <a href="#">#Seguridad</a>
@@ -270,12 +282,12 @@
                 </div>
             </article>
             <article class="post_body">
-                <header class="post_header  ">
+                <header class="post_header">
                     <div><button><img src="assets/icons/user_icon_black_100.png" title="usuario"></button><a href="#">ManolodelBombo</a></div>
-                    <div><h1>Wifi Humano</h1></div>
+                    <div><a href="views/post.html"><h1>Wifi Humano</h1></a></div>
                 </header>
                 <div class="post">
-                    <a href="#"><img src="assets/memes/wifi.webp" title="post"></a>
+                    <a href="views/post.html"><img src="assets/memes/wifi.webp" title="post"></a>
                 </div>
                 <div class="post_info">
                     <a href="#">#Wifi</a>
@@ -303,10 +315,10 @@
             <article class="post_body">
                 <header class="post_header  ">
                     <div><button><img src="assets/icons/user_icon_black_100.png" title="usuario"></button><a href="#">ManolodelBombo</a></div>
-                    <div><h1>El bro que dice que no importa el tamaño del musculo si no la densidd muscular:</h1></div>
+                    <div><a href="views/post.html"><h1>El bro que dice que no importa el tamaño del musculo si no la densidad muscular:</h1></a></div>
                 </header>
                 <div class="post">
-                    <a href="#"><img src="assets/memes/el_bro_fuertte.webp" title="post"></a>
+                    <a href="views/post.html"><img src="assets/memes/el_bro_fuertte.webp" title="post"></a>
                 </div>
                 <div class="post_info">
                     <a href="#">#Bro</a>
@@ -332,12 +344,12 @@
                 </div>
             </article>
             <article class="post_body">
-                <header class="post_header  ">
+                <header class="post_header">
                     <div><button><img src="assets/icons/user_icon_black_100.png" title="usuario"></button><a href="#">ManolodelBombo</a></div>
-                    <div><h1>Cuadno le digo al primito que no hare sus deberes a las 2:0AM despues de haber estado viciando al Roblox</h1></div>
+                    <div><a href="views/post.html"><h1>Cuadno le digo al primito que no hare sus deberes a las 2:0AM despues de haber estado viciando al Roblox</h1></a></div>
                 </header>
                 <div class="post">
-                    <a href="#"><img src="assets/memes/prrimito.webp" title="post"></a>
+                    <a href="views/post.html"><img src="assets/memes/prrimito.webp" title="post"></a>
                 </div>
                 <div class="post_info">
                     <a href="#">#Roblox</a>
@@ -364,16 +376,45 @@
                 </div>
             </article>
         </section>
+        <a href="#top">
+            <button  class="arrow_back_to_top">
+            <img src="assets/icons/keyboard_arrow_up_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" title="Volver Arriba">
+            </button>
+        </a>
+        <aside>
+            <section>
+                <h1>Top Tags</h1>
+                <article>
+                    <ul>
+                        <li><a href="#">#Amigo</a></li>
+                        <li><a href="#">#BichoPalp</a></li>
+                        <li><a href="#">#BuzzLightYear</a></li>
+                        <li><a href="#">#Celebridad</a></li>
+                        <li><a href="#">#Danky</a></li>
+                        <li><a href="#">#Weon</a></li>
+                        <li><a href="#">#Carnaval</a></li>
+                        <li><a href="#">#Boomer</a></li>
+                        <li><a href="#">#Snoopdog</a></li>
+                        <li><a href="#">#Anime</a></li>
+                    </ul>
+                </article>
+            </section>
+        </aside>
+         <nav class="nav_paginas">
+            <div>
+                <button><img src="assets/icons/arrow_back_ios_new_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png"></button>
+                <form method="post" action="">
+                    <input type="number">
+                </form>
+                <button><img src="assets/icons/arrow_forward_ios_100dp_5B9279_FILL0_wght500_GRAD0_opsz40.png"></button>
+            </div>
+        </nav>
        </main>
        <footer>
-        <nav>
-            <button><img src="assets/icons/arrow_back_ios_new_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png"></button>
-            <form method="post" action="">
-                <input type="number">
-            </form>
-            <button><img src="assets/icons/arrow_forward_ios_100dp_5B9279_FILL0_wght500_GRAD0_opsz40.png"></button>
-        </nav>
-       </footer>
+        <p>&copy; 2024 Blog de Memes. Todos los derechos reservados... o al menos eso intentamos.</p>
+        <p>Síguenos en nuestras redes: <a href="https://twitter.com">Twitter</a> | <a href="https://instagram.com">Instagram</a></p>
+        <p>¿Problemas? <a href="#">Llora aquí</a>.</p>
+      </footer>      
        <script src="javascript/index.js"></script>
     </body>
 </html>
