@@ -1,0 +1,117 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    position: relative;
+    height: 100vh;
+}
+body>div:nth-child(1){
+    background-color: cadetblue;
+    text-align: center;
+    padding: 10px;
+}
+body>div:nth-child(2){
+    position: absolute;
+    background-color:tomato;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    z-index: 1;
+}
+body>div:nth-child(3){
+    position: absolute;
+    height: 95%;
+    background-color: greenyellow;
+    left: 0;
+    writing-mode: vertical-rl;
+    padding: 10px;
+    text-align: center;
+}
+body>div:nth-child(4){
+    position: absolute;
+    height: 95%;
+    right: 0;
+    background-color: yellow;
+    writing-mode: vertical-rl;
+    text-align: center;
+    padding: 10px;
+}
+#menu{
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+#menu div{
+    width: 100%;
+    background-color: grey;
+    position:sticky;
+    top:15%;
+    padding: 10px;
+    z-index: -1;
+}
+.containers{
+    background-color: rgba(128, 128, 128, 0.199);
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    color:azure;
+    border: solid 1px grey;
+}
+.one{
+    width: 150px;
+    height: 100px;
+    background-color: red;
+    opacity: 65%;
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    text-align: center;
+    line-height: 100px;
+}
+.two{
+    width: 150px;
+    height: 100px;
+    background-color: greenyellow;
+    opacity: 85%;
+    z-index: 0;
+    text-align: center;
+    line-height: 100px;
+    position:absolute;
+    top: 35px;
+    left: 35px;
+}
+.three{
+    width: 150px;
+    height: 100px;
+    background-color: blue;
+    opacity: 100%;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    z-index: -1;
+}
+
+.centered-container{
+    height: 300px;
+    margin-top: 20px;
+    background-color:rgba(128, 128, 128, 0.658);
+    color: aliceblue;
+    text-align: center;
+}
+.centered-content{
+    position: relative;
+    padding: 20px;
+    width: 100px;
+    background-color: rgb(94, 94, 94);
+    margin: auto;
+    top: 50%;
+}

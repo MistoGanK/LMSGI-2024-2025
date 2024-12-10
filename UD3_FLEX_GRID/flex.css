@@ -1,0 +1,43 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.container{
+  background-color: rgb(23, 11, 11);
+  color: aliceblue;
+  display: flex;
+  gap:10px;
+  /* align-content: flex-start; */
+  /* align-content: space-around; */
+  /* align-content: space-between; */
+  padding: 5px 0;
+  height: 500px;
+  align-items: center;
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
+  flex-wrap: wrap; /*Especifica como */
+  
+
+}
+.container div{
+  background-color: red;
+  flex-basis: 100px; /* el ancho(row) o la altura (column) que ocupara el elemento de base*/
+  /* flex-shrink:1; */ /*0:No puede minimizarse el elemento 1:puede minimizarse según el espacio*/
+  /* flex-grow: 1; Capacidad de crecimienton, 0:Deault, no crece 1:Crece ocupando equitativamente el espació disponible */
+  height: 50%;
+  display: flex;
+  align-items: flex-end; /* Alinea los elementos sobre el eje Y (row) o X (column)*/
+  justify-content: flex-end;/* Alinea los elementos sobre el eje X (row) o Y (column)*/
+
+}
+.container div:first-child{
+  /* flex-basis: 300px; */
+  /* align-self: center; */
+  order: 1;
+}

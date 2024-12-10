@@ -1,0 +1,142 @@
+:root{
+  --nvo:#12130F;
+  --vs:#5B9279;
+  --vm:#8fcb9b;
+  --ba:#F7F3F3;
+  }
+/* --> Fonts*/
+@font-face{
+  font-family:"brand";
+  src:url(../fonts/brand/milk_and_honey/Milk\ And\ Honey.ttf);
+}
+@font-face{
+  font-family:"header";
+  src:url(../fonts/header/CQ_MONO/CQ\ Mono.otf);
+}
+@font-face{
+  font-family: "body_black";
+  src: url(../fonts/body/MADECarvingSoftPERSONALUSE-Black.otf);
+}
+@font-face{
+  font-family: "body_bold";
+  src:url(../fonts/body/MADECarvingSoftPERSONALUSE-Bold.otf);
+}
+@font-face{
+  font-family: "body_extra_light";
+  src: url(../fonts/body/MADECarvingSoftPERSONALUSE-ExtraLight.otf);
+}
+@font-face{
+  font-family: "body_light";
+  src: url(../fonts/body/MADECarvingSoftPERSONALUSE-Light.otf);
+}
+@font-face{
+  font-family: "body_medium";
+  src: url(../fonts/body/MADECarvingSoftPERSONALUSE-Medium.otf)
+}
+@font-face{
+  font-family: "body_regular";
+  src: url(../fonts/body/MADECarvingSoftPERSONALUSE-Regular.otf);
+}
+@font-face{
+  font-family: "body_semi_bold";
+  src: url(../fonts/body/MADECarvingSoftPERSONALUSE-SemiBold.otf);
+}
+@font-face{
+  font-family:"body_thin";
+  src: url(../fonts/body/MADECarvingSoftPERSONALUSE-Thin.otf);
+}
+*{
+  margin: 0;
+  padding:0;
+  text-decoration: none;
+  color:var(--nvo);
+  list-style:none;
+  box-sizing:border-box;
+  font-family:"body_regular";
+
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--ba);
+  display: block;
+  padding:20px;
+  height: fit-content;
+}
+
+.form_container {
+  background: var(--vs);
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 100px auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--ba);
+}
+
+.form_group {
+  margin-bottom: 15px;
+}
+.form_group p{
+  color: var(--ba);
+  font-size: 17px;
+}
+.form_group p:hover{
+  color: var(--nvo);
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: var(--ba);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid var(--nvo);
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--ba);
+  background-color: #fff;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  color: var(--nvo);
+  background-color:var(--vm);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--ba);
+  color: var(--vs);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+.volver{
+  width: fit-content;
+}
+.volver img{
+ width: 40px;
+}
+
