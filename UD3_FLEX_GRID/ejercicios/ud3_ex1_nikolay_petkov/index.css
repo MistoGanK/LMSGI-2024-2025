@@ -41,13 +41,13 @@ aside a{
 section{
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /*eje X*/
+  justify-content: center; /*eje Y*/
+  align-content: center; /*eje X*/
   gap: 20px;
   flex-wrap: wrap;
   padding: 20px;
   height: fit-content;
-
 }
 section div.card{
   width: 49%;
@@ -56,6 +56,4 @@ section div.card{
   display: flex;
   justify-content: center;
   align-items: center;
-
-
 }
