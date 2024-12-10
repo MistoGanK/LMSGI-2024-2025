@@ -31,6 +31,7 @@ header ul li{
 main{
   width: 100%;
   min-height: calc(100vh - 140px); 
+  padding: 10px;
 }
 section{
   height:100%;
