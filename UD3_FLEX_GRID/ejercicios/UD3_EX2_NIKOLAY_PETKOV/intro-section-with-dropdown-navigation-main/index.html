@@ -7,33 +7,109 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="../css/index.css">
 </head>
+
 <body>
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/logo.svg" alt="logo_img" title="logo">
+      </div>
+      <div class="burger_drop_icon">
+        <button id="btn_show_drop_down_menu"><img src="images/icon-menu.svg" alt="drop_down_menu_open" title="show menu"></button>
+      </div>
+        <ul class="drop_down_menu">
+        <div class="close_icon">
+          <button id="btn_show_drop_down_list"><img src="images/icon-close-menu.svg"></button>
+        </div>
+        <li class="freatures_li">
+          <a href="#">Freatures</a>
+          <button id="btn_show_freatures"><img src="images/icon-arrow-down.svg" alt="arrow_down_icon" title="show freatures"></button>
+          <button id="btn_hide_freatures"><img src="images/icon-arrow-up.svg" alt="arrow_up_icon" title="hide freatures"></button>
+          <ul class="freatures_container">
+            <li><a href="#"><img src="images/icon-todo.svg">Todo List</a></li>
+            <li><a href="#"><img src="images/icon-calendar.svg">Calendar</a></li>
+            <li><a href="#"><img src="images/icon-reminders.svg">Reminders</a></li>
+            <li><a href="#"><img src="images/icon-planning.svg">Planning</a></li>
+          </ul>
+        </li>
+        <div>
+          <button id="btn_show_freatures_desktop"><img src="images/icon-arrow-down.svg" alt="arrow_down_icon" title="show freatures"></button>
+          <button id="btn_hide_freatures_desktop"><img src="images/icon-arrow-up.svg" alt="arrow_up_icon" title="hide freatures"></button>
+        </div>
+        <li class="company_li">
+          <a href="#">Company</a>
+          <button id="btn_show_company"><img src="images/icon-arrow-down.svg" alt="arrow_down_icno" title="dropdown"></button>
+          <button id="btn_hide_company"><img src="images/icon-arrow-up.svg" alt="arrow_up_icon" title="hide company"></button>
+          <ul class="company_container">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Planning</a></li>
+          </ul>
+        </li>
+        <div>
+          <button id="btn_show_company_desktop"><img src="images/icon-arrow-down.svg" alt="arrow_down_icno" title="dropdown"></button>
+          <button id="btn_hide_company_desktop"><img src="images/icon-arrow-up.svg" alt="arrow_up_icon" title="hide company"></button>
+        </div>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+        <div class="sing_in_on">
+          <div id="login"><a href="#">Login</a></div>
+          <div id="register"><a href="#">Register</a></div>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <!-- Contenedor del estilo fondo negro al desplegar el menu movile-->
+  <div class="black_background"></div>
+  <main>
+    <section>
+      <div class="hero_container">
+        <picture>
+          <!-- Imagen para pantallas grandes (Desktop) > 1440px -->
+          <source srcset="images/image-hero-desktop.png" media="(min-width: 1440px)">
+          <!-- Imagen para pantallas pequeñas (Mobile) < 1440px -->
+          <img src="images/image-hero-mobile.png" alt="hero_image">
+        </picture>
+      </div>
+    <div class="content">
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+      </p>
+      <button id="btn_learn_more">Learn more</button>
+      <div class="section_footer">
+        <div class="client_container">
+          <img src="images/client-databiz.svg" alt="databiz_logo">
+        </div>
+        <div class="client_container">
+          <img src="images/client-audiophile.svg" alt="audiophile_logo">
+        </div>
+        <div class="client_container">
+          <img src="images/client-meet.svg" alt="meet_logo">
+        </div>
+        <div class="client_container">
+          <img src="images/client-maker.svg" alt="maker_logo">
+        </div>
+      </div>
+    </div>
+    </section>
+  </main>
+  <footer>
+    <div class="client_container">
+      <img src="images/client-databiz.svg" alt="databiz_logo">
+    </div>
+    <div class="client_container">
+      <img src="images/client-audiophile.svg" alt="audiophile_logo">
+    </div>
+    <div class="client_container">
+      <img src="images/client-meet.svg" alt="meet_logo">
+    </div>
+    <div class="client_container">
+      <img src="images/client-maker.svg" alt="maker_logo">
+    </div>
+  </footer>
+<script src="../javascript/index.js"></script>
 </body>
 </html>
