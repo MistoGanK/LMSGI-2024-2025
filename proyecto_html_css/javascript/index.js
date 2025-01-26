@@ -1,9 +1,24 @@
-// ---> Busquedab block <---> none
+// ---> Busqueda block <---> none
 const searchBtn = document.getElementById("search_btn");
 const barraBusqueda = document.querySelector(".search_box");
 
 searchBtn.addEventListener("click", () => {
   barraBusqueda.classList.toggle("search_box_visible");
+});
+
+// ---> Comment flex <--> none
+const commentButton = document.querySelector(".btn_comment");
+const addCommentContainer = document.querySelector(".add_comment_container");
+
+document.addEventListener("DOMContentLoaded", () =>{
+  if(commentButton && addCommentContainer){
+    console.log("Elementos encontrados: ", commentButton, addCommentContainer);
+
+    commentButton.addEventListener("click", () =>{
+      console.log("¡Click detectado!");
+      addCommentContainer.classList.toggle("show_element");
+    });
+  }
 });
 
 // ---> Dropw donw menu block <---> none
@@ -17,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       dropDownMenuIcon.addEventListener("click", () => {
           console.log("¡Click detectado!");
-          dropDownMenu.classList.toggle("hide_show_drop_down"); // -->Problema resuelto añadiendo !important en el Display
+          dropDownMenu.classList.toggle("show_element"); // -->Problema resuelto añadiendo !important en el Display
       });
   } else {
       console.error("No se encontraron los elementos requeridos.");
