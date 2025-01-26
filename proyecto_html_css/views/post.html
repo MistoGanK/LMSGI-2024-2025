@@ -7,6 +7,102 @@
   <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-  
+  <header>
+    <nav>
+        <div class="menu_div">
+            <ul class="menu">
+                <li id="drop_down_icon">
+                    <a href="#"><div><img src="../assets/icons/menu_100dp_5B9279_FILL0_wght500_GRAD200_opsz48.png" title="Menu" alt="menu_png"></div></a>
+                </li>
+                <li>
+                    <a href="../index.html"><div><img src="../logo/pepe_frog-removebg-preview.png" title="Home" alt="home_png"></div></a>
+                </li>
+            </ul>
+            <ul class="drop_down_menu">
+                <li><a href="../index.html"><img src="../assets/icons/home_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" alt="home" title="home">Home</a></li>
+                <li><a href="subir_meme.html"><img src="../assets/icons/publish_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png">Subir Meme</a></li>
+                <li><a href="inicio.html"><img src="../assets/icons/login_100dp_5B9279_FILL0_wght400_GRAD200_opsz48.png" title="Inició">Inició</a></li>
+                <li><a href="#"><img src="../assets/icons/schedule_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" title="Ultimos">Últimos</a></li>
+                <li><a href="#"><img src="../assets/icons/mode_heat_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" title="Trending">Trending</a></li>
+                <li><a href="#"><img src="../assets/icons/shuffle_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" title="Aleatorio">Aleatorio</a></li>
+                <li><a href="favoritos.html"><img src="../assets/icons/bookmark_heart_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" title="Favoritos">Favoritos</a></li>
+                <li><a href="mis_subidas.html"><img src="../assets/icons/archive_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" title="Mis subidas">Mis subidas</a></li>
+                <li><a href="ranking.html"><img src="../assets/icons/military_tech_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" title="Ranking">Ranking</a></li>
+            </ul>
+            <ul class="search">
+                <li>
+                    <button><img src="../assets/icons/contrast_100dp_5B9279_FILL0_wght400_GRAD0_opsz48.png"></button>
+                </li>
+                <li>
+                <label for="go_search"><button id="search_btn"><img src="../assets/icons/search_100dp_5B9279_FILL0_wght400_GRAD200_opsz48.png"></button></label>
+                </li>
+            </ul>
+        </div>
+        <div class="search_box">
+            <form method="post" action="">
+                <input type="search" id="go_search" name="search_tab" placeholder="Busca tus memes aqui...  ">  
+            </form>
+        </div>
+        <div class="filter">
+            <select name="cronologico">
+                <option value="ultimos">Ultimós</option>
+                <option value="antiguos">Antiguos</option>
+            </select>
+            <select name="popularidad">
+                <option value="" disabled selected>---</option>
+                <option value="tendencia">Trending</option>
+                <option value="mas_vistos">Mas vistos</option>
+                <option value="mas_votados">Mas votados</option>
+                <option value="historicos">Historicos</option>
+                <option value="aleatorios">Aleatorios</option>
+            </select>
+            <button>Buscar</button>
+        </div>
+    </nav>
+</header>
+<main>
+  <section class="content">
+    <article class="post_body">
+      <header class="post_header">
+          <div><button class="usuario_icono"><img src="../assets/icons/user_icon_black_100.png" title="usuario"></button><a href="#">ManolodelBombo</a></div>
+          <div><a href="post.html"><h1>Mi colega el Youtuber</h1></a></div>
+      </header>
+      <div class="post">
+          <a href="views/post.html"><img src="../assets/memes/amigo_youtuber.webp" title="post"></a>
+      </div>
+      <div class="post_info">
+          <a href="#">#Yotube</a>
+          <a href="#">#Youtuber</a>
+          <a href="#">#Pana</a>
+          <a href="#">#Weon</a>
+          <a href="#">#Amigo</a>
+      </div>
+      <div class="post_footer">
+          <div class="btn_comment"><button><img src="../assets/icons/comment_100dp_5B9279_FILL1_wght500_GRAD0_opsz48.png" title="Añadir comentario"></button></div>
+          <div class="btn_rating">
+              <button><img src="../assets/icons/thumb_up_100dp_8FCB9B_FILL1_wght500_GRAD0_opsz48.png" title="Dar Like"></button>  
+              <div class="rating_container">
+                  <span class="percentage">70%</span>
+                  <span class="count">157</span>
+              </div>
+              <button><img src="../assets/icons/thumb_down_100dp_8B1A10_FILL1_wght500_GRAD0_opsz24.png" title="Dar Dislike"></button>
+          </div>
+          <div class="btn_share">
+              <button><img src="../assets/icons/share_100dp_5B9279_FILL1_wght500_GRAD0_opsz48.png" title="compartir"></button>
+          </div>
+      </div>
+      <div class="add_comment_container">
+        <form action="" method="post">
+          <textarea placeholder="Si cree va a ser gracioso, escriba aquí su comentario"></textarea>
+          <input type="submit" name="submit" value="Enviar">
+        </form>
+      </div>
+      <div>
+
+      </div>
+  </article>
+  </section>
+</main>
+<script src="../javascript/index.js"></script>
 </body>
 </html>

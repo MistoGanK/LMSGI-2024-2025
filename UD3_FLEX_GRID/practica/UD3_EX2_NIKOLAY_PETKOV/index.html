@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <img src="images/logo.svg" title="logo" alt="logo">
+    </div>
+    <div class="header__menu-button">
+      <button class="menu__toggle" id="btn_menu">
+        <img src="images/icon-menu.svg" title="menu" alt="menu">
+      </button>
+    </div>
+    <nav class="menu">
+      <div class="menu__close-button">
+        <button class="menu__close" id="btn_close">
+          <img src="images/icon-close-menu.svg" alt="close">
+        </button>
+      </div>
+      <ul class="menu__list">
+        <li class="menu__item">
+          Freatures
+          <button class="menu__show-features" id="btnFreaturesShow">
+            <img src="images/icon-arrow-down.svg" title="Show Features" alt="show_features">
+          </button>
+          <button class="menu__hide-features" id="btnFreaturesClose">
+            <img src="images/icon-arrow-up.svg" title="Hide Features" alt="hide_features">
+          </button>
+          <ul class="menu__sublist">
+            <li class="menu__subitem">
+              <img src="images/icon-todo.svg" alt="todo_list" title="Todo List">Todo List
+            </li>
+            <li class="menu__subitem">
+              <img src="images/icon-calendar.svg" alt="calendar" title="Calendar">Calendar
+            </li>
+            <li class="menu__subitem">
+              <img src="images/icon-reminders.svg" alt="reminder" title="Reminder">Reminders
+            </li>
+            <li class="menu__subitem">
+              <img src="images/icon-planning.svg" alt="planning" title="Planning">Planning
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          Company
+          <button class="menu__show-company" id="btnCompanyShow">
+            <img src="images/icon-arrow-down.svg" title="Show Company" alt="show_company">
+          </button>
+          <button class="menu__hide-company" id="btnCompanyClose">
+            <img src="images/icon-arrow-up.svg" title="Hide Company" alt="hide_company">
+          </button>
+          <ul class="menu__sublist">
+            <li class="menu__subitem">History</li>
+            <li class="menu__subitem">Our Team</li>
+            <li class="menu__subitem">Blog</li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <ul class="menu__auth">
+            <li class="menu__auth-item">Login</li>
+            <li class="menu__auth-item">Register</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>  
+  <body>
+    <main>
+      <section>
+        <div>
+          <picture>
+            <!-- Imagen para pantalla grandes (> 1440px) -->
+            <source srcset="images/image-hero-desktop.png" media="(min-width: 1440px)" type="image/png">
+            <!-- Imagen para pantalla movil (375px < 1440px) -->
+            <img src="images/image-hero-mobile.png" alt="movile_hero" loading="lazy">
+          </picture>
+        </div>
+        <div>
+          <h1>Make remore work</h1>
+          <p>Get your team in sync, no matter your location. Streamline processes, 
+            create team rituals, and watch productivity soar.
+          </p>
+          <button id="btnLearnMore">Learn more</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__element">
+        <img src="images/client-databiz.svg" alt="client_databiz" title="databiz"> 
+      </div>
+      <div class="footer__element">
+        <img src="images/client-audiophile.svg" alt="client_audiophile" title="audiophile">
+      </div>
+      <div class="footer__element">
+        <img src="images/client-meet.svg" title="meet" alt="client_meet">
+      </div>
+      <div class="footer__element">
+        <img src="images/client-maker.svg" title="maker" alt="clietn_maker">
+      </div>
+    </footer>
+  </body>
+  <script src="js/index.js"></script>
+</body>
+</html>

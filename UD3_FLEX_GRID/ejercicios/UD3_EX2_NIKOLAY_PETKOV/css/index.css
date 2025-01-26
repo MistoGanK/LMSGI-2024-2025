@@ -122,6 +122,7 @@ ul.freatures_container{
   justify-content: center;
   padding-left: 20px;
 }
+
 /* movile */
 #btn_show_freatures,
 #btn_show_company,
@@ -322,5 +323,5 @@ div.section_footer{
     color: var(--AlmostBlack);
     border: 1px solid var(--AlmostBlack);
   }
-  
+
 }

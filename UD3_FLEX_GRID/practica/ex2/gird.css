@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 5fr 1fr 80px;
+  height: 100vH;
+}
+header,
+footer{
+  background-color: darkseagreen;
+}
+header{
+  grid-area: cabecera;
+}
+footer{
+  grid-area:pie;
+}
+main{
+  grid-area: principal;
+}
+aside{
+  grid-area:lateral;
+}
+main{
+  background-color: blanchedalmond;
+}
+aside{
+  background-color: rgba(0, 128, 0, 0.685);
+}
+
+@media(width > 800px){
+  body{
+    grid-template-columns:1fr 4fr;
+    grid-template-rows:80px auto 80px;
+    grid-template-areas: 
+      "cabecera cabecera"
+      "lateral principal"
+      "pie pie"
+    ;
+  }
+}

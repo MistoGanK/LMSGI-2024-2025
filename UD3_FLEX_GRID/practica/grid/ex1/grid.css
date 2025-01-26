@@ -1,0 +1,18 @@
+.grid-container{
+  display: grid;
+  /* grid-template-columns: 1fr 2fr 2fr; ocupar la proporcion del eje X Y especificada segun la suma de las fracciones */
+  /* grid-template-columns: repeat(3, 1fr) repeat(3, 2fr); */
+  /* grid-template-rows: 33% 33% 33%; */
+  grid-template-columns: 100px 200px 200px;
+  gap: 20px;
+  height: 100vH;
+  justify-items: stretch;
+  align-items: stretch; /*Modifica verticalmente (y)*/
+  justify-content: space-evenly; /*Modifica horizontalmente (x)*/
+  
+}
+.grid-item{
+  background-color:gainsboro;
+  border:1px solid black;
+  padding: 20px;
+}

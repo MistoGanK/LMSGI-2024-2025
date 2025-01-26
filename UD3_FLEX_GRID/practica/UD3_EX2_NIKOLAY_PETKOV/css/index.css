@@ -1,0 +1,62 @@
+:root{
+  --AlmostWhite:hsl(0, 0%, 98%);
+  --AlmostGray:hsl(0, 0%, 41%);
+  --AlmostBlack: hsl(0, 0%, 8%);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "epilogue_500"; 
+
+  } 
+
+@font-face {
+  font-family: "epilogue_500";
+  src: url(../fonts/static/Epilogue-Medium.ttf);
+}
+
+@font-face {
+  font-family: "epilogue_700";
+  src: url(../fonts/static/Epilogue-Bold.ttf);
+}
+
+@font-face {
+  font-family: "epilogue_800";
+  src: url(../fonts/static/Epilogue-ExtraBold.ttf);
+}
+
+button{
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+body{
+  height: 100vh;
+  background-color:var(--ALmostWHite);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+
+header,
+footer{
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* X Axis */
+  align-items: center; /* Y Axis */
+}
+
+
+
+@media (width >= 1440px){
+
+}

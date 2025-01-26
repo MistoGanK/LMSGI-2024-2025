@@ -214,7 +214,9 @@ main{
 .post,
 .post img,
 .post_info,
-.post_footer{
+.post_footer
+.add_comment_container,
+.add_comment_container textarea{
     width: 100%;
 }
 .post_body{
@@ -315,6 +317,31 @@ main{
 .count{
     color: #12130f90;
 }
+/* ---> Post comment container*/
+.add_comment_container{
+    text-align: center;
+}
+.add_comment_container textarea{
+    background-color: var(--ba);
+    font-size: 18px;
+    height: 80px;
+    max-height: 300px;
+    border-radius:3px;
+    resize:vertical;
+}
+.add_comment_container input[type="submit"]{
+    font-size: 18px;
+    padding: 5px;
+    background-color:var(--vm);
+    border: 1px solid var(--nvo);
+    border-radius: 5px;
+    margin-top:15px;
+}
+.add_comment_container input[type="submit"]:hover{
+    color: var(--ba);
+    background-color:var(--vm);
+}
+
 /* ---> Nav paginas*/
 .nav_paginas{
     margin-top: 10px;

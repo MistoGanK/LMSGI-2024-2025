@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root{
+  /*---Primary---*/
+  --softRed:hsl(7, 99%, 70%);
+  --yellow:hsl(51, 100%, 49%);
+  --cyan:#90d4c5;
+  --darkDesaturatedCyan: hsl(167, 40%, 24%); /*Graphic Design Text*/
+  --darkBlue: hsl(198, 62%, 26%); /*Photography Text*/
+  --darkModeraCyan: hsl(168, 34%, 41%);/*Footer*/
+
+  /*---Neutral---*/
+  --veryDarkDesaturatedBlue:hsl(212, 27%, 19%);
+  --veryDarkGrayishBlue:hsl(213, 9%, 39%);
+  --darkGrayishBlue:hsl(232, 10%, 55%);
+  --grayishBlue:hsl(210, 4%, 67%);
+  --white:hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url(../../fonts/Barlow/Barlow-SemiBold.ttf); /*weight:600*/
+}
+@font-face{
+  font-family: "FrauncesBold";
+  src: url(../../fonts/Fraunces/static/Fraunces_9pt-Bold.ttf) /*weight:700 bold*/
+}
+@font-face{
+  font-family: "FrauncesBlack";
+  src:url(../../fonts/Fraunces/static/Fraunces_9pt-Black.ttf) /*weight: 900 black*/
+}
+
+button{
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border:none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/*---> Mobile*/
+body{
+  font-size: 18px;
+}
+h1{
+  font-family: "FrauncesBold";
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+}
+header{
+  background-image:url(../../images/mobile/image-header.jpg);
+  display: flex;
+  flex-direction: column; 
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  height:600px;
+}
+header nav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0 15px;
+  height: 100px;
+}
+
+footer{
+  background-color: var(--cyan);  
+}
+.footer-logo{
+  mask:url("");
+}
+
+@media(width >=1400px){
+  header{
+    background-image:url(../../images/desktop/image-header.jpg);
+  }
+}
