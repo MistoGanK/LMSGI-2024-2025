@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  text-decoration: none;
+}
+
+body {
+  color: #252323;
+  background-color: #FEF9FF;
+  display: flex;
+  flex-direction: column;
+}
+
+header {  
+  color:#CAD178;
+  height: 100px;
+  background-color: #434960;
+  display: flex;
+  align-items: center;
+}
+
+/* ---> Cambios Header*/
+.nav-primary,
+.nav-logo .logo-square,
+.nav-icons span {
+  display: none;
+}
+header div,
+header nav,
+.nav-logo{ 
+  display: flex;
+  align-items: center;
+}
+.nav-logo,
+.nav-icons{
+  flex: 1;
+}
+.nav-icons{
+  justify-content: flex-end;
+}
+
+/* ----> Fin cambios Header*/
+
+
+/* ---> Cambios Main */
+main{
+  display: flex;
+  height: 100%;
+  flex-direction: column-reverse;
+}
+.products-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+aside nav{
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---> Fin cambios Main */
+
+
+.logo-square {
+  height: 80px;
+}
+
+.logo-landscape {
+  height: 25px;  
+}
+
+.menu-item {
+  margin: 0 10px;  
+}
+
+.menu-item:hover {
+  cursor: pointer;
+}
+
+.nav-primary .menu-item:hover {
+  text-decoration: underline;
+}
+
+aside {
+  padding: 10px;
+  background-color: #CAD178;
+}
+
+a {
+  padding: 10px 0;
+  color: #252323;
+}
+
+a:hover {
+  font-weight: bold;  
+}
+
+.item {
+  padding: 100px;
+  margin: 10px;
+  background-color: #95818D;
+}
+
+.item:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+@media(width >= 768px){
+
+  /* ---> Cambios Header*/
+  header{
+    height: 100px;
+  }
+  .logo-landscape{
+    display: none;
+  }
+  .nav-logo .logo-square{
+    display: flex;
+  }
+  .nav-logo{
+    flex: 0;
+  }
+  .nav-icons span{
+    display: flex;
+  }
+  .nav-icons .menu-item{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    
+  }
+  /* ---> Fin cambios header */
+
+}
+@media(width >= 992px){
+  /*---> Cambios Header */
+  .nav-primary{
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+  .nav-primary .menu-item{
+    display: flex;
+    align-items: center;
+  }
+  .nav-logo div.menu-item{
+    display: none;
+  }
+
+  /* ---> Fin cambios Header*/
+
+  /* --> Cambios Main*/
+  main{
+    flex-direction: row-reverse;
+  }
+  aside{
+    flex-basis: 200px;
+  }
+  aside nav{
+    height: calc(100vH - 100px);
+  }
+  .products-container{
+    flex: 1;
+    align-items: center;
+  }
+  /* ---> Fin cambios Main*/
+  
+}
