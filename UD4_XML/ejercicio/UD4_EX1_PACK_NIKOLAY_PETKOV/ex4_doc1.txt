@@ -1,0 +1,9 @@
+<?xml version="1.0"?> (C: La etiqueta no esta cerrada correctamente y le falta el atributo encoding="UTF-8")
+<documento>
+<p>Mi Primer <destacar importancia=1>documento (C: La etiqueta destaar no esta cerrada correctamente y el atributo no esta formado correctamente)
+XML</destacar></p] (C: La etiqueta p esta mal cerrada )
+<p>Comienza con la etiqueta <documento&gt;</p> (C: El comentario documento usa caracter reservado al principio, ha de usar HTML entity: &lt;)
+<p>A continuacion colocamos un elemento sin
+contenido</p>
+<imagen fichero="imagen.gif"> (C: La etiqueta imagen no esta cerrada correctamente)
+</documento>

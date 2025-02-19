@@ -1,0 +1,6 @@
+<?Xml version="1,0" encoding="UTF-8"?> (C: La etiqueta comienza con tipado incorrecto, ha de ser minuscula. el contenido de atributo encoding usa una coma en vez de punto.)
+(C: Falta de etiqueta raiz en el documento)
+<triangulo base="7"altura="5"> (C: La etiquea triangulo cierra incorrectamente, ademas le falta espaciado de un atributo a otro) 
+<triangulo base="2"altura="6"> (C: La etiquea triangulo cierra incorrectamente, ademas le falta espaciado de un atributo a otro)
+<triangulo base="3"altura="3"> (C: La etiquea triangulo cierra incorrectamente, ademas le falta espaciado de un atributo a otro)
+

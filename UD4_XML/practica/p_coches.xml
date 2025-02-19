@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cars [
+  <!ELEMENT cars (brand,model,type,price,info)>
+  <!ELEMENT info (doors,seats,itv)>
+  
+  <!-- Element definitions-->
+  <!ELEMENT brand (#PCDATA)>
+  <!ELEMENT model (#PCDATA)>
+  <!ELEMENT type (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+  <!ELEMENT doors (#PCDATA)>
+  <!ELEMENT seats (#PCDATA)>
+  <!ELEMENT itv (#PCDATA)>
+]>
+
+<cars>
+  <brand>Toyota</brand>
+  <model>Yaris</model>
+  <type>Gasoline</type>
+  <price>20.000€</price>
+  <info>
+    <doors>2</doors>
+    <seats>2</seats>
+    <itv>2025-01-01</itv>
+  </info>
+</cars>

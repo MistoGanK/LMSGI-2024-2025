@@ -1,0 +1,16 @@
+<!ELEMENT cars (car*)>
+<!ELEMENT car (brand,model,type,price,info)>
+<!ELEMENT info (doors,seats,itv)>
+
+<!-- cars elements-->
+
+<!ELEMENT brand (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+
+<!-- info elements -->
+
+<!ELEMENT doors (#PCDATA)>
+<!ELEMENT seats (#PCDATA)>
+<!ELEMENT itv (#PCDATA)>

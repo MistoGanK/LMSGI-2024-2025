@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+ <curriculums>
+  <cv>
+    <nom>Nikolay</nom>
+    <llinatges>Petkov Simeonova</llinatges>
+    <naixment>2000-08-18</naixment>
+    <residencia>
+      <ciutat>Maó</ciutat>
+      <pais>España</pais>
+    </residencia>
+    <dades_contacte>
+      <telefon>+34 921 95 93 12</telefon>
+      <correco_electronic>nikiolay_petkov@gmail.com</correco_electronic>
+      <perfil_linkedin>nikolay_simeonova@hootmail.com</perfil_linkedin>
+    </dades_contacte>
+    <descripcio_general>
+      Tecnico superior en Desarollo de Aplicaciónes web con experiencia en back end en la empresa infotelecom 2026-2028.
+      Apasionado de la programación en general, con una atracción al entorno Back End y siempre aprendiendo por interes propio
+      en mi tiempo libre.
+    </descripcio_general>
+    <competencies>
+      <competencia nivell="alt">Desarollo de base de datos en SQL y derivados</competencia>
+      <competencia nivell="intermedi">Desarollo de paginas web HTML, CSS, JAVASCRIPT/TYPESCRIPT</competencia>
+      <competencia nivell="alt">Programación en JAVA</competencia>
+      <competencia nivell="intermedi">Programación en Python</competencia>
+      <competencia nivell="basic">Programación en C</competencia>
+      <competencia nivell="alt">B2 Ingles</competencia>
+    </competencies>
+    <formacion_academica>
+      <formacion>
+        <instituto>IES JOAN RAMIS Y RAMIS</instituto>
+        <localidad>Maó</localidad>
+        <pais>España</pais>
+        <any_finalicacio>2026-06-30</any_finalicacio>
+      </formacion>
+    </formacion_academica>  
+    <experiencias_profesionals>
+      <experiencia_profesional>
+        <lloc>España</lloc>
+        <empresa>Infotelecom</empresa>
+        <any_inici>2026</any_inici>
+        <any_finalitzacio>2028</any_finalitzacio>
+      </experiencia_profesional>
+    </experiencias_profesionals>
+  </cv>
+
+  <cv>
+    <nom>Maria</nom>
+    <llinatges>Nieto Mercadal</llinatges>
+    <naixment>1997-01-28</naixment>
+    <residencia>
+      <ciutat>Maó</ciutat>
+      <pais>España</pais>
+    </residencia>
+    <dades_contacte>
+      <telefon>+34 941 92 13 32</telefon>
+      <correco_electronic>maria_nieto@gmail.com</correco_electronic>
+      <perfil_linkedin>maria_mercadal@hootmail.com</perfil_linkedin>
+    </dades_contacte>
+    <descripcio_general>
+      Criminologa con amplia experiencia y formación en sectores publicos y privados con gran bocación y pasión por el aprendizaje
+      y desarollo de las experiencia profesionales
+    </descripcio_general>
+    <competencies>
+      <competencia nivell="alt">Legislación</competencia>
+      <competencia nivell="alt">Tic</competencia>
+      <competencia nivell="alt">Cyberseguridad</competencia>
+      <competencia nivell="alt">Sociologia</competencia>
+      <competencia nivell="intermedi">Programació en python</competencia>
+      <competencia nivell="alt">B2 Ingles</competencia>
+    </competencies>
+    <formacion_academica>
+      <formacion>
+        <instituto>VIU</instituto>
+        <localidad>Valencia</localidad>
+        <pais>España</pais>
+        <any_finalicacio>2028-06-30</any_finalicacio>
+      </formacion>
+    </formacion_academica>  
+    <experiencias_profesionals>
+      <experiencia_profesional>
+        <lloc>Estats Units</lloc>
+        <empresa>DEFENDERS.S.A</empresa>
+        <any_inici>2028</any_inici>
+        <any_finalitzacio>2030</any_finalitzacio>
+      </experiencia_profesional>
+
+    <experiencia_profesional>
+        <lloc>España</lloc>
+        <empresa>Ministerio de defensa</empresa>
+        <any_inici>2030</any_inici>
+        <any_finalitzacio>2034</any_finalitzacio>
+      </experiencia_profesional>
+
+    <experiencia_profesional>
+        <lloc>Estats Units</lloc>
+        <empresa>FBI</empresa>
+        <any_inici>2034</any_inici>
+        <any_finalitzacio>2036</any_finalitzacio>
+      </experiencia_profesional>
+
+    </experiencias_profesionals>
+  </cv>
+ </curriculums>

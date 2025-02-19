@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE cars[
+<!--ELEMENTS-->
+<!ELEMENT cars (car)>
+<!ELEMENT car (brand,model,type,price,info)>
+<!ELEMENT info (doors,seats,itv)>
+<!--car elements-->
+<!ELEMENT brand (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+
+<!--info elements-->
+<!ELEMENT doors (#PCDATA)>
+<!ELEMENT seats (#PCDATA)>
+<!ELEMENT itv (#PCDATA)>
+
+<!--ATRIBUTES-->
+]>
+
+<!--XML-->
+<cars>
+  <car>
+    <brand>Toyoya</brand>
+    <model>Yaris</model>
+    <type>Gasoline</type>
+    <price>20.000</price>
+    <info>
+      <doors>4</doors>
+      <seats>4</seats>
+      <itv>2025-01-01</itv>
+    </info>
+  </car>
+</cars>

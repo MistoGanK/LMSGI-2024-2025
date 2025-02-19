@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE cars SYSTEM "cars.dtd">
+ 
+ <cars>
+  <car>
+    <brand>Toyoya</brand>
+    <model>Yaris</model>
+    <type>Gasoline</type>
+    <price>20.000€</price>
+    <info>
+      <doors>4</doors>
+      <seats>4</seats>
+      <itv>2024-01-01</itv>
+    </info>
+  </car>
+
+  <car>
+    <brand>BMW</brand>
+    <model>Tornados</model>
+    <type>Gasoline</type>
+    <price>20.000€</price>
+    <info>
+      <doors>4</doors>
+      <seats>4</seats>
+      <itv>2024-01-01</itv>
+    </info>
+  </car>
+
+ </cars>

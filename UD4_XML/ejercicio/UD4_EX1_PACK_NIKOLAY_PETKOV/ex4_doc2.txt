@@ -1,0 +1,9 @@
+<?xml version="1.0"?> (C: La etiqueta le falta el atributo encoding="UTF-8")
+<libros>
+<libro id="quijote">
+<titulo>El Quijote</titulo>
+<autor nombre=cervantes nombre=cervantes> (C: La etiqueta autor no cierra y su atributo no esta declarado correctamente, le faflta comillado y ademas repite el mismo atributo, lo cual no esta permitido)
+<descripcion>Es el m<ejor libro de (C: Error de tipado dentro de texto que usa caracter reservado <)
+cervantes.</descripcion>
+</libro] (C: El elemento esta encerrado incorrectamente)
+</Libros> (C: El elemento raiz cierra con un nombre incorrecto)

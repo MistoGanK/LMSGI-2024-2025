@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE operaciones[
+  <!ELEMENT operaciones (operacion+)>
+  <!ELEMENT operacion (venta | compra)+>
+  
+  <!--Elementos de venta-->
+  <!ELEMENT venta (titols,quantitat,lliurat?,import)>
+  <!ELEMENT titols (titol+)>
+
+  <!ELEMENT titol (#PCDATA)>
+  <!ELEMENT quantitat (#PCDATA)>
+  <!ELEMENT lliurat (#PCDATA)>
+  <!ELEMENT import (#PCDATA)>
+
+  <!ATTLIST import moneda CDATA #REQUIRED>
+
+  <!--Elementos de compra-->
+  <!ELEMENT compra (titols,proveedor,data)>
+  <!ELEMENT data (dia?,mes,any)>
+
+  <!ELEMENT proveedor (#PCDATA)>
+  <!ELEMENT dia (#PCDATA)>
+  <!ELEMENT mes (#PCDATA)>
+  <!ELEMENT any (#PCDATA)>
+]>
+<operaciones>
+  <operacion>
+
+    <venta>
+      <titols>
+        <titol>Harry Potter y la piedra Filosofal</titol>
+      </titols>
+      <quantitat>100</quantitat>
+      <lliurat>No</lliurat>
+      <import moneda="euro">1200</import>
+    </venta>
+
+    <compra>
+      <titols>
+        <titol>El señor de los anillos: La comunidad del anillo</titol>
+        <titol>Harry Potter y la Piedra Filosofal</titol>
+        <titol>Yo robot</titol>
+      </titols>
+      <proveedor>
+        Casa del Libro  
+      </proveedor>
+      <data>
+        <dia>20</dia>
+        <mes>02</mes>
+        <any>2025</any>
+      </data>
+    </compra>
+
+  </operacion>
+
+  <operacion>
+  
+    <venta>
+      <titols>
+        <titol>Oliver Twist</titol>
+        <titol>Dunes</titol>
+        <titol>Hijos de Dune</titol>
+      </titols>
+      <quantitat>100</quantitat>
+      <import moneda="euro">13400</import>
+    </venta>
+
+  </operacion>
+</operaciones>
