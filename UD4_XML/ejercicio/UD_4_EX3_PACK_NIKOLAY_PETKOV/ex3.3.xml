@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE demanat SYSTEM "ex3.3.dtd">
+
+<demanat>
+
+    <llibres>
+        <llibre titol="Harry Potter y la Piedra Filosofal"></llibre>
+        <llibre titol="El señor de los anillos: La comunidad del anillo"/>
+    </llibres>
+
+    <llibres>
+        <llibre titol="El fin de la eternidad"></llibre>
+    </llibres>
+
+    <quaderns>
+        <quadern></quadern>
+        <quadern></quadern>
+        <quadern num_fulles="300"></quadern>
+    </quaderns>
+
+    <llapissos>
+        <llapis>
+            <numero>12</numero>
+        </llapis>
+        <llapis>
+            <numero>13</numero>
+        </llapis>
+        <llapis>
+            <numero>14</numero>
+        </llapis>
+    </llapissos>
+
+    <llibres>
+        <llibre titol="Harry Potter y el Principe Mestizo"></llibre>
+    </llibres>
+
+    <llapissos>
+        <llapis>
+            <numero>15</numero>
+        </llapis>
+    </llapissos>
+
+    <quaderns>
+        <quadern num_fulles="155"></quadern>
+    </quaderns>
+
+</demanat>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE entregas [
+  <!ELEMENT entregas (entrega+)>
+  <!ELEMENT entrega (lots+)>
+  <!ELEMENT lots (lot+)>
+  <!ELEMENT lot (palet+)>
+  <!ELEMENT palet (nombre_caixes,contingut,pes,forma_manipulacion)>
+  <!ELEMENT contingut (nom_component,procedencia?,numero_serie,pes_individual)>
+  <!ELEMENT procedencia (pais?)+>
+
+  <!ATTLIST pes_individual unitat (kg|lb) #IMPLIED>
+
+  <!ELEMENT nombre_caixes (#PCDATA)>
+  <!ELEMENT pes (#PCDATA)>
+  <!ELEMENT forma_manipulacion (#PCDATA)>
+  <!ELEMENT nom_component (#PCDATA)>
+  <!ELEMENT numero_serie (#PCDATA)>
+  <!ELEMENT pes_individual (#PCDATA)>
+
+  <!ELEMENT pais (#PCDATA)>
+]>
+
+<entregas>
+
+  <entrega>
+
+    <lots>
+    
+      <lot>
+
+        <palet>
+          <nombre_caixes>25</nombre_caixes>
+          <contingut>
+            <nom_component>RTX 3070 TI GEFORCE</nom_component>
+            <procedencia>
+              <pais>Alemania</pais>
+              <pais>USA</pais>
+            </procedencia>
+            <numero_serie>104</numero_serie>
+            <pes_individual unitat="kg">1.5</pes_individual>
+          </contingut>
+          <pes>37.5</pes>
+          <forma_manipulacion>fragil</forma_manipulacion>
+        </palet>
+
+        <palet>
+          <nombre_caixes>1</nombre_caixes>
+          <contingut>
+            <nom_component>ALIENWARE</nom_component>
+            <numero_serie>102</numero_serie>
+            <pes_individual unitat="lb">30.86</pes_individual>
+          </contingut>
+          <pes>30.86</pes>
+          <forma_manipulacion>fragil</forma_manipulacion>
+        </palet>
+      </lot>
+
+      <lot>
+        <palet>
+          <nombre_caixes>30</nombre_caixes>
+          <contingut>
+            <nom_component>RTX 3070 TI MSI</nom_component>
+            <procedencia>
+              <pais>Alemania</pais>
+              <pais>USA</pais>
+              <pais>China</pais>
+              <pais>Japan</pais>
+            </procedencia>
+            <numero_serie>192</numero_serie>
+            <pes_individual>1.5</pes_individual>
+          </contingut>
+          <pes>45</pes>
+          <forma_manipulacion>fragil</forma_manipulacion>
+        </palet>
+
+      </lot>
+    </lots>
+
+  </entrega>
+
+</entregas>

@@ -1,0 +1,37 @@
+<!ELEMENT llistat (futurs+,divises+,bons+,lletres+)>
+<!ELEMENT futurs (futur+)>
+<!ELEMENT futur (procedencia,valor_esperat,mercat?)>
+<!ELEMENT divises (divisa+)>
+<!ELEMENT bons (bon+)>
+<!ELEMENT bon (procedencia,pais_de_procedencia)>
+<!ELEMENT pais_de_procedencia (estat,valor_desitjat,valor_minim,valor_maxim)>
+<!ELEMENT lletres (lletra+)>
+
+<!ELEMENT divisa (procedencia,canvis?)>
+<!ELEMENT canvis (canvi+)>
+<!ELEMENT lletra (procedencia,pais_emisor)>
+
+<!ELEMENT valor_esperat (#PCDATA)>
+<!ELEMENT estat (#PCDATA)>
+<!ELEMENT valor_desitjat (#PCDATA)>
+<!ELEMENT valor_minim (#PCDATA)>
+<!ELEMENT valor_maxim (#PCDATA)>
+<!ELEMENT canvi (#PCDATA)>
+<!ELEMENT tipo_interes (#PCDATA)>
+<!ELEMENT procedencia EMPTY>
+<!ELEMENT mercat EMPTY>
+<!ELEMENT pais_emisor EMPTY>
+
+
+<!ATTLIST futur preu CDATA #REQUIRED >
+<!ATTLIST divisa preu CDATA #REQUIRED >
+<!ATTLIST bon preu CDATA #REQUIRED >
+<!ATTLIST lletra preu CDATA #REQUIRED >
+<!ATTLIST divisa nom CDATA #REQUIRED >
+
+<!ATTLIST procedencia capital (Madrid|Nova_York|Frankfurt|Toquio) #REQUIRED >
+<!ATTLIST mercat pais (Espanya|EUA|Alemanya|Japo) #REQUIRED >
+<!ATTLIST pais_emisor pais (Espanya|EUA|Alemanya|Japo) #REQUIRED >
+<!ATTLIST pais_emisor tipo_interes CDATA #REQUIRED >
+<!ATTLIST divisa estable (si|no) #IMPLIED >
+<!ATTLIST bon estable (si|no) #IMPLIED >

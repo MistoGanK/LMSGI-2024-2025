@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE llistacursos[
+  <!ELEMENT llistacursos (cursos+)>
+  <!ELEMENT cursos (curs+)>
+  <!ELEMENT curs (alumnes)>
+  <!ELEMENT alumnes (alumne+)>
+  <!ELEMENT alumne (dni,nom,cognom,segoncognom?,llista_assignatures)>
+  <!ELEMENT llista_assignatures (assignatura+)>
+  <!ELEMENT assignatura (nom,profesor)>
+  <!ELEMENT profesor (nrp,nom,cognom,segoncognom?)>
+
+
+  <!ELEMENT dni (#PCDATA)>
+  <!ELEMENT nom (#PCDATA)>
+  <!ELEMENT cognom (#PCDATA)>
+  <!ELEMENT segoncognom (#PCDATA)>
+  <!ELEMENT nrp (#PCDATA)>
+  
+  <!ATTLIST assignatura codi CDATA #REQUIRED>
+]>
+
+<llistacursos>
+
+  <cursos>
+  
+    <curs>
+    
+        <alumnes>
+          
+          <alumne>
+            <dni>e4914814x</dni>
+            <nom>Manolo</nom>
+            <cognom>Bombo</cognom>
+            <segoncognom>Bombai</segoncognom>
+            <llista_assignatures>
+            
+              <assignatura codi="e14">
+                <nom>Matematiques</nom>
+                <profesor>
+                  <nrp>49141</nrp>
+                  <nom>Jaime</nom>
+                  <cognom>Ramirez</cognom>
+                </profesor>
+              </assignatura>
+
+              <assignatura codi="e14">
+                <nom>Fisica</nom>
+                <profesor>
+                  <nrp>49112</nrp>
+                  <nom>Pedro</nom>
+                  <cognom>Jerez</cognom>
+                  <segoncognom>Lozano</segoncognom>
+                </profesor>
+              </assignatura>
+
+              <assignatura codi="e91">
+                <nom>Historia</nom>
+                <profesor>
+                  <nrp>1241</nrp>
+                  <nom>Jere</nom>
+                  <cognom>Noble</cognom>
+                  <segoncognom>Lobo</segoncognom>
+                </profesor>
+              </assignatura>
+
+            </llista_assignatures>
+          </alumne>
+
+          <alumne>
+            
+            <dni>e4914144w</dni>
+            <nom>Jorge</nom>
+            <cognom>Meme</cognom>
+            <segoncognom>Memero</segoncognom>
+            <llista_assignatures>
+            
+              <assignatura codi="e14">
+                <nom>Matematiques</nom>
+                <profesor>
+                  <nrp>49141</nrp>
+                  <nom>Jaime</nom>
+                  <cognom>Ramirez</cognom>
+                </profesor>
+              </assignatura>
+
+              <assignatura codi="e14">
+                <nom>Filosofia</nom>
+                <profesor>
+                  <nrp>49112</nrp>
+                  <nom>Miquel</nom>
+                  <cognom>General</cognom>
+                </profesor>
+              </assignatura>
+            </llista_assignatures>
+
+          </alumne>
+        </alumnes>
+
+    </curs>
+
+    <curs>
+    
+      <alumnes>
+      
+        <alumne>
+        
+        <dni>e941851</dni>
+          <nom>Nikolay</nom>
+          <cognom>Petkov</cognom>
+          <segoncognom>Simeonova</segoncognom>
+          <llista_assignatures>
+          
+            <assignatura codi="e04">
+              <nom>LMSGI</nom>
+              <profesor>
+                <nrp>3915</nrp>
+                <nom>Irene</nom>
+                <cognom>Vinent</cognom>
+                <segoncognom>Mercad</segoncognom>
+              </profesor>
+            </assignatura>
+            <assignatura codi="e03">
+              <nom>BS</nom>
+              <profesor>
+                <nrp>4012</nrp>
+                <nom>Enrique</nom>
+                <cognom>Vizcaíno</cognom>
+                <segoncognom>Sánchez</segoncognom>
+              </profesor>
+            </assignatura>
+            <assignatura codi="05">
+              <nom>Digitalización</nom>
+              <profesor>
+                <nrp>9415</nrp>
+                <nom>Carlos</nom>
+                <cognom>Camps</cognom>
+              </profesor>
+            </assignatura>
+          </llista_assignatures>
+
+        </alumne>
+      
+      </alumnes>
+
+    </curs>
+
+  </cursos>
+
+</llistacursos>

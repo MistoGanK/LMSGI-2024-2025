@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE llistat SYSTEM "ex.3.4.dtd">
+
+<llistat>
+    <futurs>
+        <futur preu="100">
+            <procedencia capital="Madrid"/>
+            <valor_esperat>120</valor_esperat>
+            <mercat pais="Espanya"/>
+        </futur>
+        <futur preu="200">
+            <procedencia capital="Toquio"/>
+            <valor_esperat>250</valor_esperat>
+            <mercat pais="Japo"/>
+        </futur>
+        <futur preu="300">
+            <procedencia capital="Nova_York"/>
+            <valor_esperat>400</valor_esperat>
+        </futur>
+    </futurs>
+    <divises>
+        <divisa preu="200" nom="USD" estable="si">
+            <procedencia capital="Madrid"/>
+            <canvis>
+                <canvi>EUR</canvi>
+                <canvi>JPY</canvi>
+                <canvi>CAD</canvi>
+            </canvis>
+        </divisa>
+        <divisa preu="300" nom="EUR">
+            <procedencia capital="Madrid"/>
+        </divisa>
+    </divises>
+    <bons>
+     <bon preu="300" estable="si">
+        <procedencia capital="Frankfurt"/>
+        <pais_de_procedencia>
+            <estat>Alemania</estat>
+            <valor_desitjat>400</valor_desitjat>
+            <valor_minim>350</valor_minim>
+            <valor_maxim>450</valor_maxim>
+        </pais_de_procedencia>
+     </bon>
+    <bon preu="200" estable="no">
+        <procedencia capital="Madrid"/>
+        <pais_de_procedencia>
+            <estat>Brazil</estat>
+            <valor_desitjat>350</valor_desitjat>
+            <valor_minim>150</valor_minim>
+            <valor_maxim>500</valor_maxim>
+        </pais_de_procedencia>
+    </bon>
+    </bons>
+    <lletres>
+        <lletra preu="300">
+            <procedencia capital="Madrid"/>
+            <pais_emisor pais="Espanya" tipo_interes="8%"></pais_emisor>
+        </lletra>
+        <lletra preu="400">
+            <procedencia capital="Toquio"/>
+            <pais_emisor pais="Japo" tipo_interes="10%"/>
+        </lletra>
+    </lletres>
+    
+</llistat>
