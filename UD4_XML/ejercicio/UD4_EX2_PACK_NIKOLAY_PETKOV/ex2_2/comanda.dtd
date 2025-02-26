@@ -1,7 +1,5 @@
-<!ELEMENT comandas (comanda+)>
 <!ELEMENT comanda (tractor+)>
-<!ELEMENT tractor (components)>
-<!ELEMENT components (component+)>
+<!ELEMENT tractor (component+)>
 <!ELEMENT component (data_entrega,pes,nombre_serie,km_maxims?)>
 <!ELEMENT data_entrega (dia?,mes,any)>
 

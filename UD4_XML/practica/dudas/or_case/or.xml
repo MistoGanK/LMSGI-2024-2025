@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE operacion [
+  <!ELEMENT operacion (venta|compra)+> <!--Rebundancia (venta+|compra+)+-->
+  <!ELEMENT venta EMPTY >
+  <!ELEMENT compra EMPTY >
+]>
+<!--Permite poner los elementos las veces que queramos en el orden que queramos-->
+<operacion>
+  <venta/>
+  <compra/>
+  <venta/>
+  <compra/>
+  <compra/>
+  <venta/>
+</operacion>

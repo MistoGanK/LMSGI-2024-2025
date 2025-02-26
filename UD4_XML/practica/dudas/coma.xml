@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE operacion [
+  <!ELEMENT operacion (venta+,compra)>
+  <!ELEMENT venta EMPTY >
+  <!ELEMENT compra EMPTY >
+]>
+<!--Obliga que tengan que salir los elementos en orden pero el + permite que el elemento se repita siempre respetando la sequencia-->
+<operacion>
+  <venta/>
+  <venta/>
+  <venta/>
+  <compra/>
+</operacion>

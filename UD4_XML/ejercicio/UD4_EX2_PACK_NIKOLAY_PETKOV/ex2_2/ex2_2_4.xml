@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE comanda SYSTEM "comanda.dtd">
+ <comanda>
+
+    <tractor> 
+        <component nom_fabricant="Joshuas_fields.S.A" fragil="si">
+          <data_entrega>
+            <dia>10</dia>
+            <mes>10</mes>
+            <any>2025</any>
+          </data_entrega>
+          <pes unitat="grams">1450</pes>
+          <nombre_serie>1924</nombre_serie>
+        </component>
+
+        <component nom_fabricant="Joshuas_fields.S.A" fragil="no">
+          <data_entrega>
+            <dia>12</dia>
+            <mes>10</mes>
+            <any>2025</any>
+          </data_entrega>
+          <pes unitat="quilos"></pes>
+          <nombre_serie>0014</nombre_serie>
+          <km_maxims>23000</km_maxims>
+        </component>
+    </tractor>
+
+    <tractor>
+        <component nom_fabricant="Lozanos.S.A" fragil="si">
+          <data_entrega>
+            <mes>10</mes>
+            <any>2025</any>
+          </data_entrega>
+          <pes unitat="quilos">5</pes>
+          <nombre_serie>1914</nombre_serie>
+        </component>
+    </tractor>
+  </comanda>

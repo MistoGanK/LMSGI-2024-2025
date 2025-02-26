@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE carta SYSTEM "validation/front_page.dtd">
+<?xml-stylesheet href="assets/stylesheet/front_web.css" type="text/css"?>
+<carta>
+  
+  <platos>
+
+    <plato>
+      <image src="assets/images/gofres_belgas.webp" alt="gofres_belgas"></image>
+      <nombre>Gofres Belgas</nombre>
+      <descripcion>Dos de nuestros famosos Gofres belgas con abundante sirope</descripcion>
+      <calorias>650</calorias>
+      <precio unitat="EUR">5.95</precio>
+    </plato>
+    
+    <plato>
+      <image src="assets/images/gofre_belga_fresa.webp" alt="gofres_belgas_fresa"></image>
+      <nombre>Gofres Belgas con fresas</nombre>
+      <descripcion>Ligeros Gofres Belgas cubiertos de fresa y nada montada</descripcion>
+      <calorias>900</calorias>
+      <precio unitat="EUR">7.95</precio>
+    </plato>
+
+     <plato>
+      <image src="assets/images/gofre_belga_frutos.webp" alt="gofres_belgas_frutos"></image>
+      <nombre>Gofres Belgas con frutas del bosque</nombre>
+      <descripcion>Ligeros Gofres Belgas cubiertos de frutas del bosque y nada montada</descripcion>
+      <calorias>900</calorias>
+      <precio unitat="EUR">8.95</precio>
+    </plato>
+
+    <plato>
+      <image src="assets/images/tostadas_francesas.webp" alt="tostada_francesa"></image>
+      <nombre>Tostada Francesa</nombre>
+      <descripcion>Dos gruesas rebanadas de nuestor pan francés casero</descripcion>
+      <calorias>600</calorias>
+      <precio unitat="EUR">4.50</precio>
+    </plato>
+    
+    <plato>
+      <image src="assets/images/desayuno_ingles.webp" alt="desayuno_ingles"></image>
+      <nombre>Desayuno de la casa</nombre>
+      <descripcion>Dos huevos, bacon o salchicha, tostada y patatas fritas</descripcion>
+      <calorias>950</calorias>
+      <precio unitat="EUR">6.95</precio>
+    </plato>
+
+  </platos>
+
+</carta>

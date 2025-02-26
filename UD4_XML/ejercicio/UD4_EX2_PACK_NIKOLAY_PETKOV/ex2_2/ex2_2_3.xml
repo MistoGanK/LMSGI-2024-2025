@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE comanda SYSTEM "comanda.dtd">
-  <comanda>
+<comanda>
     <tractor>
         <component nom_fabricant="Lozanos.S.A" fragil="no">
           <data_entrega>
@@ -14,5 +14,3 @@
         </component>
     </tractor>
   </comanda>
-
- 

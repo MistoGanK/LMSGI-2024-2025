@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <!DOCTYPE comanda SYSTEM "comanda.dtd">
+ <comanda>
+    <tractor>
+        <component nom_fabricant="Lozanos.S.A" fragil="si">
+          <data_entrega>
+            <mes>06</mes>
+            <any>2025</any>
+          </data_entrega>
+          <pes unitat="grams">565</pes>
+          <nombre_serie>0214</nombre_serie>
+        </component>
+
+        <component nom_fabricant="Joshuas_fields.S.A" fragil="no">
+          <data_entrega>
+            <dia>10</dia>
+            <mes>07</mes>
+            <any>2025</any>
+          </data_entrega>
+          <pes unitat="quilos">2000</pes>
+          <nombre_serie>10241</nombre_serie>
+        </component>
+    </tractor>
+  </comanda>

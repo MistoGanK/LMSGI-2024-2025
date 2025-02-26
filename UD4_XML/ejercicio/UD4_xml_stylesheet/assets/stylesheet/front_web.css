@@ -1,0 +1,36 @@
+ *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+ }
+ /* Font Head*/
+ @font-face {
+  font-family: "Delight";
+  src: url(../fonts/food_delight/Food\ Delight.ttf);
+ }
+ /* Font Body*/
+ carta{
+  background-color: beige;
+  height: 100Vh;
+  padding: 30px;
+ }
+ platos{
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+ }
+ plato{
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  align-items:center;
+  gap: 10px;
+ }
+plato{
+  color: red;
+}

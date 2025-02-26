@@ -1,0 +1,16 @@
+<!ELEMENT carta (platos+)>
+<!ELEMENT platos (plato*)>
+<!ELEMENT plato (image,nombre,descripcion,calorias,precio)>
+
+<!--Declaracion del contenido de los elementos-->
+<!ELEMENT image EMPTY>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT calorias (#PCDATA)>
+
+<!--Declaración de los atributos-->
+
+<!ATTLIST precio unitat (EUR) #REQUIRED >
+<!ATTLIST image src CDATA #REQUIRED >
+<!ATTLIST image alt CDATA #REQUIRED >
