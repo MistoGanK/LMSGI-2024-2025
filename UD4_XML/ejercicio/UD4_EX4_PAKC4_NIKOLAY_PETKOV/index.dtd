@@ -1,0 +1,58 @@
+<!ELEMENT factura (capçalera,linia+,resum_total)>
+<!ELEMENT capçalera (data,client,proveidor)>
+
+
+<!--Capçalera-->
+<!ELEMENT data EMPTY>
+<!ELEMENT client EMPTY>
+<!ELEMENT proveidor EMPTY>
+
+    <!--Data-->
+<!ATTLIST data dia CDATA #REQUIRED>
+<!ATTLIST data mes CDATA #REQUIRED>
+<!ATTLIST data any CDATA #REQUIRED>
+
+<!ATTLIST capçalera id ID #REQUIRED>
+    <!--Client-->
+<!ATTLIST client nom_fiscal CDATA #REQUIRED>
+<!ATTLIST client nom_comercial CDATA #REQUIRED>
+<!ATTLIST client nif CDATA #REQUIRED>
+    <!--Proveidor-->
+<!ATTLIST proveidor nom_fiscal CDATA #REQUIRED>
+<!ATTLIST proveidor nom_comercial CDATA #REQUIRED>
+<!ATTLIST proveidor nif CDATA #REQUIRED>
+
+
+<!--Linia-->
+<!ELEMENT linia (article,num_unitats,import_total)>
+<!ATTLIST linia id ID #REQUIRED>
+
+    <!--Article-->
+<!ELEMENT article (descripcio,preus,tipu_iva)>
+<!ELEMENT preus (sense_iva,amb_iva)>
+
+<!ELEMENT descripcio (#PCDATA)>
+
+<!ELEMENT sense_iva (#PCDATA)>
+<!ELEMENT amb_iva (#PCDATA)>
+<!ELEMENT tipu_iva EMPTY>
+
+<!ATTLIST tipu_iva aplicat (4|10|21) #REQUIRED>
+
+<!ELEMENT num_unitats (#PCDATA)>
+<!ELEMENT import_total (#PCDATA)>
+
+<!ATTLIST article id ID #REQUIRED>
+    <!--Linia ref-->
+<!ATTLIST linia article_ref IDREF #REQUIRED>
+
+<!--Resum total-->
+<!ELEMENT resum_total (subtotal,total_sense_iva,total_amb_iva)>
+<!ELEMENT subtotal (iva_4,iva_10,iva_21)>
+
+<!ELEMENT iva_4 (#PCDATA)>
+<!ELEMENT iva_10 (#PCDATA)>
+<!ELEMENT iva_21 (#PCDATA)>
+
+<!ELEMENT total_sense_iva (#PCDATA)>
+<!ELEMENT total_amb_iva (#PCDATA)>
