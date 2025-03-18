@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xs:noNamespaceSchemaLocation="factura.xsd">
+
+    <capçalera id="F4">
+        <data dia="05" mes="05" any="2025"/>
+        <client nom_fiscal="JaimeLozano" nom_comercial="lozano SA" nif="E93591293"/>
+        <proveidor nom_fiscal="Erchiga" nom_comercial="Erchiga SA" nif="A93291256"/>
+    </capçalera>
+    <linia id="E9" article_ref="A8">
+        <article id="A8">
+            <descripcio>Armario Empotrado Emporium</descripcio>
+            <preus>
+                <sense_iva>1000.00</sense_iva>
+                <amb_iva>1100.00</amb_iva>
+            </preus>
+            <tipu_iva aplicat="10"/>
+        </article>
+        <num_unitats>1</num_unitats>
+        <import_total>1100</import_total>
+    </linia>
+    <resum_total>
+        <subtotal>
+            <iva_4>0</iva_4>
+            <iva_10>1100</iva_10>
+            <iva_21>0</iva_21>
+        </subtotal>
+        <total_sense_iva>1000</total_sense_iva>
+        <total_amb_iva>1100</total_amb_iva>
+    </resum_total>
+    
+</factura> 

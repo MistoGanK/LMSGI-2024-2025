@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="factura">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="capçalera">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="data">
+                                <xs:complexType>
+                                    <xs:attribute name="dia" type="xs:int" use="required"/>
+                                    <xs:attribute name="mes" type="xs:int" use="required"/>
+                                    <xs:attribute name="any" type="xs:int" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="client">
+                                <xs:complexType>
+                                    <xs:attribute name="nom_fiscal" use="required"/>
+                                    <xs:attribute name="nom_comercial" use="required"/>
+                                    <xs:attribute name="nif" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="proveidor">
+                                <xs:complexType>
+                                    <xs:attribute name="nom_fiscal" use="required"/>
+                                    <xs:attribute name="nom_comercial" use="required"/>
+                                    <xs:attribute name="nif" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="id" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="linia" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="article">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="descripcio" type="xs:string"/>
+                                        <xs:element name="preus">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="sense_iva" type="xs:double"/>
+                                                    <xs:element name="amb_iva" type="xs:double"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="tipu_iva">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:int">
+                                                    <xs:enumeration value="4"/>
+                                                    <xs:enumeration value="10"/>
+                                                    <xs:enumeration value="21"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                     </xs:sequence>
+                                     <xs:attribute name="id" type="id" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="num_unitats" type="xs:double"/>
+                            <xs:element name="import_total" type="xs:double"/>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:IDREF" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="resum_total">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="subtotal">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="iva_4" type="xs:double"></xs:element>
+                                        <xs:element name="iva_10" type="xs:double"></xs:element>
+                                        <xs:element name="iva_21" type="xs:double"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="total_sense_iva" type="xs:double"/>
+                            <xs:element name="total_amb_iva" type="xs:double"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--Definir los typos repetidos-->
+    <xs:simpleType name="id">
+        <xs:restriction base="xs:ID"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="nom_fiscal">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="nom_comercial">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    
+    <xs:simpleType name="nif">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+</xs:schema>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<factura
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xs:noNamespaceSchemaLocation="factura.xsd">
-</factura> 
