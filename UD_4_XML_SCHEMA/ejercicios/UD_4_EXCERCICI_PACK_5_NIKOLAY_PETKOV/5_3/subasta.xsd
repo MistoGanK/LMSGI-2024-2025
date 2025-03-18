@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="subasta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="objecte" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="propietari" type="xs:string"></xs:element>
+              <xs:element name="preu_sortida">
+                <xs:simpleType>
+                  <xs:restriction base="xs:decimal">
+                    <xs:totalDigits value="6"/>
+                    <xs:fractionDigits value="2"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="preu_minim" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:decimal">
+                    <xs:totalDigits value="6"/>
+                    <xs:fractionDigits value="2"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <!--Ejemplo de deciaml con restricción pattern-->
+              <xs:element name="preu_pattern" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:decimal">
+                    <xs:pattern value="\d{1,4}\.\d{2}"></xs:pattern>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

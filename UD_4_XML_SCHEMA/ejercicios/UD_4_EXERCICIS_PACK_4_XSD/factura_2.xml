@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <factura
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
     xs:noNamespaceSchemaLocation="factura.xsd">
 
         <capçalera id="F4">
@@ -15,7 +15,7 @@
                 <sense_iva>50</sense_iva>
                 <amb_iva>61</amb_iva>
             </preus>
-            <tipu_iva aplicat="21"/>
+            <tipu_iva>10</tipu_iva>
         </article>
         <num_unitats>100</num_unitats>
         <import_total>6100</import_total>
@@ -27,7 +27,7 @@
                 <sense_iva>10</sense_iva>
                 <amb_iva>11</amb_iva>
             </preus>
-            <tipu_iva aplicat="10"/>
+            <tipu_iva>4</tipu_iva>
         </article>
         <num_unitats>1000</num_unitats>
         <import_total>11000</import_total>
@@ -39,7 +39,7 @@
                 <sense_iva>10</sense_iva>
                 <amb_iva>10.4</amb_iva>
             </preus>
-            <tipu_iva aplicat="4"/>
+            <tipu_iva>4</tipu_iva>
         </article>
         <num_unitats>100</num_unitats>
         <import_total>1000.4</import_total>
@@ -53,6 +53,4 @@
         <total_sense_iva>11600.04</total_sense_iva>
         <total_amb_iva>11700.04</total_amb_iva>
     </resum_total>
-
-    
 </factura> 

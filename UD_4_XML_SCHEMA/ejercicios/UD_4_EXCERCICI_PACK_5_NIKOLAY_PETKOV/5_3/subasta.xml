@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subasta
+  xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+  xs:noNamespaceSchemaLocation="subasta.xsd">
+  <objecte>
+    <propietari>Nikolay</propietari>
+    <preu_sortida>1000.41</preu_sortida>
+  </objecte>
+<!--He podido comprovar que la restricción de totalDigits solo
+especifica el total de numeros que contendra el numero entero como
+su numero fracionario, xml por lo visto normaliza todos los 0 decimales
+y no los cuenta como "digitos" en la comprovación de los digitos totales
+por lo tanto es necesario hacer un pattern para poder manejar este caso también-->
+  <objecte>
+    <propietari>Joshua</propietari>
+    <preu_sortida>500000.00</preu_sortida>
+    <preu_minim>600000.00</preu_minim>
+  </objecte>
+<!--Ejemplo de uso con pattern aplicado-->
+  <objecte>
+    <propietari>Manolo</propietari>
+    <preu_sortida>1000.30</preu_sortida>
+    <preu_minim>2000.000</preu_minim>
+    <!--No permitira decimales menores que 2 ni mayores 2
+    al igual de numero entero mayor de 4 digitos pero si menor -->
+    <!--La restricción se aplicaria igualmente unicamente usando el pattern-->
+    <preu_pattern>1000.00</preu_pattern>
+  </objecte>
+</subasta>
