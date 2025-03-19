@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="conexions_ADSL">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="oferta" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nom_compania" type="xs:string" />
+              <xs:element name="velocitat_transferencia">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="pujada">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:decimal">
+                          <xs:minInclusive value="0"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="baixada">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:decimal">
+                          <xs:minInclusive value="0"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="unitat" use="required">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:enumeration value="Mbps"/>
+                        <xs:enumeration value="MBps"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="preu">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="alta">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="preu_alta" minOccurs="0">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:decimal">
+                                <xs:pattern value="\d{1,6}\.\d{2}"/>
+                                <xs:minInclusive value="0"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="permanencia_alta" minOccurs="0">
+                            <xs:complexType>
+                              <xs:attribute name="tiempo" use="required">
+                                <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                    <xs:enumeration value="dia"/>
+                                    <xs:enumeration value="meses"/>
+                                    <xs:enumeration value="años"/>
+                                  </xs:restriction>
+                                </xs:simpleType>
+                              </xs:attribute>
+                              <xs:attribute name="quantitat" use="required">
+                                <xs:simpleType>
+                                  <xs:restriction base="xs:int">
+                                    <xs:minInclusive value="0"/>
+                                  </xs:restriction>
+                                </xs:simpleType>
+                              </xs:attribute>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="gratis" use="required">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:enumeration value="Si"/>
+                              <xs:enumeration value="No"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="permanencia" use="required">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:enumeration value="Si" />
+                              <xs:enumeration value="No" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="linea">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:decimal">
+                          <xs:pattern value="\d{1,6}\.\d{2}"/>
+                          <xs:minInclusive value="0"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="promocio" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="promocio_preu">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:decimal">
+                                <xs:pattern value="\d{1,6}\.\d{2}"/>
+                                <xs:minInclusive value="0"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="fins" type="xs:date" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="mensual">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:decimal">
+                          <xs:pattern value="\d{1,6}\.\d{2}"/>
+                          <xs:minInclusive value="0"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="total_mensual">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:decimal">
+                          <xs:pattern value="\d{1,6}\.\d{2}"/>
+                          <xs:minInclusive value="0"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="extres" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+                  </xs:sequence>
+                  <xs:attribute name="moneda" use="required">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:enumeration value="Euro"/>
+                        <xs:enumeration value="Dolar"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" use="required">
+              <xs:simpleType>
+                <xs:restriction base="xs:ID">
+                  <xs:pattern value="\d+"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="nom" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

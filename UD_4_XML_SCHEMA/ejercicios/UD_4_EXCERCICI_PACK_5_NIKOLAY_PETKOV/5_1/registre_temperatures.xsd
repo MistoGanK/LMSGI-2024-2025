@@ -25,7 +25,7 @@
             <xs:sequence>
               <xs:element name="incidencia" maxOccurs="unbounded">
                 <xs:complexType>
-                  <xs:attribute name="nom">
+                  <xs:attribute name="nom" use="required">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:enumeration value="fred"/>
@@ -35,7 +35,7 @@
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:attribute>
-                  <xs:attribute name="severitat">
+                  <xs:attribute name="severitat" use="required">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:enumeration value="baixa"/>

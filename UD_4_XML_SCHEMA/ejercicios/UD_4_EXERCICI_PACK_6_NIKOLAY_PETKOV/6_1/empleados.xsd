@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="empleados">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="empleado" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nom">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="id" type="xs:ID" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="inici_contracte">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="dia" type="xs:gDay" />
+                    <xs:element name="mes" type="xs:gMonth" />
+                    <xs:element name="any" type="xs:gYear" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ocupacio_actual" type="xs:string" />
+              <xs:element name="ocupacions_posteriors" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="lloc" type="xs:string" maxOccurs="unbounded" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="cap_directe" minOccurs="0">
+                <xs:complexType>
+                  <xs:attribute name="id" type="xs:IDREF" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="sou">
+                <xs:simpleType>
+                  <xs:restriction base="xs:decimal">
+                    <xs:pattern value="\d{1,6}\.\d{2}" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="titol_academics" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="titulacio" type="xs:string" maxOccurs="unbounded" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="seu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="Madrid" />
+                    <xs:enumeration value="Barcelona" />
+                    <xs:enumeration value="Valencia" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="observacions" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="merits" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="merit" type="xs:string" maxOccurs="unbounded" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="demerits" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="demerit" type="xs:string" maxOccurs="unbounded" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
