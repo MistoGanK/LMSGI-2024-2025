@@ -99,7 +99,7 @@
 
   </oferta>
 
-  <oferta id="a6" nom="ASDL Máxima Velocidad">
+  <oferta id="6" nom="ASDL Máxima Velocidad">
     <nom_compania>Orange</nom_compania>    
     <velocitat_transferencia unitat="Mbps">
       <pujada>0.512</pujada>

@@ -142,7 +142,7 @@
             </xs:sequence>
             <xs:attribute name="id" use="required">
               <xs:simpleType>
-                <xs:restriction base="xs:ID">
+                <xs:restriction base="xs:NMTOKEN">
                   <xs:pattern value="\d+"/>
                 </xs:restriction>
               </xs:simpleType>

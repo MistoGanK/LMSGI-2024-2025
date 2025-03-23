@@ -1,6 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="asseguranca_cotxe">
-    
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="asseguranca" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="asseguradora">
+              </xs:element>
+              <xs:element name="geocobertura">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="Europea" />
+                    <xs:enumeration value="Espanyola" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cobrament">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="financament">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:int">
+                          <xs:minInclusive value="1" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="mensualitat">
+                      <xs:simpleType>
+                        <xs:union>
+                          <xs:simpleType>
+                            <xs:restriction base="xs:decimal">
+                              <xs:pattern value="\d{1,6}\.\d{2}" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                          <xs:simpleType>
+                            <xs:restriction base="xs:int">
+                              <xs:minInclusive value="1" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:union>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="mensualitativa">
+                      <xs:simpleType>
+                        <xs:union>
+                          <xs:simpleType>
+                            <xs:restriction base="xs:decimal">
+                              <xs:pattern value="\d{1,6}\.\d{2}" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                          <xs:simpleType>
+                            <xs:restriction base="xs:int">
+                              <xs:minInclusive value="1" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:union>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="anual">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:int">
+                          <xs:minInclusive value="1" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="en" use="required">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:enumeration value="Euro" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="mensual" use="required">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:enumeration value="Si" />
+                        <xs:enumeration value="No" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="promocions">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="descompteonline" minOccurs="0">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:int">
+                          <xs:minInclusive value="1" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="descompteedat" minOccurs="0">
+                      <xs:complexType>
+                        <xs:attribute name="edat" use="required">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:int">
+                              <xs:minInclusive value="18" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="import" use="optional">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:int">
+                              <xs:minInclusive value="1" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="percentatge" use="optional">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:int">
+                              <xs:minInclusive value="1" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="nouclient" use="required">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:enumeration value="Si" />
+                        <xs:enumeration value="No" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:NMTOKEN" use="required" />
+            <xs:attribute name="denominacio" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
   </xs:element>
 </xs:schema>
