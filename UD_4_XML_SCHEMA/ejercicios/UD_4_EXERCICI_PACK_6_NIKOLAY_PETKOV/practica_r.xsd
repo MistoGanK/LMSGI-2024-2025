@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="matricula">
+     <xs:complexType>
+      <xs:sequence>
+        <xs:element name="alumne" maxOccurs="unbounded">
+         <xs:complexType>
+          <xs:sequence>
+            <xs:element name="nom" type="xs:string"/>
+            <xs:element name="curs" type="xs:date"/>
+            <xs:element name="assignatures">
+              <xs:complexType>
+                <xs:all>
+                  <xs:element name="programacion" type="tipus_nota" minOccurs="0"></xs:element>
+                  <xs:element name="lmsgi" type="tipus_nota" minOccurs="0"></xs:element>
+                  <xs:element name="bd" type="tipus_nota" minOccurs="0"></xs:element>
+                  <xs:element name="sin" type="tipus_nota" minOccurs="0"></xs:element>
+                  <xs:element name="ed" type="tipus_nota" minOccurs="0"></xs:element>
+                  <xs:element name="optatives">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="entorno" type="tipus_nota"></xs:element>
+                        <xs:choice>
+                          <xs:element name="ingles" type="tipus_nota"></xs:element>
+                          <xs:element name="diw" type="tipus_nota"></xs:element>
+                        </xs:choice>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:all>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+         </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="tipus_nota">
+    <xs:simpleContent>
+      <xs:extension base="xs:positiveInteger">
+        <xs:attribute name="aprovat" type="xs:boolean" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

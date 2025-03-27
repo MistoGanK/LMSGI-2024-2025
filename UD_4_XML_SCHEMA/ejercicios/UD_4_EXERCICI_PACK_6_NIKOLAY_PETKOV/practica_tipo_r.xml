@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<matricula
+  xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+  xs:noNamespaceSchemaLocation="practica_r.xsd">
+  <alumne>
+    <nom>Nikolay</nom>
+    <curs>2024-01-01</curs>
+    <assignatures>
+      <programacion aprovat="true">10</programacion>
+      <lmsgi aprovat="true">8</lmsgi>
+      <bd aprovat="true">8</bd>
+      <sin aprovat="false">4</sin>
+      <ed aprovat="false">4</ed>
+      <optatives>
+        <entorno aprovat="true">10</entorno>
+        <diw aprovat="true">9</diw>
+      </optatives>
+    </assignatures>
+  </alumne>
+ </matricula>
