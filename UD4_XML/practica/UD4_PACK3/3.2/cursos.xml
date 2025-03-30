@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE llistacursos [
+  <!ELEMENT llistacursos (curs)+>
+  <!ELEMENT curs (alumne)+>
+  <!ELEMENT alumne (dni,nom,cognom,segon_cognom?,llista_assignatures)>
+  <!ELEMENT llista_assignatures (assignatura)+>
+  <!ELEMENT assignatura (nom,profesor)>
+  <!ELEMENT profesor (nrp,nom,cognom,segon_cognom?)>
+
+  <!ELEMENT dni (#PCDATA)>
+  <!ELEMENT nom (#PCDATA)>
+  <!ELEMENT cognom (#PCDATA)>
+  <!ELEMENT segon_cognom (#PCDATA)>
+  <!ELEMENT nrp (#PCDATA)>
+
+  <!ATTLIST assignatura codi ID #REQUIRED >
+]> -->
+<!DOCTYPE llistacursos SYSTEM "cursos.dtd">
+<llistacursos>
+  <curs>
+    <alumne>
+      <dni>e01560124</dni>
+      <nom>Nikolay</nom>
+      <cognom>Petkov</cognom>
+      <segon_cognom>Simeonova</segon_cognom>
+      <llista_assignatures>
+        <assignatura codi="A1">
+          <nom>LMSGI</nom>
+          <profesor>
+            <nrp>A914</nrp>
+            <nom>Irene</nom>
+            <cognom>Mercadal</cognom>
+          </profesor>
+        </assignatura>
+        <assignatura codi="B1">
+          <nom>BASE DE DATOS</nom>
+          <profesor>
+            <nrp>A921</nrp>
+            <nom>Enrique</nom>
+            <cognom>Valazquez</cognom>
+            <segon_cognom>Madrid</segon_cognom>
+          </profesor>
+        </assignatura>
+        <assignatura codi="C1">
+          <nom>SIN</nom>
+          <profesor>
+            <nrp>B913</nrp>
+            <nom>Carlos</nom>
+            <cognom>Camps</cognom>
+          </profesor>
+        </assignatura>
+      </llista_assignatures>
+    </alumne>
+    <alumne>
+      <dni>E014140</dni>
+      <nom>Josh</nom>
+      <cognom>Johny</cognom>
+      <llista_assignatures>
+        <assignatura codi="E1">
+          <nom>BASE DE DATOS</nom>
+          <profesor>
+            <nrp>A921</nrp>
+            <nom>Enrique</nom>
+            <cognom>Valazquez</cognom>
+            <segon_cognom>Madrid</segon_cognom>
+          </profesor>
+        </assignatura>
+      </llista_assignatures>
+    </alumne>
+  </curs>
+</llistacursos>

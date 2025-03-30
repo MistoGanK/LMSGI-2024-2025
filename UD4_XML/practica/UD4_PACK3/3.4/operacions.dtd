@@ -1,0 +1,33 @@
+<!ELEMENT operacions (futur,divisa,bon,lletra)+>
+  <!ELEMENT futur (valor_esperat,mercat?) >
+    <!ELEMENT valor_esperat (#PCDATA)>
+    <!ELEMENT mercat EMPTY>
+      <!ATTLIST mercat pais (Espanya|EUA|Alemanya|Japo) #REQUIRED>
+    
+    <!ELEMENT bon (pais_procedencia,valor_desitjat,valor_minim,valor_maxim)>
+      <!ELEMENT pais_procedencia (#PCDATA)>
+      <!ELEMENT valor_desitjat (#PCDATA)>
+      <!ELEMENT valor_minim (#PCDATA)>
+      <!ELEMENT valor_maxim (#PCDATA)>
+    
+    <!ELEMENT divisa (nom,canvi+)>
+      <!ELEMENT nom (#PCDATA)>
+      <!ELEMENT canvi (#PCDATA)>
+
+    <!ELEMENT lletra (interes_plegable,pais_emisor)>
+      <!ELEMENT interes_plegable (#PCDATA)>
+      <!ELEMENT pais_emisor EMPTY >
+        <!ATTLIST pais_emisor pais (Espanya|EUA|Alemanya|Japo) #REQUIRED>
+
+  <!ATTLIST futur preu CDATA #REQUIRED >
+  <!ATTLIST divisa preu CDATA #REQUIRED >
+  <!ATTLIST bon preu CDATA #REQUIRED >
+  <!ATTLIST lletra preu CDATA #REQUIRED >
+
+  <!ATTLIST futur procedencia (Madrid|Nova_york|Frankfurt|Toquio) #REQUIRED>
+  <!ATTLIST divisa procedencia (Madrid|Nova_york|Frankfurt|Toquio) #REQUIRED>
+  <!ATTLIST bon procedencia (Madrid|Nova_york|Frankfurt|Toquio) #REQUIRED>
+  <!ATTLIST lletra procedencia (Madrid|Nova_york|Frankfurt|Toquio) #REQUIRED>
+
+  <!ATTLIST divisa estable (si|no) #IMPLIED >
+  <!ATTLIST bon estable (si|no) #IMPLIED >

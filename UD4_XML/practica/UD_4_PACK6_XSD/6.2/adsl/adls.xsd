@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="conexions_ADSL">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="oferta" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nom_compania" type="xs:string" />
+              <xs:element name="velocitat_transferencia">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="pujada" type="velocitat" />
+                    <xs:element name="baixada" type="velocitat" />
+                  </xs:sequence>
+                  <xs:attribute name="unitat">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:enumeration value="Mbps" />
+                        <xs:enumeration value="Mibps" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="preu">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="alta">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="preu_alta" minOccurs="0" type="precio" />
+                          <xs:element name="permanencia_alta" minOccurs="0">
+                            <xs:complexType>
+                              <xs:attribute name="tiempo">
+                                <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                    <xs:enumeration value="dias" />
+                                    <xs:enumeration value="meses" />
+                                    <xs:enumeration value="años" />
+                                  </xs:restriction>
+                                </xs:simpleType>
+                              </xs:attribute>
+                              <xs:attribute name="quantitat" type="xs:positiveInteger" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="gratis" type="confirmacion" />
+                        <xs:attribute name="permanencia" type="confirmacion" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="linea" type="precio" />
+                    <xs:element name="promocio" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="promocio_preu" type="precio" />
+                        </xs:sequence>
+                        <xs:attribute name="fins" type="xs:date" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="mensual" type="precio" />
+                    <xs:element name="total_mensual" type="precio" />
+                    <xs:element name="extres" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                  <xs:attribute name="moneda">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:enumeration value="Dolar" />
+                        <xs:enumeration value="Euro" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:ID" />
+            <xs:attribute name="nom" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!--Tipo
+  velocidad-->
+  <xs:simpleType name="velocitat">
+    <xs:union>
+      <xs:simpleType>
+        <xs:restriction base="xs:int">
+          <xs:minInclusive value="0" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType>
+        <xs:restriction base="xs:decimal">
+          <xs:pattern value="\d{1,10}\.\d{3}" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:union>
+  </xs:simpleType>
+
+  <!--Tipo
+  alta-->
+  <xs:simpleType name="confirmacion">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Si" />
+      <xs:enumeration value="No" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--Tipo
+  precio-->
+  <xs:simpleType name="precio">
+    <xs:restriction base="xs:decimal">
+      <xs:pattern value="\d{1,10}\.\d{2}" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

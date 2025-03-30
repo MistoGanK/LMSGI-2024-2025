@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UFT-8"?>
+<factura 
+xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+  xs:noNamespaceSchemaLocation="factura.xsd">
+  <caçalera id="A1">
+    <data>
+      <dia>---01</dia>
+      <mes>--01</mes>
+      <any>2025</any>
+    </data>
+    <client nom_fiscal="Lozano SA" nom_comercial="Lozanos y Hermanos" nif="E01512512" />
+    <proveidor nom_fiscal="Erchiga SA" nom_comercial="Erchiga" nif="A9215121" />
+  </caçalera>
+  <linies>
+    <linia id="AE3" article_ref="B1">
+      <article id="B1">
+        <descripcio>Armario Empotrado de Roble</descripcio>
+        <preus>
+          <amb_iva>10000.00</amb_iva>
+          <sense_iva>8000.00</sense_iva>
+        </preus>
+        <tipus_iva aplicat="21" />
+      </article>
+      <numero_unitats>1</numero_unitats>
+      <import_total>10000.00</import_total>
+    </linia>
+    <linia id="AE4" article_ref="B2">
+      <article id="B2">
+        <descripcio>Tablones de madera de roble 10 metros</descripcio>
+        <preus>
+          <amb_iva>100.00</amb_iva>
+          <sense_iva>90.00</sense_iva>
+        </preus>
+        <tipus_iva aplicat="10" />
+      </article>
+      <numero_unitats>1000</numero_unitats>
+      <import_total>10000.00</import_total>
+    </linia>
+  </linies>
+  <total>
+    <subtotal>
+      <iva10>10000.00</iva10>
+      <iva21>10000.00</iva21>
+    </subtotal>
+    <sense_iva>18500.00</sense_iva>
+    <amb_iva>20000.00</amb_iva>
+  </total>
+</factura>

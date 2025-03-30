@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empleats
+  xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+  xs:noNamespaceSchemaLocation="empleats.xsd">
+  <empleat id="E1" cap="E10">
+    <nom>Nikolay</nom>
+    <data_inici>
+      <dia>---15</dia>
+      <mes>--01</mes>
+      <any>2025</any>
+    </data_inici>
+    <lloc_ocupa>Ingeniero de datos Junior </lloc_ocupa>
+    <nomina>2000.40</nomina>
+    <tituls_academics>
+      <titul>Técnico Superior en Desarrollo de Aplicaciones Web</titul>
+    </tituls_academics>
+    <seu>Valencia</seu>
+    <observacions>
+      <merits>
+        <merit>Puntualidad</merit>
+        <merit>Actitud</merit>
+        <merit>Trabajador</merit>
+      </merits>
+      <demerits>
+        <demerit>Falta de compresión lectora ocasionales</demerit>
+      </demerits>
+    </observacions>
+  </empleat>
+  <empleat id="E2" cap="E10">
+    <nom>Joshua</nom>
+    <data_inici>
+      <dia>---15</dia>
+      <mes>--05</mes>
+      <any>2023</any>
+    </data_inici>
+    <lloc_ocupa>Ingeniero de datos Semi-Senior</lloc_ocupa>
+    <llocs_ocupats>
+      <lloc>Ingeniero de robotica industrial Senior</lloc>
+    </llocs_ocupats>
+    <nomina>9000.00</nomina>
+    <tituls_academics>
+      <titul>Técnico Superior en Robótica Industrial</titul>
+      <titul>Técnico Superior en Desarrollo de Aplicaciones Web</titul>
+    </tituls_academics>
+    <seu>Valencia</seu>
+    <observacions>
+      <merits>
+        <merit>Amplia experiencia en Robotica</merit>
+        <merit>Observador</merit>
+        <merit>Puntualidad</merit>
+        <merit>Trabajador</merit>
+      </merits>
+    </observacions>
+  </empleat>
+  <empleat id="E10">
+    <nom>Enrique</nom>
+    <data_inici>
+      <dia>---20</dia>
+      <mes>--02</mes>
+      <any>2019</any>
+    </data_inici>
+    <lloc_ocupa>Desarollador de Big Data Senior</lloc_ocupa>
+    <llocs_ocupats>
+      <lloc>Desarollador de Bases de Datos Senior</lloc>
+      <lloc>Desarollador de Big Data Semi-Senior</lloc>
+    </llocs_ocupats>
+    <nomina>20000.00</nomina>
+    <tituls_academics>
+      <titul>Graduado en Ingeniería de Tecnologías de Telecomunicación</titul>
+      <titul>Máster en Ingeniería de Telecomunicaciones</titul>
+    </tituls_academics>
+    <seu>Valencia</seu>
+    <observacions>
+      <merits>
+        <merit>Liderazgo</merit>
+        <merit>Enseñanza</merit>
+        <merit>Visión de Proyecto</merit>
+      </merits>
+      <demerits>
+        <demerit>Ocacionalmente fechas de entrega poco realistas a su equipo</demerit>
+      </demerits>
+    </observacions>
+  </empleat>
+  <empleat id="A10">
+    <nom>Irene</nom>
+    <data_inici>
+      <dia>---10</dia>
+      <mes>--03</mes>
+      <any>2019</any>
+    </data_inici>
+    <lloc_ocupa>Desarolladora de Software Senior</lloc_ocupa>
+    <llocs_ocupats>
+      <lloc>Desarolladora de Software Semi-Senior</lloc>
+    </llocs_ocupats>
+    <nomina>20000.00</nomina>
+    <tituls_academics>
+      <titul>Graduada en Ingeniería Informática</titul>
+      <titul>Máster en Desarrollo de Software</titul>
+    </tituls_academics>
+    <seu>Barcelona</seu>
+    <observacions>
+      <merits>
+        <merit>Exigencia</merit>
+        <merit>Buena formación al personal a cargo</merit>
+        <merit>Liderazgo</merit>
+      </merits>
+      <demerits>
+        <demerit>Ocaionalmente falta de directrices concretas en algunos proyectos</demerit>
+      </demerits>
+    </observacions>
+  </empleat>
+  <empleat id="A2" cap="A10">
+    <nom>Sam</nom>
+    <data_inici>
+      <dia>---03</dia>
+      <mes>--01</mes>
+      <any>2025</any>
+    </data_inici>
+    <lloc_ocupa>Desarollador de Software Junior</lloc_ocupa>
+    <nomina>2000.00</nomina>
+    <tituls_academics>
+      <titul>Técnico Superior en Desarrollo de Aplicaciones Web</titul>
+    </tituls_academics>
+    <seu>Barcelona</seu>
+    <observacions>
+      <merits>
+        <merit>Rapida compreción de nuevo conceptos</merit>
+        <merit>Agilidad en resolución de problemas</merit>
+      </merits>
+      <demerits>
+        <demerit>Ocasionalmente no deja explicar a sus superiores</demerit>
+        <demerit>Puntualidad</demerit>
+      </demerits>
+    </observacions>
+  </empleat>
+</empleats>

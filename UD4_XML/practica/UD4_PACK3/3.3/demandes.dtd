@@ -1,0 +1,12 @@
+ <!ELEMENT demanat (llibres|quaderns|llapisos)*>
+  <!ELEMENT llibres (llibre)+>
+  <!ELEMENT quaderns (quadern)+>
+  <!ELEMENT llapisos (llapis)+>
+
+  <!ELEMENT llibre EMPTY>
+  <!ELEMENT quadern (#PCDATA)>
+  <!ELEMENT llapis (numero)>
+  <!ELEMENT numero (#PCDATA)>
+
+  <!ATTLIST llibre titol CDATA #REQUIRED >
+  <!ATTLIST quadern num_fulles CDATA #IMPLIED >

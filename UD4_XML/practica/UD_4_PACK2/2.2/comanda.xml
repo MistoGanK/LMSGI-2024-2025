@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE comanda[
+  <!ELEMENT comanda (tractor)*>
+  <!ELEMENT tractor (component)*>
+  <!ELEMENT component (data_entrega,pes,nombre_serie,kmaxmimx?)>
+
+  <!ELEMENT data_entrega (dia?,mes,any)>
+  <!ELEMENT dia (#PCDATA)>
+  <!ELEMENT mes (#PCDATA)>
+  <!ELEMENT any (#PCDATA)>
+  <!ELEMENT pes (#PCDATA)>
+  <!ELEMENT nombre_serie (#PCDATA)>
+  <!ELEMENT kmaxims (#PCDATA)>
+
+  <!ATTLIST pes unitat (quilos|grams) #REQUIRED>
+
+  <!ATTLIST component nom_fabricant CDATA #REQUIRED>
+  <!ATTLIST component fragil (si|no) #REQUIRED>
+]> -->
+<!DOCTYPE comanda SYSTEM "comanda.dtd">
+<comanda>
+  <tractor>
+    <component nom_fabricant="lozano SA" fragil="si">
+      <data_entrega>
+        <dia>02</dia>
+        <mes>05</mes>
+        <any>2025</any>
+      </data_entrega>
+      <pes unitat="quilos">400</pes>
+      <nombre_serie>044</nombre_serie>
+    </component>
+  </tractor>
+  <tractor>
+    <component nom_fabricant="erchigas SA" fragil="no">
+      <data_entrega>
+        <mes>05</mes>
+        <any>2025</any>
+      </data_entrega>
+      <pes unitat="grams">400</pes>
+      <nombre_serie>001</nombre_serie>
+    </component>
+  </tractor>
+</comanda>

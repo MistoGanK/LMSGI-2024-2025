@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE operacions [
+  <!ELEMENT operacions (futur,divisa,bon,lletra)+>
+  <!ELEMENT futur (valor_esperat,mercat?) >
+    <!ELEMENT valor_esperat (#PCDATA)>
+    <!ELEMENT mercat EMPTY>
+      <!ATTLIST mercat pais (Espanya|EUA|Alemanya|Japo) #REQUIRED>
+    
+    <!ELEMENT bon (pais_procedencia,valor_desitjat,valor_minim,valor_maxim)>
+      <!ELEMENT pais_procedencia (#PCDATA)>
+      <!ELEMENT valor_desitjat (#PCDATA)>
+      <!ELEMENT valor_minim (#PCDATA)>
+      <!ELEMENT valor_maxim (#PCDATA)>
+    
+    <!ELEMENT divisa (nom,canvi+)>
+      <!ELEMENT nom (#PCDATA)>
+      <!ELEMENT canvi (#PCDATA)>
+
+    <!ELEMENT lletra (interes_plegable,pais_emisor)>
+      <!ELEMENT interes_plegable (#PCDATA)>
+      <!ELEMENT pais_emisor EMPTY >
+        <!ATTLIST pais_emisor pais (Espanya|EUA|Alemanya|Japo) #REQUIRED>
+
+  <!ATTLIST futur preu CDATA #REQUIRED >
+  <!ATTLIST divisa preu CDATA #REQUIRED >
+  <!ATTLIST bon preu CDATA #REQUIRED >
+  <!ATTLIST lletra preu CDATA #REQUIRED >
+
+  <!ATTLIST futur procedencia (Madrid|Nova_york|Frankfurt|Toquio) #REQUIRED>
+  <!ATTLIST divisa procedencia (Madrid|Nova_york|Frankfurt|Toquio) #REQUIRED>
+  <!ATTLIST bon procedencia (Madrid|Nova_york|Frankfurt|Toquio) #REQUIRED>
+  <!ATTLIST lletra procedencia (Madrid|Nova_york|Frankfurt|Toquio) #REQUIRED>
+
+  <!ATTLIST divisa estable (si|no) #IMPLIED >
+  <!ATTLIST bon estable (si|no) #IMPLIED >
+]> -->
+<!DOCTYPE operacions SYSTEM "operacions.dtd">
+<operacions>
+  <futur preu="100" procedencia="Madrid">
+    <valor_esperat>200</valor_esperat>
+    <mercat pais="Espanya" />
+  </futur>
+  <divisa preu="100" procedencia="Madrid" estable="no">
+    <nom>EUR</nom>
+    <canvi>USD</canvi>
+  </divisa>
+  <bon preu="300" procedencia="Nova_york" estable="si">
+    <pais_procedencia>EUA</pais_procedencia>
+    <valor_desitjat>400</valor_desitjat>
+    <valor_minim>450</valor_minim>
+    <valor_maxim>490</valor_maxim>
+  </bon>
+  <lletra preu="200" procedencia="Toquio">
+    <interes_plegable>0.2</interes_plegable>
+    <pais_emisor pais="Japo" />
+  </lletra>
+  <futur preu="200" procedencia="Frankfurt">
+    <valor_esperat>300</valor_esperat>
+    <mercat pais="Alemanya" />
+  </futur>
+  <divisa preu="200" procedencia="Toquio">
+    <nom>JPY</nom>
+    <canvi>USD</canvi>
+    <canvi>EUR</canvi>
+  </divisa>
+  <bon preu="100" procedencia="Nova_york" estable="si">
+    <pais_procedencia>Japo</pais_procedencia>
+    <valor_desitjat>200</valor_desitjat>
+    <valor_minim>180</valor_minim>
+    <valor_maxim>300</valor_maxim>
+  </bon>
+  <lletra preu="300" procedencia="Madrid">
+    <interes_plegable>1.2</interes_plegable>
+    <pais_emisor pais="Espanya" />
+  </lletra>
+  </operacions>

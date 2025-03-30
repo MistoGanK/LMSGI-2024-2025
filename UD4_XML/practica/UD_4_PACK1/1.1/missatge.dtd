@@ -1,0 +1,8 @@
+<!ELEMENT missatge (remitent,destinatari,assumpte,text)>
+<!ELEMENT remitent (nom,email)>
+<!ELEMENT destinatari (nom,email)>
+<!ELEMENT assumpte (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT text (paragraf)*>
+<!ELEMENT paragraf (#PCDATA)>

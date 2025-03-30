@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE entrega [
+  <!ELEMENT entrega (lote)+>
+  <!ELEMENT lote (palet)+>
+  <!ELEMENT palet (nombre_caixes,contingut,pes,forma_manipulacion)>
+  <!ELEMENT contingut (nom_component,procedencia,numero_serie,pes)>
+  <!ELEMENT procedencia (pais)*>
+
+  <!ELEMENT nombre_caixes (#PCDATA)>
+  <!ELEMENT pes (#PCDATA)>
+  <!ELEMENT forma_manipulacion (#PCDATA)>
+  
+  <!ELEMENT nom_component (#PCDATA)>
+  <!ELEMENT numero_serie (#PCDATA)>
+  <!ELEMENT pais (#PCDATA)>
+
+  <!ATTLIST pes unitat CDATA #IMPLIED>
+]> -->
+<!DOCTYPE entrega SYSTEM "entrega.dtd">
+<entrega>
+  <lote>
+    <palet>
+      <nombre_caixes>10</nombre_caixes>
+      <contingut>
+        <nom_component>GPU NVIDIA RTX 4070 TI SUPER</nom_component>
+        <procedencia>
+          <pais>China</pais>
+          <pais>USA</pais>
+          <pais>Taiwan</pais>
+          <pais>Japo</pais>
+        </procedencia>
+        <numero_serie>0045</numero_serie>
+        <pes unitat="quilograms">20</pes>
+      </contingut>
+      <pes>20000</pes>
+      <forma_manipulacion>Contenido Fragil, seguir reglamento de manipulación de mercancia fragil vigente</forma_manipulacion>
+    </palet>
+  </lote>
+  <lote>
+    <palet>
+      <nombre_caixes>20</nombre_caixes>
+      <contingut>
+        <nom_component>CPU intel core ultra 7</nom_component>
+        <procedencia>
+          <pais>USA</pais>
+        </procedencia>
+        <numero_serie>0415</numero_serie>
+        <pes unitat="grams">2004</pes>
+      </contingut>
+      <pes>20004</pes>
+      <forma_manipulacion>Contenido Fragil, seguir reglamento de manipulación de mercancia fragil vigente</forma_manipulacion>
+    </palet>
+    <palet>
+      <nombre_caixes>1000</nombre_caixes>
+      <contingut>
+        <nom_component>Tornillos philips 0.2cm</nom_component>
+        <procedencia></procedencia>
+        <numero_serie>1015</numero_serie>
+        <pes>1000</pes>
+      </contingut>
+      <pes>1000</pes>
+      <forma_manipulacion>Contenido no fragil, seguir reglamento de manipulación de mercancia estandar</forma_manipulacion>
+    </palet>
+  </lote>
+</entrega>

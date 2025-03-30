@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE missatge[
+  <!ELEMENT missatge (remitent,destinatari,assumpte,text)>
+  <!ELEMENT remitent (nom,email)>
+  <!ELEMENT destinatari (nom,email)>
+  <!ELEMENT assumpte (#PCDATA)>
+  <!ELEMENT nom (#PCDATA)>
+  <!ELEMENT email (#PCDATA)>
+  <!ELEMENT text (paragraf)*>
+  <!ELEMENT paragraf (#PCDATA)>
+]> -->
+<!DOCTYPE missatge SYSTEM "missatge.dtd"> 
+<missatge>
+  <remitent>
+    <nom>Nikolay</nom>
+    <email>niko@gmail.com</email>
+  </remitent>
+  <destinatari>
+    <nom>Maria</nom>
+    <email>maria@gmail.com</email>
+  </destinatari>
+  <assumpte>Me debes dinero</assumpte>
+  <text>
+    <paragraf>TU</paragraf>
+    <paragraf>EL DINERO DEL KEEEBAAAB</paragraf>
+  </text>
+</missatge>

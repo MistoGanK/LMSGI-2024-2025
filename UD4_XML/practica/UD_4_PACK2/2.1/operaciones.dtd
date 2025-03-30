@@ -1,0 +1,18 @@
+  <!ELEMENT operaciones (operacion)*>
+  <!ELEMENT operacion (venta|compra)*>
+  <!ELEMENT venta (titulo*,cantidad,librado?,importe)>
+  <!ELEMENT compra ( titulo*,nombre_provedor,data_compra)>
+
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT cantidad (#PCDATA)>
+  <!ELEMENT librado (#PCDATA)>
+  <!ELEMENT importe (#PCDATA)>
+
+  <!ATTLIST importe moneda CDATA #REQUIRED>
+  
+  <!ELEMENT nombre_provedor (#PCDATA)>
+  <!ELEMENT data_compra (dia,mes,año)>
+
+  <!ELEMENT dia (#PCDATA)>
+  <!ELEMENT mes (#PCDATA)>
+  <!ELEMENT año (#PCDATA)>

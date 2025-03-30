@@ -1,0 +1,10 @@
+<!ELEMENT carta (plato)*>
+  <!ELEMENT plato (nombre,precio,descripcion,calorias)>
+  
+  <!--Declaración de los elementos-->
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT precio (#PCDATA)>
+  <!ELEMENT descripcion (#PCDATA)>
+  <!ELEMENT calorias (#PCDATA)>
+
+  <!ATTLIST precio moneda CDATA #REQUIRED>

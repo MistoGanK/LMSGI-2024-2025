@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UFT-8"?>
+<!-- <!DOCTYPE factura [
+  <!ELEMENT factura (caçalera,linies,total)>
+  <!ELEMENT caçalera (data,client,proveidor)>
+    <!ELEMENT data (dia,mes,any)>
+      <!ELEMENT dia (#PCDATA)>
+      <!ELEMENT mes (#PCDATA)>
+      <!ELEMENT any (#PCDATA)>
+    <!ELEMENT client EMPTY>
+      <!ATTLIST client nom_fiscal CDATA #REQUIRED>
+      <!ATTLIST client nom_comercial CDATA #IMPLIED>
+      <!ATTLIST client nif CDATA #REQUIRED>
+    <!ELEMENT proveidor EMPTY>
+      <!ATTLIST proveidor nom_fiscal CDATA #REQUIRED>
+      <!ATTLIST proveidor nom_comercial CDATA #REQUIRED>
+      <!ATTLIST proveidor nif CDATA #REQUIRED>
+  <!ATTLIST caçalera id ID #REQUIRED >
+
+  <!ELEMENT linies (linia)+>
+    <!ELEMENT linia (article,numero_unitats,import_total)>
+      <!ELEMENT article (descripcio,preus,tipus_iva)>
+        <!ELEMENT descripcio (#PCDATA)>
+        <!ELEMENT preus (amb_iva,sense_iva)>
+          <!ELEMENT amb_iva (#PCDATA)>
+          <!ELEMENT sense_iva (#PCDATA)>
+          <!ELEMENT tipus_iva EMPTY>
+            <!ATTLIST tipus_iva aplicat (4|10|21) #REQUIRED >
+      <!ATTLIST article id ID #REQUIRED >
+    <!ELEMENT numero_unitats (#PCDATA) >
+    <!ELEMENT import_total (#PCDATA) >
+  <!ATTLIST linia id ID #REQUIRED>
+  <!ATTLIST linia article_ref IDREF #REQUIRED>
+
+  <!ELEMENT total (subtotal,sense_iva,amb_iva)>
+    <!ELEMENT subtotal (iva4,iva10,iva21)>
+      <!ELEMENT iva4 (#PCDATA)>
+      <!ELEMENT iva10 (#PCDATA)>
+      <!ELEMENT iva21 (#PCDATA)>
+]> -->
+<!DOCTYPE factura SYSTEM "factura.dtd">
+<factura>
+  <caçalera id="A1">
+    <data>
+      <dia>01</dia>
+      <mes>01</mes>
+      <any>2025</any>
+    </data>
+    <client nom_fiscal="Lozano SA" nom_comercial="Lozanos y Hermanos" nif="E01512512" />
+    <proveidor nom_fiscal="Erchiga SA" nom_comercial="Erchiga" nif="A9215121" />
+  </caçalera>
+  <linies>
+    <linia id="AE3" article_ref="B1">
+      <article id="B1">
+        <descripcio>Armario Empotrado de Roble</descripcio>
+        <preus>
+          <amb_iva>10000</amb_iva>
+          <sense_iva>8000</sense_iva>
+        </preus>
+        <tipus_iva aplicat="21" />
+      </article>
+      <numero_unitats>1</numero_unitats>
+      <import_total>10000</import_total>
+    </linia>
+    <linia id="AE4" article_ref="B2">
+      <article id="B2">
+        <descripcio>Tablones de madera de roble 10 metros</descripcio>
+        <preus>
+          <amb_iva>100</amb_iva>
+          <sense_iva>90</sense_iva>
+        </preus>
+        <tipus_iva aplicat="10" />
+      </article>
+      <numero_unitats>1000</numero_unitats>
+      <import_total>10000</import_total>
+    </linia>
+  </linies>
+  <total>
+    <subtotal>
+      <iva4></iva4>
+      <iva10>10000</iva10>
+      <iva21>10000</iva21>
+    </subtotal>
+    <sense_iva>18500</sense_iva>
+    <amb_iva>20000</amb_iva>
+  </total>
+</factura>

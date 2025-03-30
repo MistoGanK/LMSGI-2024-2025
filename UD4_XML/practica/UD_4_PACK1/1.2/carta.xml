@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE carta[
+  <!ELEMENT carta (plato)*>
+  <!ELEMENT plato (nombre,precio,descripcion,calorias)>
+  
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT precio (#PCDATA)>
+  <!ELEMENT descripcion (#PCDATA)>
+  <!ELEMENT calorias (#PCDATA)>
+
+  <!ATTLIST precio moneda CDATA #REQUIRED>
+]> -->
+<!DOCTYPE carta SYSTEM "carta.dtd">
+<carta>
+  <plato>
+    <nombre>Vegetal de pollo</nombre>
+    <precio moneda="€">6.95</precio>
+    <descripcion>Un puto vegetal de pollo que esperas leer</descripcion>
+    <calorias>0 mi rey</calorias>
+  </plato>
+  <plato>
+    <nombre>Vegetal de atún</nombre>
+    <precio moneda="€">5.95</precio>
+    <descripcion>Enserio tio?</descripcion>
+    <calorias>-10</calorias>
+  </plato>
+
+</carta>

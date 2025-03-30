@@ -1,0 +1,15 @@
+<!ELEMENT entrega (lote)+>
+  <!ELEMENT lote (palet)+>
+  <!ELEMENT palet (nombre_caixes,contingut,pes,forma_manipulacion)>
+  <!ELEMENT contingut (nom_component,procedencia,numero_serie,pes)>
+  <!ELEMENT procedencia (pais)*>
+
+  <!ELEMENT nombre_caixes (#PCDATA)>
+  <!ELEMENT pes (#PCDATA)>
+  <!ELEMENT forma_manipulacion (#PCDATA)>
+  
+  <!ELEMENT nom_component (#PCDATA)>
+  <!ELEMENT numero_serie (#PCDATA)>
+  <!ELEMENT pais (#PCDATA)>
+
+  <!ATTLIST pes unitat CDATA #IMPLIED>

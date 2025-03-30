@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE ofertas [
+  <!ELEMENT ofertas (cd)*>
+  <!ELEMENT cd (nombre,artista,pais,c_d,a_p)>
+  
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT artista (#PCDATA)>
+  <!ELEMENT pais (#PCDATA)>
+  <!ELEMENT c_d (#PCDATA)>
+  <!ELEMENT a_p (#PCDATA)>
+]> -->
+<!DOCTYPE ofertas SYSTEM "ofertas.dtd">
+<ofertas>
+  <cd>
+    <nombre>Pokemon</nombre>
+    <artista>Gigante</artista>
+    <pais>Japón</pais>
+    <c_d>Nintendo</c_d>
+    <a_p>1990</a_p>
+    <test prueba="0"/>
+  </cd>
+
+  <cd>
+    <nombre>Mi palo</nombre>
+    <artista>Nikolay</artista>
+    <pais>Bulgaria</pais>
+    <c_d>Nikolay</c_d>
+    <a_p>2000</a_p>
+  </cd>
+
+</ofertas>

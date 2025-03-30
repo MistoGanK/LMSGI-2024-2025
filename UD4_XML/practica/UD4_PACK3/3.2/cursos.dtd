@@ -1,0 +1,15 @@
+<!-- <!DOCTYPE llistacursos [
+  <!ELEMENT llistacursos (curs)+>
+  <!ELEMENT curs (alumne)+>
+  <!ELEMENT alumne (dni,nom,cognom,segon_cognom?,llista_assignatures)>
+  <!ELEMENT llista_assignatures (assignatura)+>
+  <!ELEMENT assignatura (nom,profesor)>
+  <!ELEMENT profesor (nrp,nom,cognom,segon_cognom?)>
+
+  <!ELEMENT dni (#PCDATA)>
+  <!ELEMENT nom (#PCDATA)>
+  <!ELEMENT cognom (#PCDATA)>
+  <!ELEMENT segon_cognom (#PCDATA)>
+  <!ELEMENT nrp (#PCDATA)>
+
+  <!ATTLIST assignatura codi ID #REQUIRED >

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="factura">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="caçalera">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="data">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="dia" type="xs:gDay" />
+                    <xs:element name="mes" type="xs:gMonth" />
+                    <xs:element name="any" type="xs:gYear" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="client" type="client_proveidor" />
+              <xs:element name="proveidor" type="client_proveidor" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:ID" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="linies">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="linia" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="article">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="descripcio" type="xs:string" />
+                          <xs:element name="preus">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="amb_iva" type="preu" />
+                                <xs:element name="sense_iva" type="preu" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="tipus_iva">
+                            <xs:complexType>
+                              <xs:attribute name="aplicat">
+                                <xs:simpleType>
+                                  <xs:restriction base="xs:int">
+                                    <xs:enumeration value="4" />
+                                    <xs:enumeration value="10" />
+                                    <xs:enumeration value="21" />
+                                  </xs:restriction>
+                                </xs:simpleType>
+                              </xs:attribute>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:ID" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="numero_unitats" type="xs:positiveInteger"/>
+                    <xs:element name="import_total" type="preu"/>
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:ID" use="required" />
+                  <xs:attribute name="article_ref" type="xs:IDREF" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="total">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="subtotal">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="iva4" type="preu" minOccurs="0"/>
+                    <xs:element name="iva10" type="preu"/>
+                    <xs:element name="iva21" type="preu"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="sense_iva" type="preu"/>
+              <xs:element name="amb_iva" type="preu"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!--Tipus
+  global client y proveidor-->
+  <xs:complexType name="client_proveidor">
+    <xs:attribute name="nom_fiscal" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string" />
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="nom_comercial" use="optional">
+      <xs:simpleType>
+        <xs:restriction base="xs:string" />
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="nif" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string" />
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <!--Tipus
+  global preus-->
+  <xs:simpleType name="preu">
+    <xs:restriction base="xs:decimal">
+      <xs:pattern value="\d{1,10}\.\d{2}" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

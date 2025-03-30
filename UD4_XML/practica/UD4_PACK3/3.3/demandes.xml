@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE demandes [
+  <!ELEMENT demanat (llibres|quaderns|llapis)*>
+  <!ELEMENT llibres (llibre)+>
+  <!ELEMENT quaderns (quadern)+>
+  <!ELEMENT llapisos (llapis)+>
+
+  <!ELEMENT llibre EMPTY>
+  <!ELEMENT quadern (#PCDATA)>
+  <!ELEMENT llapis (numero)>
+  <!ELEMENT numero (#PCDATA)>
+
+  <!ATTLIST llibre titol CDATA #REQUIRED >
+  <!ATTLIST quadern num_fulles CDATA #IMPLIED >
+]> -->
+<!DOCTYPE demanat SYSTEM "demandes.dtd">
+<demanat>
+  <llibres>
+    <llibre titol="Harry Potter y la piedra filosofal" />
+    <llibre titol="El señor de los anillos: La comunidad del anillo" />
+  </llibres>
+  <llapisos>
+    <llapis>
+      <numero>12</numero>
+    </llapis>
+    <llapis>
+      <numero>10</numero>
+    </llapis>
+  </llapisos>
+  <quaderns>
+    <quadern num_fulles="130">OxFord Red Basic</quadern>
+    <quadern num_fulles="200">OxFord Blue Mathematics</quadern>
+    <quadern>Oxford Green Basic</quadern>
+  </quaderns>
+  <quaderns>
+    <quadern num_fulles="100">Generics Blue</quadern>
+  </quaderns>
+  <llapisos>
+    <llapis>
+      <numero>8</numero>
+    </llapis>
+  </llapisos>
+</demanat>

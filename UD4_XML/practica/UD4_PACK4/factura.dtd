@@ -1,0 +1,36 @@
+<!ELEMENT factura (caçalera,linies,total)>
+  <!ELEMENT caçalera (data,client,proveidor)>
+    <!ELEMENT data (dia,mes,any)>
+      <!ELEMENT dia (#PCDATA)>
+      <!ELEMENT mes (#PCDATA)>
+      <!ELEMENT any (#PCDATA)>
+    <!ELEMENT client EMPTY>
+      <!ATTLIST client nom_fiscal CDATA #REQUIRED>
+      <!ATTLIST client nom_comercial CDATA #IMPLIED>
+      <!ATTLIST client nif CDATA #REQUIRED>
+    <!ELEMENT proveidor EMPTY>
+      <!ATTLIST proveidor nom_fiscal CDATA #REQUIRED>
+      <!ATTLIST proveidor nom_comercial CDATA #REQUIRED>
+      <!ATTLIST proveidor nif CDATA #REQUIRED>
+  <!ATTLIST caçalera id ID #REQUIRED >
+
+  <!ELEMENT linies (linia)+>
+    <!ELEMENT linia (article,numero_unitats,import_total)>
+      <!ELEMENT article (descripcio,preus,tipus_iva)>
+        <!ELEMENT descripcio (#PCDATA)>
+        <!ELEMENT preus (amb_iva,sense_iva)>
+          <!ELEMENT amb_iva (#PCDATA)>
+          <!ELEMENT sense_iva (#PCDATA)>
+          <!ELEMENT tipus_iva EMPTY>
+            <!ATTLIST tipus_iva aplicat (4|10|21) #REQUIRED >
+      <!ATTLIST article id ID #REQUIRED >
+    <!ELEMENT numero_unitats (#PCDATA) >
+    <!ELEMENT import_total (#PCDATA) >
+  <!ATTLIST linia id ID #REQUIRED>
+  <!ATTLIST linia article_ref IDREF #REQUIRED>
+
+  <!ELEMENT total (subtotal,sense_iva,amb_iva)>
+    <!ELEMENT subtotal (iva4,iva10,iva21)>
+      <!ELEMENT iva4 (#PCDATA)>
+      <!ELEMENT iva10 (#PCDATA)>
+      <!ELEMENT iva21 (#PCDATA)>

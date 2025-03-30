@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subasta
+  xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+  xs:noNamespaceSchemaLocation="subasta.xsd">
+  <objecte>
+    <propietari>Nikolay</propietari>
+    <preu_sortida>10000.00</preu_sortida>
+    <preu_minim>9000.00</preu_minim>
+  </objecte>
+  
+  <objecte>
+    <propietari>Joshua</propietari>
+    <preu_sortida>10000.00</preu_sortida>
+    <preu_minim>20000.00</preu_minim>
+  </objecte>
+</subasta>

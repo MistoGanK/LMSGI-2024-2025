@@ -1,0 +1,11 @@
+<!ELEMENT ofertas (cd)*>
+  <!ELEMENT cd (nombre,artista,pais,c_d,a_p,test?)>
+  
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT artista (#PCDATA)>
+  <!ELEMENT pais (#PCDATA)>
+  <!ELEMENT c_d (#PCDATA)>
+  <!ELEMENT a_p (#PCDATA)>
+  <!ELEMENT test EMPTY>
+
+  <!ATTLIST test prueba CDATA #IMPLIED>

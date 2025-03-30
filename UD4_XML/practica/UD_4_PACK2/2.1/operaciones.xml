@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE operaciones [
+  <!ELEMENT operaciones (operacion)*>
+  <!ELEMENT operacion (venta|compra)*>
+  <!ELEMENT venta (titulo*,cantidad,librado?,importe)>
+  <!ELEMENT compra ( titulo,nombre_provedor,data_compra)>
+
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT cantidad (#PCDATA)>
+  <!ELEMENT librado (#PCDATA)>
+  <!ELEMENT importe (#PCDATA)>
+
+  <!ATTLIST importe moneda CDATA #REQUIRED>
+  
+  <!ELEMENT nombre_provedor (#PCDATA)>
+  <!ELEMENT data_compra (#PCDATA)>
+]> -->
+<!DOCTYPE operaciones SYSTEM "operaciones.dtd">
+<operaciones>
+  <operacion>
+    <venta>
+      <titulo>El señor de los anillos: La comunidad del anillo</titulo>
+      <cantidad>10</cantidad>
+      <librado>No</librado>
+      <importe moneda="€">250</importe>      
+    </venta>
+    <compra>
+      <titulo>Harry Potter y la piedra filosofal</titulo>
+      <nombre_provedor>Pinguin Random House</nombre_provedor>
+      <data_compra>
+        <dia>20</dia>
+        <mes>05</mes>
+        <año>2025</año>
+      </data_compra>
+    </compra>
+  </operacion>
+  <operacion>
+    <venta>
+      <titulo>El señor de los anillos: Las dos torres</titulo>
+      <titulo>El señor de los anillos: EL retorno del rey </titulo>
+      <cantidad>20</cantidad>
+      <importe moneda="€">500</importe>      
+    </venta>
+    <compra>
+     <titulo>El señor de los anillos: El retorno del rey</titulo>
+     <titulo>El señor de los anillos: Las dos Torres</titulo>
+     <titulo>Harry Potter y la piedra filosofal</titulo>
+      <nombre_provedor>Pinguin Random House</nombre_provedor>
+      <data_compra>
+        <dia>20</dia>
+        <mes>06</mes>
+        <año>2025</año>
+      </data_compra>
+    </compra>
+  </operacion>
+</operaciones>
