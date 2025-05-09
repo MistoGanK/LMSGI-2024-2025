@@ -113,6 +113,7 @@ for in: Recorre indices string, enfocado mas a objetos
 for of: Recorre indices de array, enfocado a arrays
 
 */
+// También con .filter
 
 function parNizador(arr){
   let var_n = [];
