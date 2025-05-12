@@ -5,6 +5,19 @@
   --var-color-blue:#7dbaff;
   --var-color-blue-light:#95bae7;
 }
+/* Animación de "fade" del pop up */
+@keyframes fadeOut{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+.fade_out {
+  animation: fadeOut 0.5s forwards;
+}
 
 *{
   padding: 0;
@@ -36,7 +49,7 @@ article{
 header{
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 15px;
   height: 50px;
   background-color: var(--var-color-black);
   color:var(--var-color-blue);
@@ -49,23 +62,29 @@ section{
   align-items: center;
 }
 
-body{
- background-color: var(--var-color-black-light);
-}
-
 article{
+  display: none;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   height: 30%;
   width: 40%;
-  /* Estilos pop up */
   background-color: var(--var-color-white);
   border-radius: 20px;
 }
 
 article > *{
   height: 33%;
+}
+
+article div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article div:nth-child(3){
+    gap: 5px;
 }
 
 article div:nth-child(1){
@@ -102,7 +121,7 @@ button:hover{
 .black_light_background{
     background-color: var(--var-color-black-light);
 } 
-.white_backgroud{
+.white_background{
   background-color:var(--var-color-white);
 }
 
