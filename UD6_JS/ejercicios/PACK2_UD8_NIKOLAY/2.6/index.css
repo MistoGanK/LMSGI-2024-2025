@@ -1,0 +1,143 @@
+:root{
+  --var-green: #7eefbb;
+  --var-light-green:#98f2c8;
+  --var-dark-green:#5deba9;
+  --var-blue:#060918f5;
+  --var-black::#040712;
+  --var-light-blue: #070d21ea;
+  --var-dark-blue:#090e25;
+  --var-dark-red:#67121c;
+}
+
+@keyframes chng_btn_color{
+  from{
+    color: var(--var-dark-green);
+    background-color: var(--var-blue);
+  }
+  to{
+    background-color: var(--var-dark-green);
+    color: var(--var-blue);
+  }
+}
+@keyframes chng_btn_delete_color{
+  from{
+    color: var(--var-dark-green);
+    background-color: var(--var-blue);
+  }
+  to{
+    background-color:var(--var-dark-red);
+  }
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100vH;
+  font-family: monospace;
+  background-color: var(--var-blue);
+}
+
+header,
+main,
+section{
+  width: 100%;
+  display: flex;
+}
+
+header{
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size:1.8em;
+  color:var(--var-light-blue);
+  background-color: var(--var-light-green);
+  border-radius: 0px 0px 10px 10px;
+}
+
+main{
+  height: 100%;
+  width: 80%;
+  padding: 20px;
+  gap: 10px;
+  background-color: var(--var-light-green);
+  border-radius: 20px;
+}
+
+section{
+  gap: 5px;
+  background-color: var(--var-light-blue);
+  border-radius: 20px;
+  padding: 15px;
+  justify-content: center;
+}
+
+section ul{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  gap: 13px;
+  padding: 15px;
+  color: var(--var-dark-green);
+  font-size: 1.5em;
+}
+
+section ul li{
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  gap: 10px;
+}
+
+section ul li button{
+  display: flex;
+  padding: 10px;
+  font-size: 0.9em;
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+
+section ul li button:hover{
+  animation: chng_btn_delete_color 0.5s forwards;
+}
+
+section ul li p:hover{
+  cursor: pointer;
+  color: var(--var-light-green);
+}
+
+section input,
+section button,
+section select,
+section select option,
+section label{
+  height: fit-content;
+  padding: 15px;
+  border: none;
+  border-radius: 7px;
+  color: var(--var-dark-green);
+  background-color: var(--var-blue);
+  font-family: monospace;
+  font-size: 1.2em;
+  font-weight: 550;
+}
+
+section button:hover,
+section button:hover,
+section select:hover,
+section select option:hover,
+section label:hover{
+  animation: chng_btn_color 0.5s forwards;
+  cursor: pointer;
+}
+
+

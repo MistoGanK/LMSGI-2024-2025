@@ -1,0 +1,1 @@
+// Investigar el target dentro de <li>, con if comprovar si <li> tiene clase o no 

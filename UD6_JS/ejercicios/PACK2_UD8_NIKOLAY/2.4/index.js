@@ -20,7 +20,7 @@ section_id.append("Hola!") // Añade texto puro al final del Elemento
 // f) Afegeix la classe “main” al div amb una classe “footer”.
 let div_footer = document.querySelector('.footer');
 div_footer.classList.add('main'); // No se modificar directamente con getElementsByClassName porque devuelve un NodeList y se ha de iterar en los elementos
-console.log(div_footer); // Debug
+console.log(div_footer); // Debug // Se puede usar de igual manera .toggle
 
 // g) Treu la classe “main” del div amb una class “footer”.
 div_footer.classList.remove('main') // Las clases se gestionan con classList 
@@ -44,5 +44,19 @@ list_organizada.forEach((li,indice)=>{ // li es el nodo <li> y indice la posici�
   li.style.backgroundColor = '#9ac244';
 });
 
+// DIFERENTES ITERACIONES
+
+let child = div_footer.firstChild;
+while(child){
+  const nextSibling = child.nextSibling; 
+
+}
+
 // l) Elimina el div amb una classe “footer”.
 div_footer.remove();
+
+// Usando class name
+section_id.className = 'main'  // dentro podemos añadadir con espacios indifinidamente classes
+
+
+
