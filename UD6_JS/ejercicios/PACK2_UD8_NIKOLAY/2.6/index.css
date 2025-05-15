@@ -1,6 +1,7 @@
 :root{
   --var-green: #7eefbb;
   --var-light-green:#98f2c8;
+  --var-transparent-green:#98f2c8ad;
   --var-dark-green:#5deba9;
   --var-blue:#060918f5;
   --var-black::#040712;
@@ -74,6 +75,7 @@ main{
 
 section{
   gap: 5px;
+  width: 50%;
   background-color: var(--var-light-blue);
   border-radius: 20px;
   padding: 15px;
@@ -83,6 +85,7 @@ section{
 section ul{
   height: 100%;
   width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction:column;
   gap: 13px;
@@ -93,19 +96,25 @@ section ul{
 
 section ul li{
   display:flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content:center;
   gap: 10px;
+  max-width: 100%;
 }
 
 section ul li button{
   display: flex;
   padding: 10px;
   font-size: 0.9em;
-  justify-self: flex-end;
-  align-self: flex-end;
 }
-
+section ul li p{
+  flex:1 1 auto;
+  word-break:break-word;
+  width: 50%;
+  max-width: 100%;
+}
+/* Buttons from list */
 section ul li button:hover{
   animation: chng_btn_delete_color 0.5s forwards;
 }
@@ -139,5 +148,15 @@ section label:hover{
   animation: chng_btn_color 0.5s forwards;
   cursor: pointer;
 }
+/* @media(width < ) */
+/* JS Section */
+.completed_tasks_style{
+  text-decoration:line-through var(--var-dark-green) 1.5px;
+  color:var(--var-transparent-green);
+}
+.class_btn_del{
 
+}
+.class_p_del{
 
+}
