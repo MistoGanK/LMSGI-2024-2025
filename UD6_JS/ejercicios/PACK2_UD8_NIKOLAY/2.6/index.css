@@ -81,6 +81,10 @@ section{
   padding: 15px;
   justify-content: center;
 }
+section div{
+  display: flex;
+  width: 33%;
+}
 
 section ul{
   height: 100%;
@@ -130,6 +134,7 @@ section select,
 section select option,
 section label{
   height: fit-content;
+  width: fit-content;
   padding: 15px;
   border: none;
   border-radius: 7px;
@@ -149,14 +154,16 @@ section label:hover{
   cursor: pointer;
 }
 /* @media(width < ) */
+
 /* JS Section */
 .completed_tasks_style{
   text-decoration:line-through var(--var-dark-green) 1.5px;
   color:var(--var-transparent-green);
 }
-.class_btn_del{
 
+.show_container{
+  display: flex;
 }
-.class_p_del{
-
+.hide_container{
+  display:none;
 }
