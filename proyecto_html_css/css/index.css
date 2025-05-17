@@ -58,7 +58,9 @@
 html {
     scroll-behavior: smooth;
   }
-
+a:hover{
+    cursor: pointer;
+}
 /* Minima visibilidad estable del documento ancho 276px*/
 h1{
     font-family: "header";
@@ -445,6 +447,7 @@ footer a{
 footer a:hover{
     color: var(--vm);
     text-decoration: underline;
+    cursor: pointer;
 }
 /* --> Media Querys*/
 
