@@ -1,0 +1,23 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vH;
+  display: flex;
+  flex-direction: column;
+}
+div{
+  width: 50%;
+  height: 50%;
+}
+div:nth-child(1){
+  
+  background-color: azure;
+}
+div:nth-child(2){
+  width: 50%;
+  height: 50%;
+  background-color: grey;
+}

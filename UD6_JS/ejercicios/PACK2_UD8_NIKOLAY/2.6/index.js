@@ -21,7 +21,7 @@ input_task.addEventListener('input',()=>{
   function fnc_add_task(){
     input_string_value = input_task.value.trim(); // Coger el valor del input y eliminar espacios en blanco comienzo/final
     // Validamos que NO este vacio el input, caso contrario devolver y no hacer nada
-    if(input_string_value === '') return;
+    if(input_string_value === '') return; // Equivale a: !input_string_value (Sin contenido)
     // Crear elemento <li>
     let var_li = document.createElement('li'); // Crear elemento <li> en cada llamada
     // Crear elemento <button>
