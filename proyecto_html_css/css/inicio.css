@@ -3,6 +3,8 @@
   --vs:#5B9279;
   --vm:#8fcb9b;
   --ba:#F7F3F3;
+  --redPw:#ef8b8fd1;
+  --redStrongPW:#831e22;
   }
 /* --> Fonts*/
 @font-face{
@@ -68,6 +70,9 @@ body {
 
 .form_container {
   background: var(--vs);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 20px 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -75,15 +80,22 @@ body {
   max-width: 600px;
   margin: 100px auto;
 }
-
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
 h2 {
   text-align: center;
   margin-bottom: 20px;
   color: var(--ba);
 }
-
-.form_group {
+.form_group{
   margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .form_group p{
   color: var(--ba);
@@ -140,3 +152,31 @@ button:active {
  width: 40px;
 }
 
+a:hover{
+  cursor:pointer;
+}
+
+/* JS STYLE */
+
+.unvalidatedPassword,
+.unvalidatedPassword:focus{
+  background-color: var(--redPw);
+}
+.jsPassWordValidator{
+  display:none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border: var(--vm) solid 2px;
+  border-radius: 10px;
+  color: var(--redPw);
+}
+.jsPassWordValidator p{
+  color: var(--redStrongPW);
+  font-weight:600;
+}
+
+.showContainer{
+  display: flex;
+}
