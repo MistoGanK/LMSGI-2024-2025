@@ -1,18 +1,22 @@
 // Objetos con value link
+let var_host = location.hostname;
+console.log("host",var_host);
+
+let base_url = window.location.hostname === '127.0.0.1' ? "" : "/repo"
 
 const rutas = {
-  'link_index': '/index.html',
-  'link_subir_meme': '/views/subir_meme.html',
-  'link_inicio': '/views/inicio.html',
-  'link_ultimos': '/views/favoritos.html',
-  'link_trending': '/views/inicio.html',
-  'link_aleatorio': '/views/inicio.html',
-  'link_favoritos': '/views/favoritos.html',
-  'link_subidas': '/views/mis_subidas.html',
-  'link_ranking': '/views/ranking.html',
-  'link_post': '/views/post.html',
-  'link_twitter': 'https://twitter.com',
-  'link_instagram': 'https://instagram.com'
+  'link_index': base_url+'/index.html',
+  'link_subir_meme': base_url+'/views/subir_meme.html',
+  'link_inicio': base_url+'/views/inicio.html',
+  'link_ultimos': base_url+'/views/favoritos.html',
+  'link_trending': base_url+'/views/inicio.html',
+  'link_aleatorio': base_url+'/views/inicio.html',
+  'link_favoritos': base_url+'/views/favoritos.html',
+  'link_subidas': base_url+'/views/mis_subidas.html',
+  'link_ranking': base_url+'/views/ranking.html',
+  'link_post': base_url+'/views/post.html',
+  'link_registro': base_url+'/views/registro.html',
+  'link_recuperar_contr': base_url+'/views/recuperar_contr.html'
 };
 
 for (let clase in rutas){
