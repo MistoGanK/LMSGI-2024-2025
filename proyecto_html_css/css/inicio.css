@@ -5,6 +5,7 @@
   --ba:#F7F3F3;
   --redPw:#ef8b8fd1;
   --redStrongPW:#831e22;
+  --greenPw:#77cd5d;
   }
 /* --> Fonts*/
 @font-face{
@@ -63,9 +64,12 @@ html {
 
 body {
   background-color: var(--ba);
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding:20px;
-  height: fit-content;
+  height: 100vH;
 }
 
 .form_container {
@@ -78,7 +82,10 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 600px;
-  margin: 100px auto;
+}
+.volver{
+  align-self:flex-start;
+  justify-self:flex-start;
 }
 form{
   display: flex;
@@ -88,11 +95,10 @@ form{
 }
 h2 {
   text-align: center;
-  margin-bottom: 20px;
   color: var(--ba);
+  padding: 10px;
 }
 .form_group{
-  margin-bottom: 15px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -106,7 +112,7 @@ h2 {
 }
 label {
   display: block;
-  margin-bottom: 5px;
+  padding: 5px;
   font-size: 16px;
   color: var(--ba);
 }
@@ -166,8 +172,10 @@ a:hover{
   display:none;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 50%;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 10px;
+  width: 100%;
   border: var(--vm) solid 2px;
   border-radius: 10px;
   color: var(--redPw);
@@ -176,7 +184,29 @@ a:hover{
   color: var(--redStrongPW);
   font-weight:600;
 }
-
+.jsValidated{
+  color: var(--greenPw) !important;
+}
 .showContainer{
   display: flex;
+}
+.form_err_div,
+.form_err_div div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+}
+.form_err_div{
+  width: 100%;
+}
+.form_err_div div{
+  height: 30px;
+}
+.form_err_div img,
+.form_err_div p{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: var(--redStrongPW);
 }
