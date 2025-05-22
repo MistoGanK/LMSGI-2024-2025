@@ -12,7 +12,7 @@
   </div>
   <div class="form_container">
     <h2>Formulario de Registro</h2>
-    <form action="#" method="post">
+    <form action="#" method="post" id="register_form">
       <div class="form_group">
         <label for="usuario">Nombre:</label>
         <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu nombre" required>
@@ -26,14 +26,14 @@
         <input type="password" id="password" name="password" placeholder="Crea una contraseña" required>
       </div>
       <div class="jsPassWordValidator">
-        <p>iofaokfdj</p>
-        <p>iofaokfdj</p>
-        <p>iofaokfdj</p>
-        <p>iofaokfdj</p>
-        <p>iofaokfdj</p>
+        <p id="pMin">Minimum 4 characters</p>
+        <p id="pMax">Maximum 20 characters</p>
+        <p id="pUp">Atleast 1 Upper case character</p>
+        <p id="pLow">Atleas 1 Lower case character</p>
+        <p id="pSpe">Atleast 1 special character</p>
       </div>
       <div class="form_group">
-        <button type="submit">Registrarse</button>
+        <button type="submit" id="submit_button">Registrarse</button>
       </div>
       <div class="form_group">
         <div>
