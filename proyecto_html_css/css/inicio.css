@@ -5,6 +5,7 @@
   --ba:#F7F3F3;
   --redPw:#ef8b8fd1;
   --redStrongPW:#831e22;
+  --yellowPw:#f2d96c;
   --greenPw:#77cd5d;
   }
 /* --> Fonts*/
@@ -47,6 +48,51 @@
 @font-face{
   font-family:"body_thin";
   src: url(../fonts/body/MADECarvingSoftPERSONALUSE-Thin.otf);
+}
+/* Animation For bar password progress bar */
+@keyframes prgVeryWeak{
+  from {
+
+  }to{
+    background-color: var(--redStrongPW);
+    width: 21%;
+  }
+}
+@keyframes prgWeak{
+  from {
+    background-color: var(--redStrongPW);
+    width: 21%;
+  }to{
+    background-color: var(--redPw);
+    width: 40%;
+  }
+}
+@keyframes prgNormal{
+  from{
+    background-color: var(--redPw);
+    width: 40%;
+  }to{
+    background-color: var(--yellowPw);
+    width: 60%;
+  }
+}
+@keyframes prgStrong{
+  from{
+    background-color: var(--yellowPw);
+    width: 60%;
+  }to{
+    background-color: var(--vm);
+    width: 80%;
+  }
+}
+@keyframes pgrVeryStrong {
+  from{
+    background-color: var(--vm);
+    width: 80%;
+  }to{
+    background-color: var(--greenPw);
+    width: 100%;
+  }
 }
 *{
   margin: 0;
@@ -102,6 +148,7 @@ h2 {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .form_group p{
   color: var(--ba);
@@ -109,6 +156,12 @@ h2 {
 }
 .form_group p:hover{
   color: var(--nvo);
+}
+.form_group button[id="submit_button"]{
+  width: 50%;
+  align-self: center;
+  margin-top: 15px;
+  font-size: 1.1em;
 }
 label {
   display: block;
@@ -168,6 +221,9 @@ a:hover{
 .unvalidatedPassword:focus{
   background-color: var(--redPw);
 }
+.validInput{
+  background-color: var(--greenPw);
+}
 .jsPassWordValidator{
   display:none;
   flex-direction: column;
@@ -184,23 +240,14 @@ a:hover{
   color: var(--redStrongPW);
   font-weight:600;
 }
-.jsValidated{
-  color: var(--greenPw) !important;
-}
-.showContainer{
-  display: flex;
-}
-.form_err_div,
-.form_err_div div{
-  display: flex;
+.form_err_div{
   justify-content: flex-start;
   align-items: flex-start;
   gap: 5px;
 }
 .form_err_div{
   width: 100%;
-}
-.form_err_div div{
+  display: none;
   height: 30px;
 }
 .form_err_div img,
@@ -209,4 +256,63 @@ a:hover{
   display: flex;
   align-items: center;
   color: var(--redStrongPW);
+}
+div.jsPassWordValidator div.form_err_div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.jsPassWordValidator img{
+  height: 32px;
+}
+/* Styel toggle */
+.showContainer{
+  display: flex !important;
+}
+.jsValidated{
+  color: var(--greenPw) !important;
+}
+.pass_progress{
+  display: none;
+  flex-direction:row;
+  width: 100%;
+  height: 35px;
+}
+div.pass_progress div{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-right: 10px;
+  height: 100%;
+  border: solid 2px var(--nvo);
+  border-radius: 15px;
+}
+
+div[id="progress"] img{
+  height: 100%;
+}
+p[id="pProgress"]{
+  font-size: 0.9em;
+  width:max-content;
+  height: fit-content;
+  font-weight: 500;
+  color: var(--nvo);
+}
+/* Progress bar JS */
+.pwVeryWeak{
+ animation: prgVeryWeak forwards 300ms;
+}
+.pwWeak{
+  animation: prgWeak forwards 300ms;
+}
+.pwNormal{
+  animation: prgNormal forwards 300ms;
+}
+.pwStrong{
+  animation: prgStrong forwards 300ms;
+}
+.pwVeryStrong{
+  animation: pgrVeryStrong forwards 300ms;
 }

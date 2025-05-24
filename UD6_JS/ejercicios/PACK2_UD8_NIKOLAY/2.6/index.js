@@ -51,6 +51,7 @@ input_task.addEventListener('keydown',(event)=>{ // El (event) es el objeto del 
   if(event.key === 'Enter'){ // Si detecta que la tecla presionada es enter, ejecuta la función
     fnc_add_task();
   }
+  select_filter.dispatchEvent(new Event('change'));
 });
 // Event listener sobre <ul>
 // El event en el event listener escucha cualquier evento dentro del contenedor, por lo que se puede aplicar sobre el propio evento
@@ -72,7 +73,7 @@ ul_task_list.addEventListener('click',event =>{
       li.remove();
     }
   }
-
+  select_filter.dispatchEvent(new Event('change'));
 });
 
 // Event listener del select filter
@@ -118,3 +119,4 @@ select_filter.addEventListener('change',()=>{
     return; // Control por si se incerta manualmente una clase inexsitente?
   }
 });
+
