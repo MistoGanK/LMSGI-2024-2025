@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <script src="../javascript/admin.js"></script>
+  <script src="../javascript/secion.js"></script>
+</head>
+<body>
+   <header>
+            <nav>
+                <div class="menu_div">
+                    <ul class="menu">
+                        <li id="drop_down_icon">
+                            <a role="navigation" tabindex="0"><div><img src="../assets/icons/menu_100dp_5B9279_FILL0_wght500_GRAD200_opsz48.png" title="Menu" alt="menu_png"></div></a>
+                        </li>
+                        <li>
+                            <a class="link_index" role="link" tabindex="0"><div><img src="../logo/pepe_frog-removebg-preview.png" title="Home" alt="home_png"></div></a>
+                        </li>
+                    </ul>
+                    <nav class="adminNavBar">
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </nav>
+                    <!-- Nuevas funcionalidades en <a>, especificar role para lectores de pantalla y manejo de links con JS general reinplantabe en todos los html -->
+                    <ul class="drop_down_menu">
+                        <!-- Usaremos class en vez de id en <a> para poder reutilizar el mismo codigo -->
+                        <li><a class="link_admin" role="link" tabindex="0"><img src="../assets/icons/manage_accounts_100dp_12130F_FILL0_wght500_GRAD0_opsz48.png" alt="adminLink" title="adminLink">Admin</a></li>
+                        <li><a class="link_index" role="link" tabindex="0"><img src="../assets/icons/door_open_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.svg" alt="logOutAdmin" title="logOutAdmin">Cerrar Sesión</a></li>
+                        <li><a class="link_index" role="link" tabindex="0"><img src="../assets/icons/home_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" alt="home" title="home">Home</a></li>
+                        <li><a class="link_subir_meme" role="link" tabindex="0"><img src="../assets/icons/publish_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png">Subir Meme</a></li>
+                        <li><a class="link_ultimos" role="link" tabindex=0><img src="../assets/icons/schedule_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" title="Ultimos">Últimos</a></li>
+                        <li><a class="link_trending" role="link" tabindex="0"><img src="../assets/icons/mode_heat_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" title="Trending">Trending</a></li>
+                        <li><a class="link_aleatorio" role="link" tabindex="0"><img src="../assets/icons/shuffle_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" title="Aleatorio">Aleatorio</a></li>
+                        <li><a class="link_favoritos" role="link" tabindex="0"><img src="../assets/icons/bookmark_heart_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" title="Favoritos">Favoritos</a></li>
+                        <li><a class="link_subidas" role="link" tabindex="0"><img src="../assets/icons/archive_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" title="Mis subidas">Mis subidas</a></li>
+                        <li><a class="link_ranking" role="link" tabindex="0"><img src="../assets/icons/military_tech_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" title="Ranking">Ranking</a></li>
+                        <li><a class="link_favoritos" role="link" tabindex="0"><img src="../assets/icons/settings_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.svg" title="AdminSettings">Admin Settings</a></li>
+                      </ul>
+                    <ul class="search">
+                        <li>
+                            <button><img src="../assets/icons/contrast_100dp_5B9279_FILL0_wght400_GRAD0_opsz48.png"></button>
+                        </li>
+                        <li>
+                        <label for="go_search"><button id="search_btn"><img src="../assets/icons/search_100dp_5B9279_FILL0_wght400_GRAD200_opsz48.png"></button></label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search_box">
+                    <form method="post" action="">
+                        <input type="search" id="go_search" name="search_tab" placeholder="Busca tus memes aqui...  ">
+                    </form>
+                </div>
+                <div class="filter">
+                    <select name="cronologico">
+                        <option value="ultimos">Ultimós</option>
+                        <option value="antiguos">Antiguos</option>
+                    </select>
+                    <select name="popularidad">
+                        <option value="" disabled selected>---</option>
+                        <option value="tendencia">Trending</option>
+                        <option value="mas_vistos">Mas vistos</option>
+                        <option value="mas_votados">Mas votados</option>
+                        <option value="historicos">Historicos</option>
+                        <option value="aleatorios">Aleatorios</option>
+                    </select>
+                    <button>Buscar</button>
+                </div>
+            </nav>
+       </header>
+       <main>
+          <section class="content">
+            
+          </section>
+       </main>
+  <script src="../javascript/index.js"></script>
+  <script src="../javascript/links.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

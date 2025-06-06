@@ -16,7 +16,8 @@ const rutas = {
   'link_ranking': base_url+'/views/ranking.html',
   'link_post': base_url+'/views/post.html',
   'link_registro': base_url+'/views/registro.html',
-  'link_recuperar_contr': base_url+'/views/recuperar_contr.html'
+  'link_recuperar_contr': base_url+'/views/recuperar_contr.html',
+  'link_admin': base_url+'/views/admin.html'
 };
 
 for (let clase in rutas){

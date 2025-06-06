@@ -6,9 +6,18 @@
         <meta name="author" content="N.P.S">
         <title>LMSGI PROYECTO</title>
         <link rel="stylesheet" href="css/index.css">
+        <script src='javascript/secion.js'></script>
     </head> 
     <body id="top">
        <header>
+        <nav class="adminNavBar">
+                      <ul>
+                        <li><a>Ajustes Admin</a></li>
+                        <li><a>Reports</a></li>
+                        <li><a>Dev tools</a></li>
+                        <li><a>Tickets</a></li>
+                      </ul>
+                    </nav>
             <nav>
                 <div class="menu_div">
                     <ul class="menu">
@@ -22,6 +31,8 @@
                     <!-- Nuevas funcionalidades en <a>, especificar role para lectores de pantalla y manejo de links con JS general reinplantabe en todos los html -->
                     <ul class="drop_down_menu">
                         <!-- Usaremos class en vez de id en <a> para poder reutilizar el mismo codigo -->
+                        <li><a class="link_admin" role="link" tabindex="0"><img src="../assets/icons/manage_accounts_100dp_12130F_FILL0_wght500_GRAD0_opsz48.png" alt="adminLink" title="adminLink">Admin</a></li>
+                        <li><a class="link_log_out" role="link" tabindex="0"><img src="../assets/icons/door_open_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.svg" alt="logOutAdmin" title="logOutAdmin">Cerrar Sesión</a></li>
                         <li><a class="link_index" role="link" tabindex="0"><img src="assets/icons/home_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png" alt="home" title="home">Home</a></li>
                         <li><a class="link_subir_meme" role="link" tabindex="0"><img src="assets/icons/publish_100dp_5B9279_FILL0_wght500_GRAD0_opsz48.png">Subir Meme</a></li>
                         <li><a class="link_inicio" role="link" tabindex="0"><img src="assets/icons/login_100dp_5B9279_FILL0_wght400_GRAD200_opsz48.png" title="Inició">Inició</a></li>

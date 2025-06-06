@@ -94,6 +94,14 @@
     width: 100%;
   }
 }
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
 *{
   margin: 0;
   padding:0;
@@ -163,6 +171,13 @@ h2 {
   margin-top: 15px;
   font-size: 1.1em;
 }
+.form_group button{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 label {
   display: block;
   padding: 5px;
@@ -178,7 +193,34 @@ input {
   border-radius: 5px;
   background-color: #f9f9f9;
 }
-
+.user_selection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+.user_selection h3{
+  width: 50%;
+}
+.user_selection div,
+.user_selection div label,
+.user_selection div input{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.0em;
+  font-family:'body_medium';
+}
+.user_selection div input:hover{
+  cursor: pointer;
+}
+.user_selection div input[type="radio"]:checked{
+  accent-color: var(--vm);
+}
 input:focus {
   outline: none;
   border-color: var(--ba);
@@ -215,6 +257,12 @@ a:hover{
   cursor:pointer;
 }
 
+.shake_active {
+  animation: shake 0.3s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0); /* Force hardware acceleration */
+  backface-visibility: hidden; /* Prevent flickering */
+  perspective: 1000px; /* Prevent flickering */
+}
 /* JS STYLE */
 
 .unvalidatedPassword,
@@ -299,6 +347,23 @@ p[id="pProgress"]{
   height: fit-content;
   font-weight: 500;
   color: var(--nvo);
+}
+.btnVisibility{
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 5px;
+  background-color: var(--vm);
+  border-radius: 50px;
+}
+.btnVisibility img{
+  height:30px;
+}
+.btnVisibility:hover{
+  cursor: pointer;
+  opacity: 90%;
 }
 /* Progress bar JS */
 .pwVeryWeak{

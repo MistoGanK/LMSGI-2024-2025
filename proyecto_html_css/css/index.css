@@ -449,6 +449,38 @@ footer a:hover{
     text-decoration: underline;
     cursor: pointer;
 }
+.adminNavBar{
+    display: flex;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    height: 40px;
+    background-color: var(--vs);
+    border: 1px var(--nvo) solid;
+    border-radius: 20px;
+}
+.adminNavBar ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.adminNavBar ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+}
+.adminNavBar ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'body_medium';
+}
+.adminNavBar ul li a:hover{
+    cursor: pointer;
+    background-color: var(--vm);
+    border-radius: 30px;
+}
 /* --> Media Querys*/
 
 /* --> Tablet*/
