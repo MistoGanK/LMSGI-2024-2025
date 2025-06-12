@@ -1,0 +1,132 @@
+/* Funcional hasta width 315px */
+:root{
+  --var-yellow:#faef06;
+  --var-light-yellow:#fcf67a;
+  --var-strong-yellow:#f8ec00;
+  --var-bluBlack: #23252d;
+  --var-blueLightBlack:#363946;
+  --var-strongBlueBlack:#0a0c16;
+}
+@keyframes transparency{
+  from{
+    background-color: var(--var-light-yellow);
+  }
+  to{
+     background-color: var(--var-strong-yellow);
+  }
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--var-bluBlack);
+  font-family: monospace;
+}
+main,
+section{
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+section{
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  background-color: var(--var-strongBlueBlack);
+  border-radius: 20px; 
+  align-items: center;
+}
+
+section div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 50%;
+  width: 100%;
+  border:var(--var-bluBlack) solid 2px;
+  border-radius: 20px;
+}
+
+div button{
+  height: fit-content;
+  padding: 15px;
+  border: none;
+  background-color: var(--var-light-yellow);
+  border-radius: 15px;
+  color: var(--var-strongBlueBlack);
+  font-family: monospace;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+button:hover{
+  cursor: pointer;
+  animation: transparency 0.5s forwards;
+}
+
+h1{
+  color: var(--var-strong-yellow);
+  background-color: var(--var-blueLightBlack);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: var(--var-strong-yellow);
+  font-size: 2em;
+}
+
+h2{
+  color: var(--var-yellow);
+  background-color: var(--var-bluBlack);
+  font-size: 1.5em;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+h2:hover{
+  opacity: 90%;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--var-light-yellow);
+  font-size: 1.3em;
+  font-weight: bold;
+  list-style:square;;
+}
+
+@media(width<=730px){
+  main{
+    flex-direction: column;
+  }
+  section{
+    width: 100%;
+  }
+}
+@media(width<=350px){
+  h1{
+    font-size:1.8em;
+  }
+  h2{
+    font-size:1.3em;
+  }
+  ul{
+    font-size:1.1em;
+  }
+  div button{
+    font-size: 1.0em;
+    padding: 10px;
+  }
+} 

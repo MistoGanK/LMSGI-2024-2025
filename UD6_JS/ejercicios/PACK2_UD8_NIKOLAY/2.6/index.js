@@ -85,6 +85,7 @@ select_filter.addEventListener('change',()=>{
     // console.log("todos"); // Debug
     for (let li of ul_task_list.children){
       li.classList.remove('hide_container');
+      li.classList.add('show_container');
     }
   }
   // For loop cada hijo de <ul>, se asume que son elementos <li>

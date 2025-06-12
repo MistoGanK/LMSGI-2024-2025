@@ -66,6 +66,11 @@ console.log("lenght of childNodes:",ulHtmlElement[0].childNodes.length)
 // children solo deveulve descendientes de nodos tipo elementos, es decir HTMLCollection
 console.log("lenght of children:",ulHtmlElement[0].children.length)
 
+console.log("ul",ulHtmlElement[0].children);
+console.log("ultimo hijo: ",ulHtmlElement[0].firstElementChild);
+ulHtmlElement[0].removeChild(ulHtmlElement[0].lastElementChild);
+console.log("ul",ulHtmlElement[0].children);
+
 // Iteración sobre NodeList, borrar el nodo que en su textContent sea  = one
 for (let i = 0; i< ulHtmlElement[0].childNodes.length; i++){
   if(ulHtmlElement[0].childNodes[i].textContent === 'one'){
@@ -80,7 +85,8 @@ ulHtmlElement[0].appendChild(nouElement);
 // k) Passa per tots els elements de la llista ordenada i dona’ls un color de fons de color "verd".
 const olElement = document.querySelector('ol');
 console.log(olElement.children.length)
-console.log(olElement);
+console.log("ol children: ",olElement.lastElementChild.remove());
+
 
 for (let i = 0; i<olElement.children.length; i++){
   if(olElement.children[i].tagName === 'LI'){
@@ -118,6 +124,8 @@ objcCollection.push  ({
 });
 
 console.log(objcCollection);  
+console.log("age:",objcCollection.keys());  
+
 
 console.log(objcCollection.length) // Ni existe children ni childNodes
 let mayores = [];

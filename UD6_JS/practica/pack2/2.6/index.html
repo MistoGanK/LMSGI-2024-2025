@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UD8_EX2_6_NIKOLAY</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Gestor de Tasques</h1>
+    </header>
+    <main>
+      <section>
+        <input
+          type="text"
+          id="task_input"
+          placeholder="Afegeix una nova tasca..."
+        />
+        <button id="add_task">Afegeix</button>
+        <label for="filter">Filtrar: </label>
+          <select id="filter">
+            <option value="all">Totes</option>
+            <option value="completed">Completades</option>
+            <option value="pending">Pendents</option>
+          </select>
+      </section>
+
+      <section>
+        <ul id="task_list">
+        </ul>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
